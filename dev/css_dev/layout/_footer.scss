@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file		: footer                                	      */
+// writer	: Ryu
+// date		: 20201215
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* footer s ================================================= */
+.main_footer {
+  //margin-top:80px;
+  .ft_num_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ft_num {
+    width:32%;
+    .num_tit {
+      padding-left:20px;
+      width:100%;
+      border-bottom:1px solid #000;
+    }
+    img {
+      width:auto;
+      height:85px;
+    }
+    .dot_ul {
+      padding:21px 0 28px 40px;
+      font-size:1.9em;
+      line-height:25px;
+      letter-spacing:-1.43px;
+    }
+    .sep_ul {
+      padding-top:20px;
+    }
+    .txt_ul {
+      padding-top:20px;
+    }
+  }
+  .copyright {
+    padding-top:32px;
+    padding-bottom:30px;
+    p {
+      font: {
+        weight:#{$l};
+        size: 1.5em;
+      }
+      letter-spacing:0.45px;
+    }
+    text-align:center;
+    border-top:3px solid #000;
+  }
+}
+
+.sub_footer {
+  .ft_info_wrap {
+    padding-top:20px;
+    border-top:2px solid #000;
+    .service_ul {
+      padding-top:5px;
+      padding-bottom:15px;
+      padding-left:95px;
+      background:url(#{$img_url}common/logo_idr_btm.png) no-repeat;
+      background-size:68px;
+      border-bottom:1px solid #dcdcdc;
+      @include fnt_set($l,1.7em,23px,-1.28px);
+      li {
+        display:inline-block;
+        &.sf {
+          padding-right:10px;
+          padding-left:10px;
+        }
+      }
+      @include mdq_m {
+        padding-left:$con_pd2;
+        font-size:1.3em;
+      }
+    }
+    .sep_ul {
+      display:inline-block;
+      padding-top:15px;
+      padding-left:75px;
+      padding-bottom:25px;
+      max-width:680px;
+      li {
+        margin-top:5px;
+        margin-left:10px;
+        padding-left:10px;
+        @include fnt_set($l, 1.3em, 19px, -0.98px);
+      }
+      @include mdq_m {
+        padding-left:5px;
+      }
+    }
+    .copyright {
+      float:right;
+      padding-top:25px;
+      margin-right:90px;
+      @include fnt_set($l,1.3em,33px,0.39px);
+      color:#707070;
+      @include mdq_m {
+        padding-top:0;
+        padding-bottom:$con_pd2;
+        padding-left:$con_pd2;
+        line-height:20px;
+      }
+    }
+  }
+}
+
+.sub_footer_work {
+  padding-bottom:45px;
+  @include posa_bl(0,10px);
+  .ft_info_wrap {
+    padding-top:10px;
+    padding-left:85px;
+    background:url(#{$img_url}common/logo_idr_btm.png) no-repeat;
+    .service_ul {
+      li {
+        @include fnt_set($l, 1.7em, 23px, -1.28px);
+      }
+    }
+    .sep_ul {
+      margin-top:26px;
+      li {
+        margin-top:0;
+        margin-left:10px;
+        padding-left:10px;
+        @include fnt_set($l,1.3em,19px,-0.98px);
+        &:first-child,
+        &.no_sep {
+          margin-left:0;
+          padding-left:0;
+        }
+        &.no_sep {
+          display:block;
+        }
+      }
+    }
+    .copyright {
+      margin-top:10px;
+      @include fnt_set($l,1.3em,unset,0.39px);
+    }
+  }
+  @include mdq_m {
+    position:relative;
+    bottom:unset;
+    left:unset;
+    @include setDfPadding();
+    .ft_info_wrap {
+      padding-left:0;
+      background-position:100% 100%;
+      border-top:1px solid $border_clr;
+      .service_ul {
+        display:none;
+      }
+    }
+  }
+}
+/* footer e ================================================= */
+/* ---------------------------------------------------------- */
