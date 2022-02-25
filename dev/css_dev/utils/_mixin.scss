@@ -137,6 +137,11 @@
 		@content;
 	}
 }
+@mixin narrow_custom {
+	@media (max-width: #{$narrow - 20 }){
+		@content;
+	}
+}
 @mixin mdq_m {
 	@media (max-width:#{$mobile }){
 		@content;
