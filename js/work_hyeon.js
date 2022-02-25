@@ -1,0 +1,4 @@
+/**
+ * hyeon Methods
+ */
+"use strict";
