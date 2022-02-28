@@ -13,13 +13,11 @@
     padding-top: 200px;
     .inner {
       @include narrow_custom {
-        padding: $con_pd2;
-        padding-top: 0;
-      };
+        @include setDfPadding();
+      }
     }
     @include mdq_m {
       padding-top:0;
-      @include setDfPadding();
     }
   }
 }
