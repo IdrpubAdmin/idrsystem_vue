@@ -11,12 +11,19 @@
 .con_service {
   #contents {
     padding-top: 200px;
+    .inner {
+      @include narrow_custom {
+        padding: $con_pd2;
+        padding-top: 0;
+      };
+    }
     @include mdq_m {
       padding-top:0;
       @include setDfPadding();
     }
   }
 }
+
 .sub_bg_wrap {
   max-width:$full;
   margin-bottom:95px;
