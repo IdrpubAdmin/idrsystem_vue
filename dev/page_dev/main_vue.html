@@ -1,13 +1,20 @@
 <!-- @@master ../layout_template_vue.html -->
 
 <!-- @@block root_content -->
+
 <!-- wrapper -->
 <div id="wrapper">
   
   <!-- container -->
   <div id="container" class="con_main">
 
-    <!-- @@include ../page_include/header_main.html -->
+      <!-- header -->
+      <header-component></header-component>
+          <!-- gnb_wrap -->
+          <gnb-component></gnb-component>
+          <!-- //gnb_wrap -->
+      <!-- //header -->
+
 
     <!-- contents | 컨텐츠영역 -->
     <div id="contents">
@@ -371,6 +378,8 @@
             greeting: 'Welcome to your Vue.js app!',
         },
         components : {
+            'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
+            'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
             'my-component': httpVueLoader('../js/sem-vue/components/common/single.vue'),
         },
     })
