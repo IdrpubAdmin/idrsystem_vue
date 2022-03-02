@@ -9,10 +9,9 @@
 </template>
 
 <script>
-module.exports = {
-  name: 'Page1',
-  props: ['text'],
-  data: () => ({
-  })
-}
+  module.exports = {
+    data() {
+
+    },
+  }
 </script>
