@@ -4,3 +4,4 @@
 /.idea/
 /.vscode/
 *.bak
+/dev/css_dev/.sass-cache/**/*.scssc

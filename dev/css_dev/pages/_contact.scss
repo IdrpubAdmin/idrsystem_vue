@@ -11,9 +11,13 @@
 .con_contact {
   #contents {
     padding-top: 200px;
+    .inner {
+      @include narrow_custom {
+        @include setDfPadding();
+      }
+    }
     @include mdq_m {
-      padding-top: 40px;
-      @include setDfPadding();
+      padding-top:0;
     }
   }
 }
@@ -29,17 +33,48 @@
     flex-direction: column;
     justify-content: space-between;
     width:50%;
-    height:848px;
+    height:690px;
+    @include narrow_custom {
+      width: 48%;
+      .tw_2 {
+        padding-bottom: 0;
+      }
+      .only_pc {
+        display: none;
+      }
+    }
   }
   .right_bx {
     float:right;
     width:50%;
+    overflow: hidden;
+    @include narrow_custom {
+      br {
+        display: none;
+      }
+      tr:nth-child(3) {
+        img {
+          height: 220px;
+          object-fit: cover;
+        }
+      }
+    }
   }
   @include mdq_m {
+    .left_bx {
+      .txt_wrap {
+        .tw_2 {
+          padding-bottom: 30px;
+        }
+      }
+    }
     .left_bx,
     .right_bx {
       width:100%;
       height:unset;
+      br {
+        display: block; 
+      }
     }
   }
 }
@@ -56,6 +91,9 @@
   }
   .nmb_txt {
     margin-left:-10px;
+    @include narrow_custom {
+      margin-left: -5px;
+    }
     font: {
       weight:$l;
       size:1.7em;
@@ -63,6 +101,11 @@
     letter-spacing:-1.28px;
     color:#aaa;
     vertical-align:text-bottom;
+  }
+  @include narrow_custom {
+    .nmb_num {
+      font-size:6.8em;
+    }
   }
   @include mdq_m {
     .nmb_num {
