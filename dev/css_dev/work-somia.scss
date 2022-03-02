@@ -9,6 +9,12 @@
   'display/content.scss';
 
 @import
+  'pages/main.scss',
   'pages/service.scss',
+  'pages/works.scss',
   'pages/contact.scss';
 
+
+// default.scss file 
+@import 
+  'layout/nav.scss';

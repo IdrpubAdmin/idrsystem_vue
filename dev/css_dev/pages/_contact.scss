@@ -33,9 +33,10 @@
     flex-direction: column;
     justify-content: space-between;
     width:50%;
-    height:690px;
+    height:848px;
     @include narrow_custom {
       width: 48%;
+      height: 680px;
       .tw_2 {
         padding-bottom: 0;
       }
@@ -104,7 +105,7 @@
   }
   @include narrow_custom {
     .nmb_num {
-      font-size:6.8em;
+      font-size:6.6em;
     }
   }
   @include mdq_m {

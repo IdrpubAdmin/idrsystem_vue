@@ -21,14 +21,21 @@
   letter-spacing:-1.05px;
   text-align:center;
   color:#535353;
+  
 }
 .biz_box {
   position:relative;
   margin-bottom:116px;
+  @include narrow_custom {
+    margin-bottom: 15%;
+  }
   @include mdq_m {
-    margin-bottom:60px;
+    margin: inherit;
   }
   .sec_tit {
+    @include narrow_custom {
+      display: none;
+    }
     @include posa_tl(190px,30px);
     @include mdq_m {
       top:20px;
@@ -37,12 +44,15 @@
   }
   .biz_item {
     //padding-top:470px;
-    padding-top:490px;
+    padding-top: 40%;
     text-align:right;
     .visual_img {
       @include posa_tr();
       display:inline-block;
       width:auto;
+      @include narrow_custom {
+        width: 100%;
+      }
     }
     .sub_tit {
       @include fnt_set($l, 4.1em, 54px);
@@ -61,7 +71,7 @@
       position:relative;
       //margin-top:200px;
       //padding-top:240px;
-      margin-top:160px;
+      margin-top:170px;
       padding-top:240px;
       @include setDfPadding();
       .sub_tit {
@@ -105,13 +115,23 @@
   .swiper-container {
     width: 100%;
     padding-top:80px;
+    overflow: visible;
+    @include narrow_custom {
+      padding-top: 310px;
+    }
+    @include mdq_m {
+      padding-top: 30px;
+    }
   }
   div.swiper-pagination {
     top:240px;
     bottom:unset;
     //bottom:465px;
+    @include narrow_custom {
+      top: 150px;
+    }
     @include mdq_m {
-      top:50px;
+      top:30px;
     }
   }
   span.swiper-pagination-bullet {
@@ -223,6 +243,9 @@
 }
 
 .portfolio_box {
+  .sec_tit {
+    margin-top: 80px;
+  }
   ul {
     width:100%;
     display:flex;

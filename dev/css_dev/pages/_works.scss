@@ -31,8 +31,7 @@
     }
   }
   .works_info_wrap {
-    @include posa_tl(257px,50%);
-    margin-left:-(($max_w / 2) - 20px);
+    @include posa_tl(257px,5%);
     .wif_date {
       @include fnt_set($eb,1.6em,unset,-0.32px);
     }
@@ -425,7 +424,6 @@
     }
   }
   .works_info_wrap {
-    margin-left:-520px;
     @include mdq_m {
       margin-left:0;
       padding-right: 10px;
@@ -586,7 +584,6 @@
     }
   }
   .works_info_wrap {
-    margin-left:-520px;
     @include mdq_m {
       margin-left:0;
       padding-right: 10px;
