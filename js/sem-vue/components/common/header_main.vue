@@ -18,9 +18,8 @@
 
 <script>
   module.exports = {
-    name: 'Page1',
-    props: ['text'],
-    data: () => ({
-    })
+    data() {
+
+    },
   }
 </script>

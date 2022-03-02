@@ -9,9 +9,9 @@
   <div id="container" class="con_main">
 
       <!-- header -->
-<!--      <header-component></header-component>-->
+      <header-component></header-component>
           <!-- gnb_wrap -->
-<!--          <gnb-component></gnb-component>-->
+          <gnb-component></gnb-component>
           <!-- //gnb_wrap -->
       <!-- //header -->
 
@@ -170,10 +170,8 @@
 
   </div>
   <!-- //container -->
-
 </div>
 <!-- //wrapper -->
-
 
 <!-- @@include ../page_include/lp_wrap.html -->
 
@@ -208,8 +206,8 @@
             greeting: 'Welcome to your Vue.js app!',
         },
         components : {
-            // 'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
-            // 'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
+            'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
+            'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
             'portfolio-box': httpVueLoader('../js/sem-vue/components/main/portfolio_box.vue'),
         },
     })
