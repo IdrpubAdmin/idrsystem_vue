@@ -63,6 +63,7 @@
   }
   @include mdq_m {
     .left_bx {
+      margin-top: 10px;
       .txt_wrap {
         .tw_2 {
           padding-bottom: 30px;
@@ -126,7 +127,7 @@
     background:url(#{$img_url}contact/cntc_img_03.png);
     background-repeat:repeat-y;
     background-size:286px;
-    background-position:50% 0;
+    background-position:50% 100%;
     @include mdq_m {
       padding-top:0px;
       background:none;

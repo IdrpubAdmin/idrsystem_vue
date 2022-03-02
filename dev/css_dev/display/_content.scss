@@ -48,6 +48,11 @@
     @include mdq_m {
       font-size:12px !important;
     }
+    br {
+      @include mdq_m {
+        display: none !important;
+      }
+    }
   }
   .t_lg {
     @include fnt_set($l, 2.5em, 30px, -1.88px);
@@ -57,6 +62,11 @@
   }
   .t_sm {
     @include fnt_set($l, 1.5em, 20px, -1.13px);
+    br {
+      @include mdq_m {
+        display: none !important;
+      }
+    }
   }
 }
 
@@ -259,6 +269,9 @@
       width:420px;
       @include fnt_set($l, 3.1em, 41px, -2.33px);
       vertical-align:top;
+      @include narrow_custom {
+        width: 400px;
+      }
     }
     .blk_con {
       display:inline-block;
@@ -266,6 +279,13 @@
       padding-left:0;
       @include fnt_set($l, 1.9em, 27px, -2.33px);
       vertical-align:top;
+      .point_clr {
+        .only_pc {
+          @include narrow_custom {
+            display: none;
+          }
+        }
+      }
       .dot_ul {
         padding-top:25px;
         > li {
