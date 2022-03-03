@@ -25,9 +25,6 @@
 .biz_box {
   position:relative;
   margin-bottom:116px;
-  @include narrow_custom {
-    margin-bottom: 15%;
-  }
   @include mdq_m {
     margin: inherit;
   }
@@ -43,7 +40,7 @@
   }
   .biz_item {
     //padding-top:470px;
-    padding-top: 40%;
+    padding-top: 47%;
     text-align:right;
     .visual_img {
       @include posa_tr();
@@ -114,13 +111,11 @@
   .swiper-container {
     width: 100%;
     padding-top:80px;
-    overflow: visible;
     @include narrow_custom {
       padding-top: 310px;
     }
     @include mdq_m {
       padding-top: 30px;
-      overflow: hidden;
     }
   }
   div.swiper-pagination {

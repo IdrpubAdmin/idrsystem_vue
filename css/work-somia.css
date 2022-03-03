@@ -142,8 +142,6 @@
 
 .biz_box { position: relative; margin-bottom: 116px; }
 
-@media (max-width: 1260px) { .biz_box { margin-bottom: 15%; } }
-
 @media (max-width: 736px) { .biz_box { margin: inherit; } }
 
 .biz_box .sec_tit { position: absolute; top: 190px; left: 30px; }
@@ -152,7 +150,7 @@
 
 @media (max-width: 736px) { .biz_box .sec_tit { top: 20px; left: 24px; } }
 
-.biz_box .biz_item { padding-top: 40%; text-align: right; }
+.biz_box .biz_item { padding-top: 47%; text-align: right; }
 
 .biz_box .biz_item .visual_img { position: absolute; top: 0; right: 0; display: inline-block; width: auto; }
 
@@ -178,11 +176,11 @@
 
 .biz_box .biz_item_03 .desc_box { margin-bottom: 75px; }
 
-.biz_box .swiper-container { width: 100%; padding-top: 80px; overflow: visible; }
+.biz_box .swiper-container { width: 100%; padding-top: 80px; }
 
 @media (max-width: 1260px) { .biz_box .swiper-container { padding-top: 310px; } }
 
-@media (max-width: 736px) { .biz_box .swiper-container { padding-top: 30px; overflow: hidden; } }
+@media (max-width: 736px) { .biz_box .swiper-container { padding-top: 30px; } }
 
 .biz_box div.swiper-pagination { top: 240px; bottom: unset; }
 
