@@ -4,27 +4,11 @@
 	    <!-- Swiper -->
 	    <div class="swiper-container">
 		    <div class="swiper-wrapper">
-			    <div class="swiper-slide">
+			    <div class="swiper-slide" v-for="(mainBiz, index) in list" :key="index">
 			    <!-- biz_item -->
 				    <div class="biz_item biz_item_01">
 					    <div class="visual_img">
-						    <img src="../images/main/main_swipe_img_1.png" alt="e-Commerce">
-					    </div>
-				    </div>
-			    </div>
-			    <div class="swiper-slide">
-			    <!-- biz_item -->
-				    <div class="biz_item biz_item_01">
-					    <div class="visual_img">
-						    <img src="../images/main/main_swipe_img_2.png" alt="AI Marketing Curator">
-					    </div>
-				    </div>
-			    </div>
-			    <div class="swiper-slide">
-			    <!-- biz_item -->
-				    <div class="biz_item biz_item_01">
-					    <div class="visual_img">
-						    <img src="../images/main/main_swipe_img_3.png" alt="UI/UX Design">
+						    <img :src="mainBiz.image" :alt="mainBiz.alt">
 					    </div>
 				    </div>
 			    </div>
@@ -37,11 +21,15 @@
 </template>
 
 <script>
-
+const bizData = [
+	{image : '../images/main/main_swipe_img_1.png', alt : 'e-Commerce'},
+	{image : '../images/main/main_swipe_img_2.png', alt : 'AI Marketing Curator'},
+	{image : '../images/main/main_swipe_img_3.png', alt : 'UI/UX Design'}
+];
 module.exports = {
     data() {
         return {
-            
+            list : bizData
         }
     },
     mounted() {

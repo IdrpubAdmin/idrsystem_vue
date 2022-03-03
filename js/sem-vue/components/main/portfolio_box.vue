@@ -21,7 +21,7 @@
 </template>
 
 <script>
-var portfolioData = [
+const portfolioData = [
     {link : 'works_2021_04.html', image : '../images/main/list/ptfl_thumb_11.jpg', alt : '씨젠의료재단', period : '2021.06-2021.11', 
     title1 : '씨젠의료재단', title2 : '차세대 정보화 시스템 구축', title3 : '전략 컨설팅', subTitle : '씨젠의료재단 차세대 정보화 시스템 구축 전략 컨설팅'},
     {link : 'works_2021_03.html', image : '../images/main/list/ptfl_thumb_10.jpg', alt : '중소기업유통센터', period : '2021.04-2022.02', 
