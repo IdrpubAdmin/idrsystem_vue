@@ -1,17 +1,20 @@
 <template>
-  <div class="gnb_wrap">
+<div class="gnb_wrap on" v-if="gnbModal">
     <ul class="gnb_menu">
       <li><a href="commerce.html" data-menu-id="gnb_01"><span>service</span></a></li>
       <li><a href="works_2021_01.html" data-menu-id="gnb_02"><span>work</span></a></li>
       <li><a href="intro.html" data-menu-id="gnb_03"><span>contact</span></a></li>
     </ul>
   </div>
+
 </template>
 
 <script>
   module.exports = {
     data() {
+      return {
 
+      }
     },
   }
 </script>
