@@ -127,7 +127,7 @@
     background:url(#{$img_url}contact/cntc_img_03.png);
     background-repeat:repeat-y;
     background-size:286px;
-    background-position:50% 100%;
+    background-position:50% -160px;
     @include mdq_m {
       padding-top:0px;
       background:none;
