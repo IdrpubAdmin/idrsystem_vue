@@ -1,0 +1,58 @@
+<template>
+
+
+
+	    <!-- intro_box -->
+	    <section class="commerce_box">
+
+		    <!-- sub_bg_wrap -->
+		    <div class="sub_bg_wrap">
+			    <img src="../images/service/srvc_sub_bg_01.png" alt="e-commerce">
+		    </div>
+		    <!-- //sub_bg_wrap -->
+
+		    <div class="inner">
+
+                <div class="txt_wrap">
+                    <p class="tw_1">커머스 서비스의 기획,디자인,개발 모든 역량을<br>
+                        보유한 업계최고의 전문가 집합체.</p>
+                    <p class="tw_2">(주)아이디알시스템은 커머스 서비스를 만들고 발전시키는데 필요한 모든 역량을 보유한 커머스 전문기업입니다.<br>
+                        대형종합몰, 브랜드몰, 오픈 마켓플레이스 등 핵심 커머스 분야에 대한 풍부한 프로젝트 경험을 바탕으로 전문적이고 차별화된 커머스 구축 서비스를 제공합니다.<br>
+                        온라인과 오프라인의 경계가 사라지고 하나로 만나는 지금의 변화 속에, 단순히 e-Commerce가 아닌 진정한 온-오프라인 통합형 커머스 서비스를 실현합니다.</p>
+                </div>
+       
+
+                <div class="blk_item_wrap" v-for="(blkItemList, i) in list" :key="i">
+                    <p class="blk_label">{{ blkItemList.label }}</p>
+                    <div class="blk_tit_con">
+                        <div class="blk_tit">{{ blkItemList.tit }}<br class="only_pc">{{ blkItemList.tit2 }}</div>
+                        <div class="blk_con">
+                            {{ blkItemList.con }}<span class="point_clr">{{ blkItemList.con2 }}<br class="only_pc">{{ blkItemList.con3 }}</span>{{ blkItemList.con4 }}
+                        </div>
+                    </div>            
+                </div>
+
+		    </div>
+
+	    </section>
+	    <!-- //intro_box -->
+        
+</template>
+
+<script>
+
+
+var blkItemList = [
+    { label : 'IDR Omni Channel 방법론', tit : '옴니채널 전략을 수립하여,', tit2 : '서비스에 반영', con : 'IDR은 고유의 Omni Channel Strategic Planning 방법론을 개발하여 고객의', con2 : '옴니채널 전략 수립하는', con3 : '서비스를 제공', con4 : '하고 있습니다.' },
+    { label : 'Omni  Commerce Pro !', tit : '자체 솔루션 보유,', tit2 : '자체적 개발.', con : 'IDR은 Global Solution외에도 중소규모의 쇼핑몰을 위한', con2 : 'Omni-Channel Shopping Mall Solution을 자체적으로', con3 : '개발하여 본격적으로 사업', con4 : '을 진행하고 있습니다.' },
+    { label : 'Omni Commerce Pro Architecture', tit : '빠른 개발력,', tit2 : '성능 향상을 높임.', con : 'Omni Commerce Pro는 최근 기술 기반 구조인', con2 : 'MSA(Micro Service Architecture)를 적용하여 빠르게', con3 : '개발하고, 쇼핑몰 성능을 지속적으로 높여', con4 : '갈 수 있는 기술 구조로 개발하였습니다.' }
+];
+
+module.exports = {
+    data() {
+        return {
+            list : blkItemList,
+        }
+    },
+}
+</script>

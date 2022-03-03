@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang='ko'>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9JMF3K58J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N9JMF3K58J');
+    </script>
+    <!-- //Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<!-- og-tag s -->
+	<meta property="og:title" content="(주)아이디알시스템 IDRSYSTEM">
+	<meta property="og:url" content="https://www.idrsystems.co.kr">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="시스템통합,소프트웨어개발,정보인프라구축서비스">
+	<meta property="og:image" content="https://idrsys-site.s3.ap-northeast-2.amazonaws.com/homepage/images/favicon/or_img.png">
+	<!-- og-tag e -->
+	<title>(주)아이디알시스템 IDRSYSTEM</title>
+	<link rel="shortcut icon" href="../images/favicon/favicon.ico">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<link rel="stylesheet" type="text/css" href="../css/display.css">
+    <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
+	<link rel="stylesheet" type="text/css" href="../css/work-hyeon.css">
+	<link rel="stylesheet" type="text/css" href="../css/work-seop.css">
+	<link rel="stylesheet" type="text/css" href="../css/work-somia.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- httpVueLoader cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+    <script src="https://unpkg.com/http-vue-loader@1.4.2/src/httpVueLoader.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../js/common.js"></script>
+    <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
+    <script type="text/javascript" src="../js/hyeon.js"></script>
+    <script type="text/javascript" src="../js/seop.js"></script>
+    <script type="text/javascript" src="../js/somia.js"></script>
+</head>
+<body>
+    <div id="app">
+
+<!-- wrapper -->
+<div id="wrapper">
+  
+  <!-- container -->
+  <div id="container" class="con_service service_commerce">
+
+	<script type="text/javascript" src="../js/lnb_data_service.js"></script>
+
+
+	<!-- header -->
+	<header-component></header-component>
+		<!-- gnb_wrap -->
+		<gnb-component></gnb-component>
+		<!-- //gnb_wrap -->
+	<!-- //header -->
+
+	<!-- contents | 컨텐츠영역 -->
+	<div id="contents">
+		<blk-item-mar></blk-item-mar>
+	</div>
+    <!-- //contents | 컨텐츠영역 -->
+
+		<!-- sub_footer -->
+		<footer-sub></footer-sub>
+		<!-- //sub_footer -->
+
+  	</div>
+	<!-- //container -->
+
+</div>
+<!-- //wrapper -->
+
+<!-- layer_popup_wrap -->
+<div class="lp_wrap lp_depth1"></div>
+<!-- //layer_popup_wrap -->
+
+<!-- script_include -->
+
+<!-- plugin_handlebars -->
+<script type="text/javascript" src="../plugin/handlebars/handlebars-v4.7.6.js"></script>
+<!-- //plugin_handlebars -->
+
+<!-- plugin_swiper -->
+<link rel="stylesheet" type="text/css" href="../plugin/swiper-master/css/swiper.min.css">
+<script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
+<!-- plugin_swiper -->
+
+<script type="text/javascript" src="../js/style.js?v=20201229"></script>
+
+<!-- //script_include -->
+
+<script>
+(function(){
+    WorksNav.checkCurrentLnbNav("gnb_01","lnb1_01"); //현재 페이지 체크
+    StyleCommon.updateDocTitle('e-Commerce');
+})();
+</script>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+
+        },
+        components : {
+            'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
+            'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
+            'blkItemMar': httpVueLoader('../js/sem-vue/components/service/blk_item_mar.vue'),
+			'footer-sub': httpVueLoader('../js/sem-vue/components/common/footer_sub.vue'),
+        },
+    })
+</script>
+
+    </div>
+</body>
+</html>
