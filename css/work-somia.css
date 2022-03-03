@@ -164,7 +164,7 @@
 
 .biz_box .biz_item .desc_box p { display: inline-block; max-width: 500px; margin-left: 56px; text-align: left; }
 
-@media (max-width: 736px) { .biz_box .biz_item { position: relative; margin-top: 170px; padding-top: 240px; padding-right: 15px; padding-left: 15px; }
+@media (max-width: 736px) { .biz_box .biz_item { position: relative; margin-top: 170px; padding-top: 50%; padding-right: 15px; padding-left: 15px; }
   .biz_box .biz_item .sub_tit { margin-bottom: 25px; font-size: 2.4em !important; line-height: 27px !important; }
   .biz_box .biz_item .sub_tit span { font-size: 24px !important; line-height: 24px !important; } }
 
@@ -182,7 +182,7 @@
 
 @media (max-width: 1260px) { .biz_box .swiper-container { padding-top: 310px; } }
 
-@media (max-width: 736px) { .biz_box .swiper-container { padding-top: 30px; } }
+@media (max-width: 736px) { .biz_box .swiper-container { padding-top: 30px; overflow: hidden; } }
 
 .biz_box div.swiper-pagination { top: 240px; bottom: unset; }
 
@@ -619,7 +619,7 @@
 @media (max-width: 736px) { .numbers_wrap .nmb_num { font-size: 5.4em; }
   .numbers_wrap .nmb_txt { margin-left: 0; vertical-align: super; } }
 
-.contact_history #contents { padding-top: 160px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% 100%; }
+.contact_history #contents { padding-top: 160px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% -160px; }
 
 @media (max-width: 736px) { .contact_history #contents { padding-top: 0px; background: none; } }
 
