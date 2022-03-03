@@ -115,32 +115,6 @@
 <!-- //script_include -->
 
 <script>
-  // import Footer_works from "../page_include/footer_works.html";
-  $(function() {
-	  let swiper = new Swiper('.swiper-container', {
-          slidesPerView: 1,
-          autoHeight: true,
-          effect: 'fade',
-          fadeEffect: {
-              crossFade: true
-          },
-          autoplay: true,
-	      pagination: {
-              el: '.swiper-pagination',
-	          type: 'bullets',
-              clickable: true,
-              renderBullet: function (index, className) {
-                  return '<span class="' + className + '">' + '' + '</span>';
-              },
-          },
-      });
-  });
-  // export default {
-  //     components: {Footer_works}
-  // }
-</script>
-
-<script>
     var app = new Vue({
         el: '#app',
         data: {
