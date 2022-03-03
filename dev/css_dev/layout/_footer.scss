@@ -24,6 +24,9 @@
     img {
       width:auto;
       height:85px;
+      @include narrow_custom {
+        height: 60px;
+      }
     }
     .dot_ul {
       padding:21px 0 28px 40px;
