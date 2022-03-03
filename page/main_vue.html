@@ -70,98 +70,7 @@
 	    <div class="inner">
 
 		    <!-- biz_box -->
-		    <section class="biz_box">
-				<h3 class="sec_tit">IDR 사업영역</h3>
-			    <!-- Swiper -->
-			    <div class="swiper-container">
-				    <div class="swiper-wrapper">
-					    <div class="swiper-slide">
-
-						    <!-- biz_item -->
-						    <div class="biz_item biz_item_01">
-							    <div class="visual_img">
-								    <img src="../images/main/main_swipe_img_1.png" alt="e-Commerce">
-							    </div>
-						    </div>
-						    <!-- mrkp-del : 20210303 -->
-						    <!--
-						    <div class="biz_item biz_item_01">
-							    <div class="visual_img">
-								    <img src="../images/main/biz_img_bg_01.png" alt="e-Commerce">
-							    </div>
-							    <p class="sub_tit">
-								    <span>Omni Commerce Pro<br>(Omni-Channel Commerce Solution)</span>
-							    </p>
-							    <div class="desc_box">
-								    <p class="text_desc">
-                                        Omni Commerce Pro는 최신 개발 플랫폼인<br class="only_pc">MSA (Micro Service Architecture)기반의 커머스 솔루션입니다.<br class="only_pc">고객사의 상황에 맞게끔 유연성있고, 확장이 용이하도록 구성되어 있으며,<br class="only_pc">편리한 배포환경 및 최상의 성능을 보장할 수 있습니다.</p>
-							    </div>
-							    <a href="commerce.html" class="btn border_arrow_btn">자세히 보기</a>
-						    </div>
-						    -->
-						    <!-- //mrkp-del : 20210303 -->
-						    <!-- //biz_item -->
-
-					    </div>
-					    <div class="swiper-slide">
-
-						    <!-- biz_item -->
-						    <div class="biz_item biz_item_01">
-							    <div class="visual_img">
-								    <img src="../images/main/main_swipe_img_2.png" alt="AI Marketing Curator">
-							    </div>
-						    </div>
-						    <!-- mrkp-del : 20210303 -->
-						    <!--
-						    <div class="biz_item biz_item_02">
-							    <div class="visual_img">
-								    <img src="../images/main/biz_img_bg_02.png" alt="AI Marketing Curator">
-							    </div>
-							    <p class="sub_tit">인공지능을 적용한 설계로<br>최소의 비용으로 마케팅 효과 극대화</p>
-							    <div class="desc_box">
-								    <p class="text_desc">AI Marketing Curator 인공지능을 적용해 설계된 100여개 Customer Cube를 전문가의 도움없이 고객의 구매 전환률 극대화,비용의 최소화 등 목적에 맞게 캠페인을 실행할 수 있는 솔루션입니다.</p>
-								    <p class="text_desc">AI Shop Curator는 적절한 시간에 적절한 커뮤니케이션 채널을 통해 고객에게 직접적인  혜택을 제시함으로써 소비자의 구매 시간 단축, 구매 중 이탈을 방지 할 수 있는 솔루션/서비스입니다.</p>
-							    </div>
-							    <a href="marketing.html" class="btn border_arrow_btn">자세히 보기</a>
-						    </div>
-						    -->
-						    <!-- //mrkp-del : 20210303 -->
-						    <!-- //biz_item -->
-						    
-					    </div>
-					    <div class="swiper-slide">
-
-						    <!-- biz_item -->
-						    <div class="biz_item biz_item_01">
-							    <div class="visual_img">
-								    <img src="../images/main/main_swipe_img_3.png" alt="UI/UX Design">
-							    </div>
-						    </div>
-						    <!-- mrkp-del : 20210303 -->
-						    <!--
-						    <div class="biz_item biz_item_03">
-							    <div class="visual_img">
-								    <img src="../images/main/biz_img_bg_03.png" alt="UI/UX Design">
-							    </div>
-							    <p class="sub_tit">UI(유저 인터페이스)<br>
-								    / UX(불편함을 느끼지않도록 설계)<br>
-								    디자인</p>
-							    <div class="desc_box">
-								    <p class="text_desc">사용자들의 경험과 서비를 불편함없이 설계하고 유저의 경험인 UX에<br class="only_pc"> 기반을 두어 설계 디자인을 진행하는 디자인전문가들로 구성되 어있습니다.</p>
-							    </div>
-							    <a href="design.html" class="btn border_arrow_btn">자세히 보기</a>
-						    </div>
-						    -->
-						    <!-- //mrkp-del : 20210303 -->
-						    <!-- //biz_item -->
-
-					    </div>
-				    </div>
-				    <!-- Add Pagination -->
-				    <div class="swiper-pagination"></div>
-			    </div>
-			    <!-- //Swiper -->
-		    </section>
+		    <biz-box></biz-box>
 		    <!-- biz_box -->
 
 		    <!-- portfolio -->
@@ -240,6 +149,7 @@
         components : {
             'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
             'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
+			'biz-box': httpVueLoader('../js/sem-vue/components/main/biz_box.vue'),
             'portfolio-box': httpVueLoader('../js/sem-vue/components/main/portfolio_box.vue'),
             'footer-works': httpVueLoader('../js/sem-vue/components/common/footer_works.vue'),
             'footer-main': httpVueLoader('../js/sem-vue/components/common/footer_main.vue'),
