@@ -2,7 +2,7 @@
     <section class="portfolio_box">
 		<h3 class="sec_tit">IDR 포트폴리오</h3>
 		<ul>
-            <li v-for="(mainPort, index) in list" :key="index">
+            <li v-for="mainPort in list" :key="mainPort">
                 <a :href="mainPort.link">
                     <div class="ptfl_item">
                         <img :src="mainPort.image" :alt="mainPort.alt">

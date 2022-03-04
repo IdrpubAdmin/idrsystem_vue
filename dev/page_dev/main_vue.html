@@ -7,7 +7,6 @@
   
   <!-- container -->
   <div id="container" class="con_main">
-
       <!-- header -->
       <header-component></header-component>
           <!-- gnb_wrap -->
@@ -52,6 +51,7 @@
 <!-- @@include ../page_include/script_include.html -->
 
 <script>
+    var eventBus = new Vue();
     var app = new Vue({
         el: '#app',
         data: {

@@ -6,34 +6,23 @@
       </a>
     </h1>
 
-    <button type="button" class="gnb_btn" title="메뉴버튼" @click="showGnb()">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
+    <button type="button" class="gnb_btn" title="메뉴버튼" @click="showGnb">
+      <span class="line" v-for="line in 3" :key="line"></span>
     </button>
   </header>
 </template>
 
 <script>
-  module.exports = {
-    data() {
-      return {
-        gnbModal : false,
-      }
-    },
-    methods: {
-      showGnb() {
-        const lineX = document.querySelector('.gnb_btn');
-        if(this.gnbModal == false){
-        this.gnbModal = true;
-        lineX.classList.add('on');
-        document.body.classList.add('hidden');
-        } else {
-          this.gnbModal = false;
-          lineX.classList.remove('on');
-          document.body.classList.remove('hidden')
-        }
-      }
-    },
-  }
+module.exports = {
+  data() {
+    return {
+      
+    }
+  },
+  methods: {
+    showGnb: function(){
+      eventBus.$emit('clickGnb');
+    }
+  },
+}
 </script>

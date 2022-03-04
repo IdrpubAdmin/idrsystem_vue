@@ -4,7 +4,7 @@
 	    <!-- Swiper -->
 	    <div class="swiper-container">
 		    <div class="swiper-wrapper">
-			    <div class="swiper-slide" v-for="(mainBiz, index) in list" :key="index">
+			    <div class="swiper-slide" v-for="mainBiz in list" :key="mainBiz">
 			    <!-- biz_item -->
 				    <div class="biz_item biz_item_01">
 					    <div class="visual_img">
