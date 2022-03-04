@@ -6,22 +6,10 @@
 			    <div class="left_bx">
 				    <!-- numbers_wrap -->
 				    <ul class="numbers_wrap">
-					    <li>
-						    <span class="nmb_num">10</span>
-						    <span class="nmb_txt">년</span>
+					    <li v-for="(time, i) in list" :key="i">
+						    <span class="nmb_num">{{ time.num }}</span>
+						    <span class="nmb_txt">{{ time.txt }}</span>
 					    </li>
-					    <li>
-						    <span class="nmb_num">3,650</span>
-						    <span class="nmb_txt">일</span>
-					    </li>
-					    <li>
-						    <span class="nmb_num">87,600</span>
-						    <span class="nmb_txt">시간</span>
-					    </li>
-                        <li>
-                            <span class="nmb_num">315,360,000</span>
-                            <span class="nmb_txt">초</span>
-                        </li>
 				    </ul>
 				    <!-- //numbers_wrap -->
 
@@ -78,9 +66,17 @@
 
 <script>
 
+var time = [
+	{ num: '10', txt: '년' },
+	{ num: '3,650', txt: '일' },
+	{ num: '87,600', txt: '시간' },
+	{ num: '315,360,000', txt: '초' },
+]
+
 module.exports = {
     data() {
         return {
+			list : time,
         }
     },
 }

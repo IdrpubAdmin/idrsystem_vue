@@ -65,8 +65,7 @@
 					<div class="hist_item">
 						<span class="year">2013</span>
 						<p class="desc_line">
-							<b>12월 /</b> 독일 e-commerce solution 업체인 Hybris software와
-							partnership 계약
+							<b>12월 /</b> 독일 e-commerce solution 업체인 Hybris software와 partnership 계약
 						</p>
 						<p class="desc_line">
 							<b>11월 /</b> 상호변경 ㈜쓰리에이파트너스 ->  ㈜아이디알시스템
