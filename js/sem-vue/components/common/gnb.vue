@@ -24,14 +24,18 @@ module.exports = {
   created: function() {
     eventBus.$on('clickGnb', function(){
       const lineX = document.querySelector('.gnb_btn');
+      const body = document.body;
+      const header = document.querySelector('header');
       if(this.gnbModal == false){
       this.gnbModal = true;
       lineX.classList.add('on');
-      document.body.classList.add('hidden');
+      body.classList.add('hidden');
+      header.classList.add('gnb_on');
       } else {
         this.gnbModal = false;
         lineX.classList.remove('on');
-        document.body.classList.remove('hidden')
+        body.classList.remove('hidden');
+        header.classList.remove('gnb_on');
       }
     }.bind(this));
   },
