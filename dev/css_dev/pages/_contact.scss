@@ -253,6 +253,9 @@
       }
       li {
         width:33.33%;
+        @include narrow_custom {
+          margin-left: 3%;
+        }
         @include mdq_m {
           width:100%;
         }
