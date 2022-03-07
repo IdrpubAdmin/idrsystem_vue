@@ -1,7 +1,5 @@
 <template>
 
-
-
 	    <!-- intro_box -->
 	    <section class="commerce_box">
 

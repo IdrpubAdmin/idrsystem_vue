@@ -5,7 +5,16 @@
         <img src="../images/common/logo_idr_top.png" alt="아이디알시스템 로고">
       </a>
     </h1>
-
+    <ul class="lnb_wrap lnb_d1_wrap" v-if="serviceLnb">
+        <li class="d1_li"><router-link to="/" data-menu-id=lnb1_01><span>e-commerce</span></router-link></li>
+        <li class="d1_li"><router-link to="/marketing" data-menu-id=lnb1_02><span>AI-Marketing Curator</span></li>
+        <li class="d1_li"><router-link to="/design" data-menu-id=lnb1_03><span>UI/UX Design</span></li>
+    </ul>
+    <ul class="lnb_wrap lnb_d1_wrap" v-if="contactLnb">
+        <li class="d1_li"><router-link to="/" data-menu-id=lnb1_01><span>IDR 소개</span></router-link></li>
+        <li class="d1_li"><router-link to="/history" data-menu-id=lnb1_02><span>연혁</span></li>
+        <li class="d1_li"><router-link to="/recruit" data-menu-id=lnb1_03><span>채용안내</span></li>
+    </ul>
     <button type="button" class="gnb_btn" title="메뉴버튼" @click="showGnb">
       <span class="line" v-for="line in 3" :key="line"></span>
     </button>
@@ -13,10 +22,12 @@
 </template>
 
 <script>
+const reqUrl = window.location.pathname;
 module.exports = {
   data() {
     return {
-      
+      serviceLnb: reqUrl.includes('/service'),
+      contactLnb: reqUrl.includes('/contact')
     }
   },
   methods: {
