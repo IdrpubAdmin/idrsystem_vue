@@ -1,6 +1,6 @@
 <template>
   <div class="gnb_wrap on" v-show="gnbModal">
-    <ul class="gnb_menu">
+    <ul class="gnb_menu" :class="{ has_wnd_nav : lnbOn }">
       <li v-for="gnbMenu in list" :key="gnbMenu">
         <a :href="gnbMenu.href" :data-menu-id="gnbMenu.data"><span>{{gnbMenu.title}}</span></a>
       </li>
@@ -9,16 +9,18 @@
 </template>
 
 <script>
+const reqUrl = window.location.pathname;
 const gnbData = [
-	{href : 'commerce.html', data : 'gnb_01', title : 'service'},
-	{href : 'works_2021_01.html', data : 'gnb_02', title : 'work'},
-	{href : 'intro.html', data : 'gnb_03', title : 'contact'}
+	{class : 'serviceOn', href : 'commerce.html', data : 'gnb_01', title : 'service'},
+	{class : 'workOn', href : 'works_2021_01.html', data : 'gnb_02', title : 'work'},
+	{class : 'contactOn', href : 'intro.html', data : 'gnb_03', title : 'contact'}
 ];
 module.exports = {
   data() {
     return {
       list : gnbData,
       gnbModal : false,
+      lnbOn : reqUrl.includes('/service') || reqUrl.includes('/contact') || reqUrl.includes('_vue'),
     }
   },
   created: function() {

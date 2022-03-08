@@ -6,14 +6,14 @@
       </a>
     </h1>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="serviceLnb">
-        <li class="d1_li"><router-link to="/" data-menu-id=lnb1_01><span>e-commerce</span></router-link></li>
-        <li class="d1_li"><router-link to="/marketing" data-menu-id=lnb1_02><span>AI-Marketing Curator</span></li>
-        <li class="d1_li"><router-link to="/design" data-menu-id=lnb1_03><span>UI/UX Design</span></li>
+        <li class="d1_li" :class="{on : commerceOn}"><a href="commerce_vue.html" data-menu-id=lnb1_01><span>e-commerce</span></a></li>
+        <li class="d1_li" :class="{on : marketingOn}"><a href="marketing_vue.html" data-menu-id=lnb1_02><span>AI-Marketing Curator</span></a></li>
+        <li class="d1_li" :class="{on : designOn}"><a href="design_vue.html" data-menu-id=lnb1_03><span>UI/UX Design</span></a></li>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="contactLnb">
-        <li class="d1_li"><router-link to="/" data-menu-id=lnb1_01><span>IDR 소개</span></router-link></li>
-        <li class="d1_li"><router-link to="/history" data-menu-id=lnb1_02><span>연혁</span></li>
-        <li class="d1_li"><router-link to="/recruit" data-menu-id=lnb1_03><span>채용안내</span></li>
+        <li class="d1_li" :class="{on : introOn}"><a href="intro_vue.html" data-menu-id=lnb1_01><span>IDR 소개</span></a></li>
+        <li class="d1_li" :class="{on : historyOn}"><a href="history_vue.html" data-menu-id=lnb1_02><span>연혁</span></a></li>
+        <li class="d1_li" :class="{on : recruitOn}"><a href="recruit_vue.html" data-menu-id=lnb1_03><span>채용안내</span></a></li>
     </ul>
     <button type="button" class="gnb_btn" title="메뉴버튼" @click="showGnb">
       <span class="line" v-for="line in 3" :key="line"></span>
@@ -23,11 +23,18 @@
 
 <script>
 const reqUrl = window.location.pathname;
+
 module.exports = {
   data() {
     return {
-      serviceLnb: reqUrl.includes('/service'),
-      contactLnb: reqUrl.includes('/contact')
+      serviceLnb: reqUrl.includes('/commerce') || reqUrl.includes('/marketing') || reqUrl.includes('/design'),
+      contactLnb: reqUrl.includes('/intro') || reqUrl.includes('/history') || reqUrl.includes('/recruit'),
+      commerceOn: reqUrl.includes('/commerce'),
+      marketingOn: reqUrl.includes('/marketing'),
+      designOn: reqUrl.includes('/design'),
+      introOn: reqUrl.includes('/intro'),
+      historyOn: reqUrl.includes('/history'),
+      recruitOn: reqUrl.includes('/recruit')
     }
   },
   methods: {

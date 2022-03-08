@@ -3,12 +3,12 @@
 /**
  * Style Methods
  */
+
 function getBodyScrollTop() {
   var el = document.scrollingElement || document.documentElement; // return el.scrollTop;
 
   return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
 } // STYLE COMMON API
-
 
 var StyleCommon = StyleCommon || {};
 

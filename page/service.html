@@ -121,7 +121,6 @@
 	var router = new VueRouter({
 		routes: [
 		  { path: '/', component: CommerceComponent},
-  		//   { path: '/commerce', component: CommerceComponent},
 		  { path: '/marketing', component: MarketingComponent},
   		  { path: '/design', component: DesignComponent}
   		]
@@ -133,7 +132,7 @@
 
         },
         components : {
-            'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
+            'header-component': httpVueLoader('../js/sem-vue/components/service/header_router.vue'),
             'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
 			'footer-sub': httpVueLoader('../js/sem-vue/components/common/footer_sub.vue'),
         },
