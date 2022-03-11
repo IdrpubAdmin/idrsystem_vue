@@ -11,9 +11,9 @@
 <script>
 const reqUrl = window.location.pathname;
 const gnbData = [
-	{class : 'serviceOn', href : 'commerce.html', data : 'gnb_01', title : 'service'},
+	{class : 'serviceOn', href : 'service.html', data : 'gnb_01', title : 'service'},
 	{class : 'workOn', href : 'works_2021_01.html', data : 'gnb_02', title : 'work'},
-	{class : 'contactOn', href : 'intro.html', data : 'gnb_03', title : 'contact'}
+	{class : 'contactOn', href : 'contact.html', data : 'gnb_03', title : 'contact'}
 ];
 module.exports = {
   data() {
