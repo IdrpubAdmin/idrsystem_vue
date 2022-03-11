@@ -1,4 +1,5 @@
 /**
  * seop Methods
  */
-"use strict";
+
+
