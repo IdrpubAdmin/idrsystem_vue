@@ -1,4 +1,5 @@
 <template>
+<div id="contents" class="contact_history">
 	<section class="history_box">
 		<div class="inner">
 
@@ -93,6 +94,7 @@
 
 		</div>
 	</section>
+</div>
 </template>
 
 <script>

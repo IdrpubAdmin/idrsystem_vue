@@ -271,6 +271,8 @@
 
 @media (max-width: 736px) { .con_service #contents { padding-top: 0; } }
 
+.con_service #contents .intro_box, .con_service #contents .recruit_box { padding-top: 0; }
+
 .sub_bg_wrap { max-width: 1920px; margin-bottom: 95px; margin-right: auto; margin-left: auto; }
 
 @media (max-width: 736px) { .sub_bg_wrap { margin-bottom: 40px; margin-right: -15px; margin-left: -15px; } }
@@ -617,9 +619,9 @@
 @media (max-width: 736px) { .numbers_wrap .nmb_num { font-size: 5.4em; }
   .numbers_wrap .nmb_txt { margin-left: 0; vertical-align: super; } }
 
-.contact_history #contents { padding-top: 160px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% -160px; }
+.contact_history { padding-top: 160px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% -160px; }
 
-@media (max-width: 736px) { .contact_history #contents { padding-top: 0px; background: none; } }
+@media (max-width: 736px) { .contact_history { padding-top: 0px; background: none; } }
 
 .history_box .txt_wrap { max-width: 450px; }
 

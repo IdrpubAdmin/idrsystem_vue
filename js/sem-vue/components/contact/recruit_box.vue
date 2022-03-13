@@ -1,4 +1,5 @@
 <template>
+<div id="contents">
     <!-- intro_box -->
     <section class="recruit_box">
         <div class="inner">
@@ -93,6 +94,7 @@
         </div>
     </section>
     <!-- //intro_box -->
+</div>
 </template>
 
 <script>

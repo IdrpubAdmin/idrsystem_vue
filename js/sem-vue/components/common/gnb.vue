@@ -13,11 +13,19 @@
 
 <script>
 const reqUrl = window.location.pathname;
+<<<<<<< HEAD
 // const gnbData = [
 // 	{class : 'serviceOn', href : 'commerce.html', title : 'service'},
 // 	{class : 'workOn', href : 'works_2021_01.html', title : 'work'},
 // 	{class : 'contactOn', href : 'intro.html', title : 'contact'}
 // ];
+=======
+const gnbData = [
+	{class : 'serviceOn', href : 'service.html', data : 'gnb_01', title : 'service'},
+	{class : 'workOn', href : 'works_2021_01.html', data : 'gnb_02', title : 'work'},
+	{class : 'contactOn', href : 'contact.html', data : 'gnb_03', title : 'contact'}
+];
+>>>>>>> 7cf3ff778384f3aa612234c20529cd0f10263779
 module.exports = {
   data() {
     return {
