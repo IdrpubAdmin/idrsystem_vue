@@ -35,6 +35,7 @@
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- httpVueLoader cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+	<script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
     <script src="https://unpkg.com/http-vue-loader@1.4.2/src/httpVueLoader.js"></script>
 	<!--[if lt IE 9]>
 		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -125,12 +126,12 @@ var app = new Vue({
 		  
 	},
   	components : {
-	  	'header-component': httpVueLoader('../js/sem-vue/components/common/header_main.vue'),
-	  	'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
-	  	'biz-box': httpVueLoader('../js/sem-vue/components/main/biz_box.vue'),
-	  	'portfolio-box': httpVueLoader('../js/sem-vue/components/main/portfolio_box.vue'),
-	  	'footer-works': httpVueLoader('../js/sem-vue/components/common/footer_works.vue'),
-		'footer-main': httpVueLoader('../js/sem-vue/components/common/footer_main.vue'),
+	  	'header-component': httpVueLoader('../components/common/header_main.vue'),
+	  	'gnb-component': httpVueLoader('../components/common/gnb.vue'),
+	  	'biz-box': httpVueLoader('../components/main/biz_box.vue'),
+	  	'portfolio-box': httpVueLoader('../components/main/portfolio_box.vue'),
+	  	'footer-works': httpVueLoader('../components/common/footer_works.vue'),
+		'footer-main': httpVueLoader('../components/common/footer_main.vue'),
   	},
 })
 </script>

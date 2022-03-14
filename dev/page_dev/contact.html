@@ -114,9 +114,9 @@
 </script>
 
 <script>
-	var IntroComponent = httpVueLoader('../js/sem-vue/components/contact/intro_box.vue');
-	var HistoryComponent = httpVueLoader('../js/sem-vue/components/contact/history_box.vue');
-	var RecruitComponent = httpVueLoader('../js/sem-vue/components/contact/recruit_box.vue');
+	var IntroComponent = httpVueLoader('../components/contact/intro_box.vue');
+	var HistoryComponent = httpVueLoader('../components/contact/history_box.vue');
+	var RecruitComponent = httpVueLoader('../components/contact/recruit_box.vue');
 	var eventBus = new Vue();
 	var router = new VueRouter({
 		routes: [
@@ -132,9 +132,9 @@
 
         },
         components : {
-            'header-component': httpVueLoader('../js/sem-vue/components/service/header_router.vue'),
-            'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
-			'footer-sub': httpVueLoader('../js/sem-vue/components/common/footer_sub.vue'),
+            'header-component': httpVueLoader('../components/service/header_router.vue'),
+            'gnb-component': httpVueLoader('../components/common/gnb.vue'),
+			'footer-sub': httpVueLoader('../components/common/footer_sub.vue'),
         },
     }).$mount('#app');
  

@@ -114,9 +114,9 @@
 </script>
 
 <script>
-	var CommerceComponent = httpVueLoader('../js/sem-vue/components/service/blk_item_com.vue');
-	var MarketingComponent = httpVueLoader('../js/sem-vue/components/service/blk_item_mar.vue');
-	var DesignComponent = httpVueLoader('../js/sem-vue/components/service/blk_item_des.vue');
+	var CommerceComponent = httpVueLoader('../components/service/blk_item_com.vue');
+	var MarketingComponent = httpVueLoader('../components/service/blk_item_mar.vue');
+	var DesignComponent = httpVueLoader('../components/service/blk_item_des.vue');
 	var eventBus = new Vue();
 	var router = new VueRouter({
 		routes: [
@@ -132,9 +132,9 @@
 
         },
         components : {
-            'header-component': httpVueLoader('../js/sem-vue/components/service/header_router.vue'),
-            'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
-			'footer-sub': httpVueLoader('../js/sem-vue/components/common/footer_sub.vue'),
+            'header-component': httpVueLoader('../components/service/header_router.vue'),
+            'gnb-component': httpVueLoader('../components/common/gnb.vue'),
+			'footer-sub': httpVueLoader('../components/common/footer_sub.vue'),
         },
     }).$mount('#app');
  

@@ -49,7 +49,7 @@
 	<script type="text/javascript" src="../js/common.js"></script>
     <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
     <script type="text/javascript" src="../js/hyeon.js"></script>
-    <script type="text/javascript" src="../js/seop.js"></script>
+    <script type="text/javascript" src="../js/seop.js" defer></script>
     <script type="text/javascript" src="../js/somia.js"></script>
 </head>
 <body>
@@ -59,9 +59,10 @@
 <div id="wrapper">
   
   <!-- container -->
-  <div id="container" class="con_contact contact_intro">
+  <div id="container" class="con_service service_commerce">
 
-	<script type="text/javascript" src="../js/lnb_data_contact.js"></script>
+	<script type="text/javascript" src="../js/lnb_data_service.js"></script>
+
 
 	<!-- header -->
 	<header-component></header-component>
@@ -70,18 +71,18 @@
 		<!-- //gnb_wrap -->
 	<!-- //header -->
 
-    <!-- contents | 컨텐츠영역 -->
-    <div id="contents">
-        <router-view></router-view>
-    </div>
+	<!-- contents | 컨텐츠영역 -->
+	<div id="contents">
+		<router-view></router-view>
+	</div>
     <!-- //contents | 컨텐츠영역 -->
 
 		<!-- sub_footer -->
 		<footer-sub></footer-sub>
 		<!-- //sub_footer -->
 
-  </div>
-  <!-- //container -->
+  	</div>
+	<!-- //container -->
 
 </div>
 <!-- //wrapper -->
@@ -107,15 +108,15 @@
 
 <script>
 (function(){
-    WorksNav.checkCurrentLnbNav("gnb_03","lnb1_01"); //현재 페이지 체크
-    StyleCommon.updateDocTitle('IDR 소개');
+    WorksNav.checkCurrentLnbNav("gnb_01","lnb1_01"); //현재 페이지 체크
+    StyleCommon.updateDocTitle('e-Commerce');
 })();
 </script>
 
 <script>
-    var IntroComponent = httpVueLoader('../js/sem-vue/components/contact/intro_box.vue');
-	var HistoryComponent = httpVueLoader('../js/sem-vue/components/contact/history_box.vue');
-	var RecruitComponent = httpVueLoader('../js/sem-vue/components/contact/recruit_box.vue');
+	var IntroComponent = httpVueLoader('../components/contact/intro_box.vue');
+	var HistoryComponent = httpVueLoader('../components/contact/history_box.vue');
+	var RecruitComponent = httpVueLoader('../components/contact/recruit_box.vue');
 	var eventBus = new Vue();
 	var router = new VueRouter({
 		routes: [
@@ -126,21 +127,18 @@
 	})
     var app = new Vue({
         el: '#app',
-        router,
+		router,
         data: {
-			
+
         },
         components : {
-            'header-component': httpVueLoader('../js/sem-vue/components/service/header_router.vue'),
-            'gnb-component': httpVueLoader('../js/sem-vue/components/common/gnb.vue'),
-			'footer-sub': httpVueLoader('../js/sem-vue/components/common/footer_sub.vue'),
+            'header-component': httpVueLoader('../components/service/header_router.vue'),
+            'gnb-component': httpVueLoader('../components/common/gnb.vue'),
+			'footer-sub': httpVueLoader('../components/common/footer_sub.vue'),
         },
     }).$mount('#app');
+ 
 </script>
-
-    </div>
-</body>
-</html>
 
     </div>
 </body>

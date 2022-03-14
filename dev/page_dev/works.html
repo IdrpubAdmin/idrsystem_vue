@@ -1,0 +1,72 @@
+<!-- @@master ../layout_template.html -->
+
+<!-- @@block root_content -->
+<!-- wrapper -->
+<div id="wrapper">
+
+    <!-- container -->
+    <div id="container" class="con_works">
+
+        <script type="text/javascript" src="../js/lnb_data_works.js"></script>
+
+        <!-- header -->
+	    <header-component></header-component>
+            <!-- gnb_wrap -->
+            <gnb-component></gnb-component>
+            <!-- //gnb_wrap -->
+        <!-- //header -->
+
+        <!-- contents | 컨텐츠영역 -->
+        <router-view></router-view>
+        <!-- //contents | 컨텐츠영역 -->
+
+        <!-- sub_footer -->
+		<footer-sub></footer-sub>
+		<!-- //sub_footer -->
+
+    </div>
+    <!-- //container -->
+
+</div>
+<!-- //wrapper -->
+
+<!-- @@include ../page_include/lp_wrap.html -->
+
+<!-- @@include ../page_include/script_include.html -->
+
+<script>
+    (function(){
+        WorksNav.checkCurrentLnbNav("gnb_02","lnb1_21","lnb2_04"); //현재 페이지 체크
+        StyleCommon.updateDocTitle('씨젠의료재단 차세대 정보화 시스템 구축');
+    })();
+</script>
+
+<script>
+	var component2021 = httpVueLoader('../components/work/project_2021.vue');
+	var component2020 = httpVueLoader('../components/work/project_2020.vue');
+	var component2019 = httpVueLoader('../components/work/project_2019.vue');
+
+	var eventBus = new Vue();
+	var router = new VueRouter({
+		routes: [
+		  { path: '/', component: component2021},
+		  { path: '/2020', component: component2020},
+  		  { path: '/2019', component: component2019}
+  		]
+	})
+    var app = new Vue({
+        el: '#app',
+		router,
+        data: {
+
+        },
+        components : {
+            'header-component': httpVueLoader('../components/service/header_router.vue'),
+            'gnb-component': httpVueLoader('../components/common/gnb.vue'),
+			'footer-sub': httpVueLoader('../components/common/footer_works.vue'),
+        },
+    }).$mount('#app');
+ 
+</script>
+
+<!-- @@close -->
