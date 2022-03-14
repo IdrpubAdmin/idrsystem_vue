@@ -1,4 +1,0 @@
-/**
- * somia Methods
- */
-"use strict";
