@@ -1,5 +1,4 @@
 <template>
-<div id="contents">
 	<section class="intro_box">
 		<div class="inner">
 
@@ -63,7 +62,6 @@
 
 		</div>
 	</section>
-</div>
 </template>
 
 <script>
