@@ -625,6 +625,8 @@
 
 .history_box .txt_wrap { max-width: 450px; padding-top: 200px; }
 
+@media (max-width: 736px) { .history_box .txt_wrap .tw_1 { margin-top: 40px; } }
+
 .history_box li { margin-top: -10px; }
 
 .history_box .side_l .hist_item { padding-right: 64%; text-align: right; }

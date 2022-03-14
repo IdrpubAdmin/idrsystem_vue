@@ -10,14 +10,6 @@
 					구축하고, ICT Leading Company로 성장해 나가겠습니다.</p>
 			</div>
 			<ul class="history_ul_wrap">
-				<!-- <li class="side_r">
-					<div class="hist_item">
-						<span class="year">2018</span>
-						<p class="desc_line">
-							<b>05월 /</b> 본점 이전(서울 영등포구 양평로21길 26, 8층 (아이에스비즈타워1차)
-						</p>
-					</div>
-				</li> -->
 
 				<li class="side_r">
 					<div class="hist_item">
