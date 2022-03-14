@@ -111,16 +111,33 @@
 </script>
 
 <script>
-	var component2021 = httpVueLoader('../components/work/project_2021.vue');
-	var component2020 = httpVueLoader('../components/work/project_2020.vue');
-	var component2019 = httpVueLoader('../components/work/project_2019.vue');
-
+	var Component2021 = httpVueLoader('../components/work/project_2021.vue');
+	var Component2020 = httpVueLoader('../components/work/project_2020.vue');
+	var Component2019 = httpVueLoader('../components/work/project_2019.vue');
+	var Component2018 = httpVueLoader('../components/work/project_2018.vue');
+	var Component2017 = httpVueLoader('../components/work/project_2017.vue');
+	var Component2016 = httpVueLoader('../components/work/project_2016.vue');
+	var Component2015 = httpVueLoader('../components/work/project_2015.vue');
+	var Component2014 = httpVueLoader('../components/work/project_2014.vue');
+	var Component2013 = httpVueLoader('../components/work/project_2013.vue');
+	var Component1 = httpVueLoader('../components/work/card_1.vue');
+	var Component2 = httpVueLoader('../components/work/card_2.vue');
 	var eventBus = new Vue();
 	var router = new VueRouter({
 		routes: [
-		  { path: '/', component: component2021},
-		  { path: '/2020', component: component2020},
-  		  { path: '/2019', component: component2019}
+		  { path: '/', component: Component2021},
+		  { path: '/2020', component: Component2020},
+  		  { path: '/2019', component: Component2019},
+  		  { path: '/2018', component: Component2018},
+  		  { path: '/2017', component: Component2017},
+  		  { path: '/2016', component: Component2016},
+  		  { path: '/2015', component: Component2015},
+  		  { path: '/2014', component: Component2014},
+  		  { path: '/2013', component: Component2013, children: [
+				{ path: '', component: Component1},
+				{ path: '1', component: Component1},
+				{ path: '2', component: Component2}
+			]}
   		]
 	})
     var app = new Vue({
