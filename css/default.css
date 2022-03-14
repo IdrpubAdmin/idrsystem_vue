@@ -2332,6 +2332,64 @@ img { width: 100%; }
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */
+/* file		: nav                                    	      */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* nav s ==================================================== */
+.gnb_wrap { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.86); z-index: 5; }
+
+.gnb_wrap.on { display: block; }
+
+.gnb_menu { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; width: 100%; height: 100%; }
+
+@media (max-width: 1260px) { .gnb_menu { flex-direction: column; padding-top: 100px; padding-bottom: 100px; }
+  .gnb_menu.has_wnd_nav { padding-top: 270px; } }
+
+.gnb_menu a { position: relative; display: inline-block; }
+
+.gnb_menu a span { color: #fff; font-family: "KeepCalmM", sans-serif; font-size: 68px; letter-spacing: 2.04px; }
+
+@media (max-width: 736px) { .gnb_menu a span { font-size: 48px; } }
+
+.gnb_menu a:before { position: absolute; top: 50%; left: -8%; margin-top: 6px; content: ''; width: 0; height: 8px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
+
+.gnb_menu li:hover a:before, .gnb_menu li.on a:before { width: 116%; }
+
+.lnb_d1_wrap { display: inline-block; width: 1280px; text-align: left; }
+
+@media (max-width: 1520px) { .lnb_d1_wrap { padding-left: 120px; } }
+
+@media (max-width: 736px) { .lnb_d1_wrap { display: none; margin-top: 70px; margin-left: 0; padding-left: 0; width: 100%; } }
+
+.lnb_d1_wrap li, .lnb_d1_wrap a { position: relative; display: inline-block; }
+
+@media (max-width: 736px) { .lnb_d1_wrap li, .lnb_d1_wrap a { float: left; clear: both; } }
+
+.lnb_d1_wrap > li > a { padding-right: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 44px; letter-spacing: unset; color: #959595; }
+
+.lnb_d1_wrap > li .lnb_d2_wrap { display: none; margin-left: 10px; }
+
+.lnb_d1_wrap > li .lnb_d2_wrap > li { padding-right: 10px; padding-left: 10px; }
+
+.lnb_d1_wrap > li .lnb_d2_wrap > li > a { font-weight: 400; font-size: 3.1em; line-height: 44px; letter-spacing: unset; color: #959595; }
+
+.lnb_d1_wrap > li.router-link-exact-active > a { font-size: 3.1em; color: #000; }
+
+.lnb_d1_wrap > li.router-link-exact-active > a:before { position: absolute; top: 50%; left: 0; margin-top: -4px; content: ''; width: 100%; height: 8px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
+
+.lnb_d1_wrap > li.router-link-exact-active .lnb_d2_wrap { display: inline-block; }
+
+.lnb_d1_wrap > li:hover > a { color: #000; }
+
+.lnb_d1_wrap > li .lnb_d2_wrap > li.on > a, .lnb_d1_wrap > li .lnb_d2_wrap > li:hover > a { color: #000; }
+
+.lnb_d1_wrap > li .lnb_d2_wrap > li.on > a:before, .lnb_d1_wrap > li .lnb_d2_wrap > li:hover > a:before { position: absolute; top: 50%; left: 0; margin-top: -2px; content: ''; width: 100%; height: 4px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
+
+/* nav e ==================================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
 /* file		: container                                	      */
 /*                                                            */
 /* ========================================================== */
@@ -2346,6 +2404,75 @@ img { width: 100%; }
 .inner { max-width: 1280px; margin-right: auto; margin-left: auto; }
 
 /* container e ============================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: footer                                	      */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* footer s ================================================= */
+.main_footer .ft_num_wrap { display: flex; justify-content: space-between; }
+
+.main_footer .ft_num { width: 32%; }
+
+.main_footer .ft_num .num_tit { padding-left: 20px; width: 100%; border-bottom: 1px solid #000; }
+
+.main_footer .ft_num img { width: auto; height: 85px; }
+
+@media (max-width: 1260px) { .main_footer .ft_num img { height: 60px; } }
+
+.main_footer .ft_num .dot_ul { padding: 21px 0 28px 40px; font-size: 1.9em; line-height: 25px; letter-spacing: -1.43px; }
+
+.main_footer .ft_num .sep_ul { padding-top: 20px; }
+
+.main_footer .ft_num .txt_ul { padding-top: 20px; }
+
+.main_footer .copyright { padding-top: 32px; padding-bottom: 30px; text-align: center; border-top: 3px solid #000; }
+
+.main_footer .copyright p { font-weight: 300; font-size: 1.5em; letter-spacing: 0.45px; }
+
+.sub_footer .ft_info_wrap { padding-top: 20px; border-top: 2px solid #000; }
+
+.sub_footer .ft_info_wrap .service_ul { padding-top: 5px; padding-bottom: 15px; padding-left: 95px; background: url(../images/common/logo_idr_btm.png) no-repeat; background-size: 68px; border-bottom: 1px solid #dcdcdc; font-weight: 300; font-size: 1.7em; line-height: 23px; letter-spacing: -1.28px; }
+
+.sub_footer .ft_info_wrap .service_ul li { display: inline-block; }
+
+.sub_footer .ft_info_wrap .service_ul li.sf { padding-right: 10px; padding-left: 10px; }
+
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .service_ul { padding-left: 20px; font-size: 1.3em; } }
+
+.sub_footer .ft_info_wrap .sep_ul { display: inline-block; padding-top: 15px; padding-left: 75px; padding-bottom: 25px; max-width: 680px; }
+
+.sub_footer .ft_info_wrap .sep_ul li { margin-top: 5px; margin-left: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 19px; letter-spacing: -0.98px; }
+
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .sep_ul { padding-left: 5px; } }
+
+.sub_footer .ft_info_wrap .copyright { float: right; padding-top: 25px; margin-right: 90px; font-weight: 300; font-size: 1.3em; line-height: 33px; letter-spacing: 0.39px; color: #707070; }
+
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .copyright { padding-top: 0; padding-bottom: 20px; padding-left: 20px; line-height: 20px; } }
+
+.sub_footer_work { padding-bottom: 45px; position: absolute; bottom: 0; left: 10px; }
+
+.sub_footer_work .ft_info_wrap { padding-top: 10px; padding-left: 85px; background: url(../images/common/logo_idr_btm.png) no-repeat; }
+
+.sub_footer_work .ft_info_wrap .service_ul li { font-weight: 300; font-size: 1.7em; line-height: 23px; letter-spacing: -1.28px; }
+
+.sub_footer_work .ft_info_wrap .sep_ul { margin-top: 26px; }
+
+.sub_footer_work .ft_info_wrap .sep_ul li { margin-top: 0; margin-left: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 19px; letter-spacing: -0.98px; }
+
+.sub_footer_work .ft_info_wrap .sep_ul li:first-child, .sub_footer_work .ft_info_wrap .sep_ul li.no_sep { margin-left: 0; padding-left: 0; }
+
+.sub_footer_work .ft_info_wrap .sep_ul li.no_sep { display: block; }
+
+.sub_footer_work .ft_info_wrap .copyright { margin-top: 10px; font-weight: 300; font-size: 1.3em; line-height: unset; letter-spacing: 0.39px; }
+
+@media (max-width: 736px) { .sub_footer_work { position: relative; bottom: unset; left: unset; padding-right: 15px; padding-left: 15px; }
+  .sub_footer_work .ft_info_wrap { padding-left: 0; background-position: 100% 100%; border-top: 1px solid #f1f1f1; }
+  .sub_footer_work .ft_info_wrap .service_ul { display: none; } }
+
+/* footer e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */

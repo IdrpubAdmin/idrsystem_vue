@@ -278,6 +278,9 @@
             .tit_date {
               @include fnt_set($b,1.7em,37px,unset);
               margin-bottom:53px;
+              @include narrow_custom {
+                margin-bottom: 30px;
+              }
             }
             .tit {
               min-height:108px;
@@ -285,9 +288,17 @@
               font-size:3.1em;
               letter-spacing:-2.33px;
               line-height:36px;
+              @include narrow_custom {
+                font-size: 2.1em;
+              }
             }
             .tit_sub {
               font-weight:$l;
+              br {
+                @include narrow_custom {
+                  display: none;
+                }
+              }
             }
             .tit_desc {
               margin-top:55px;

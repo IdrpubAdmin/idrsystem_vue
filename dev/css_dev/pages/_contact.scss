@@ -135,6 +135,11 @@
   .txt_wrap {
     max-width:450px;
     padding-top: 200px;
+    .tw_1 {
+      @include mdq_m {
+        margin-top: 40px;
+      }
+    }
   }
   li {
     margin-top:-10px;
