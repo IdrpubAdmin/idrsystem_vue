@@ -619,11 +619,11 @@
 @media (max-width: 736px) { .numbers_wrap .nmb_num { font-size: 5.4em; }
   .numbers_wrap .nmb_txt { margin-left: 0; vertical-align: super; } }
 
-.contact_history { padding-top: 160px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% -160px; }
+.history_box { margin-top: -200px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% -160px; margin-bottom: -80px; }
 
-@media (max-width: 736px) { .contact_history { padding-top: 0px; background: none; } }
+@media (max-width: 736px) { .history_box { padding-top: 0px; background: none; } }
 
-.history_box .txt_wrap { max-width: 450px; }
+.history_box .txt_wrap { max-width: 450px; padding-top: 200px; }
 
 .history_box li { margin-top: -10px; }
 
