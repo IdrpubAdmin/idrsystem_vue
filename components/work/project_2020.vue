@@ -21,9 +21,7 @@
             <div class="wif_detail">
                 <p class="wifd_tit">{{worksBox.title}}</p>
                 <ul class="wifd_con">
-                    <li>{{worksBox.li1}}</li>
-                    <li>{{worksBox.li2}}</li>
-                    <li>{{worksBox.li3}}</li>
+                    <li v-for="contentData in worksBox.content" :key="contentData">{{contentData.li}}</li>
                 </ul>
             </div>
             </div>
@@ -48,8 +46,10 @@ const worksData = [
         txt3: '', 
         tex4: '사업',
         title: '글라이드쇼핑몰 구축(식품 전문 쇼핑몰 구축)',
-        li1 : 'Spring boot 기반의 시스템 구축으로 Cloud 환경에 배포 및 확장이 용이한 시스템 구축', 
-        li2 : 'Vue.js를 사용하여 사용자 UI/UX 개선', 
+        content: [
+           { li : 'Spring boot 기반의 시스템 구축으로 Cloud 환경에 배포 및 확장이 용이한 시스템 구축' }, 
+           { li : 'Vue.js를 사용하여 사용자 UI/UX 개선' }, 
+        ]
     },
     {
         pc : '../images/works/lotteon/works_img.png', 
@@ -62,9 +62,10 @@ const worksData = [
         txt3: '', 
         tex4: '',
         title: '롯데온 프리미엄몰 구축',
-        li1 : '롯데온 (www.lotteon.com) 프리미엄몰 구축', 
-        li2 : '전시 (Front / Backoffice) 구축', 
-        li3 : ''
+        content: [
+            { li : '롯데온 (www.lotteon.com) 프리미엄몰 구축' } , 
+            { li : '전시 (Front / Backoffice) 구축' }, 
+        ]
     },
     {
         pc : '../images/works/hyundai_greating/works_img.png', 
@@ -77,9 +78,10 @@ const worksData = [
         txt3: '', 
         tex4: '',
         title: '현대그린푸드의 그리팅 기능개선',
-        li1 : '현대그린푸드 신사업 온라인몰(Greating)기능개선', 
-        li2 : '생산관리 시스템 등 유관 시스템 및 서비스연동', 
-        li3 : ''
+        content: [
+            { li : '현대그린푸드 신사업 온라인몰(Greating)기능개선' }, 
+            { li : '생산관리 시스템 등 유관 시스템 및 서비스연동' }, 
+        ]
     },
 ];
 

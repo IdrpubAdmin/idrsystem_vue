@@ -21,11 +21,7 @@
             <div class="wif_detail">
                 <p class="wifd_tit">{{worksBox.title}}</p>
                 <ul class="wifd_con">
-                    <li>{{worksBox.li1}}</li>
-                    <li>{{worksBox.li2}}</li>
-                    <li>{{worksBox.li3}}</li>
-                    <li>{{worksBox.li4}}</li>
-                    <li>{{worksBox.li5}}</li>
+                    <li v-for="contentData in worksBox.content" :key="contentData">{{contentData.li}}</li>
                 </ul>
             </div>
             </div>
@@ -50,11 +46,13 @@ const worksData = [
         txt3: '', 
         tex4: '',
         title: 'thehandsome.com 의 mobile & App Renewal',
-        li1 : 'PC 기반 쇼핑몰 환경을 모바일에 맞도록 최적화', 
-        li2 : '고객 편의성에 기여하는 신기술의 적극적인 반영 (바이오인증, 한섬페이, 개인화강화 등)', 
-        li3 : '모바일 매출 비중 확대',
-        li4 : '앱 다운로드 증가, 타겟 마케팅 인프라 확대',
-        li4 : 'Hybris Commerce Platform 기반'
+        content: [
+            { li : 'PC 기반 쇼핑몰 환경을 모바일에 맞도록 최적화' }, 
+            { li : '고객 편의성에 기여하는 신기술의 적극적인 반영 (바이오인증, 한섬페이, 개인화강화 등)' }, 
+            { li : '모바일 매출 비중 확대' },
+            { li : '앱 다운로드 증가, 타겟 마케팅 인프라 확대' },
+            { li : 'Hybris Commerce Platform 기반' }
+        ]
     },
 ];
 
