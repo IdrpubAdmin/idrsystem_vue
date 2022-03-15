@@ -23,10 +23,8 @@
                 <div class="blk_item_wrap" v-for="(blkItemList, i) in list" :key="i">
                     <p class="blk_label">{{ blkItemList.label }}</p>
                     <div class="blk_tit_con">
-                        <div class="blk_tit">{{ blkItemList.tit }}<br class="only_pc">{{ blkItemList.tit2 }}</div>
-                        <div class="blk_con">
-                            {{ blkItemList.con }}<span class="point_clr">{{ blkItemList.con2 }}<br class="only_pc">{{ blkItemList.con3 }}</span>{{ blkItemList.con4 }}
-                        </div>
+                        <div class="blk_tit" v-html="blkItemList.tit"></div>
+                        <div class="blk_con" v-html="blkItemList.con"></div>
                     </div>            
                 </div>
 
@@ -41,9 +39,15 @@
 
 
 var blkItemList = [
-    { label : 'IDR Omni Channel 방법론', tit : '옴니채널 전략을 수립하여,', tit2 : '서비스에 반영', con : 'IDR은 고유의 Omni Channel Strategic Planning 방법론을 개발하여 고객의', con2 : '옴니채널 전략 수립하는', con3 : '서비스를 제공', con4 : '하고 있습니다.' },
-    { label : 'Omni  Commerce Pro !', tit : '자체 솔루션 보유,', tit2 : '자체적 개발.', con : 'IDR은 Global Solution외에도 중소규모의 쇼핑몰을 위한', con2 : 'Omni-Channel Shopping Mall Solution을 자체적으로', con3 : '개발하여 본격적으로 사업', con4 : '을 진행하고 있습니다.' },
-    { label : 'Omni Commerce Pro Architecture', tit : '빠른 개발력,', tit2 : '성능 향상을 높임.', con : 'Omni Commerce Pro는 최근 기술 기반 구조인', con2 : 'MSA(Micro Service Architecture)를 적용하여 빠르게', con3 : '개발하고, 쇼핑몰 성능을 지속적으로 높여', con4 : '갈 수 있는 기술 구조로 개발하였습니다.' }
+    { label : 'IDR Omni Channel 방법론',
+    tit : '옴니채널 전략을 수립하여,<br class="only_pc">서비스에 반영',
+    con : 'IDR은 고유의 Omni Channel Strategic Planning 방법론을 개발하여 고객의 <span class="point_clr">옴니채널 전략 수립하는<br class="only_pc">서비스를 제공</span>하고 있습니다.' },
+    { label : 'Omni  Commerce Pro !',
+    tit : '자체 솔루션 보유<br class="only_pc">자체적 개발.',
+    con : 'IDR은 Global Solution외에도 중소규모의 쇼핑몰을 위한 <span class="point_clr">Omni-Channel Shopping Mall Solution을 자체적으로<br class="only_pc">개발하여 본격적으로 사업</span>을 진행하고 있습니다.' },
+    { label : 'Omni Commerce Pro Architecture',
+    tit : '빠른 개발력,<br class="only_pc">성능 향상을 높임.',
+    con : 'Omni Commerce Pro는 최근 기술 기반 구조인 <span class="point_clr">MSA(Micro Service Architecture)를 적용하여 빠르게<br class="only_pc">개발하고, 쇼핑몰 성능을 지속적으로 높여</span>갈 수 있는 기술 구조로 개발하였습니다.' }
 ];
 
 module.exports = {

@@ -32,7 +32,7 @@
                                 <div class="rect">
                                     <img class="wif_logo" :src="welfare.img" :alt="welfare.alt">
                                 </div>
-                                <p>{{ welfare.con1 }}<span>{{ welfare.con2 }}</span></p>
+                                <p v-html="welfare.con"></p>
                             </div>
                         </li>                        
                     </ul>
@@ -51,7 +51,7 @@
                         <li v-for="(culture, i) in cultureList" :key="i">
                             <div class="rect_item">
                                 <div class="rect">
-                                    <span>{{ culture.con1 }}<br>{{ culture.con2 }}</span>
+                                    <span v-html="culture.con"></span>
                                 </div>
                             </div>
                         </li>                        
@@ -82,7 +82,7 @@
                         <li v-for="(join, i) in joinList" :key="i">
                             <div class="number_item">
                                 <span class="number">{{ join.num }}</span>
-                                <p class="number_con">{{ join.con1 }}<span>{{ join.con2 }}</span></p>
+                                <p class="number_con" v-html="join.con"></p>
                             </div>
                         </li>
                     </ul>
@@ -103,25 +103,25 @@ module.exports = {
         return {
             tagList : [ '#기본에 충실한 사람', '#가족같은 분위기가  아닌 일 잘하는 사람', '#상식적인 사람', '#타인의 프라이버시를 존중할줄 아는 사람', '#자신의 발전에 게으르지 않는 사람', '#라떼는 말이지가 아닌 아메를 좋하는 사람'],
             welfareList : [
-                { img: '../images/contact/cntc_icon_01.png', alt: '복지아이콘', con1: '4대보험', con2: '국민연금,건강,고용,산재' },
-                { img: '../images/contact/cntc_icon_02.png', alt: '복지아이콘', con1: '우수사원 표창/포상', con2: '세미나,전시회 참석' },
-                { img: '../images/contact/cntc_icon_03.png', alt: '복지아이콘', con1: '연차,월차,경조휴가', con2: '연차,월차,경조휴가' },
-                { img: '../images/contact/cntc_icon_04.png', alt: '복지아이콘', con1: '경조사 지원', con2: '화환,경조금 지원등' },
-                { img: '../images/contact/cntc_icon_05.png', alt: '복지아이콘', con1: '행사&회식', con2: '정기회식,팀회식,생일파티등' },
-                { img: '../images/contact/cntc_icon_06.png', alt: '복지아이콘', con1: '자기계발비 지원/성과급', con2: '자기개발비지원 / 성과급지원' },
+                { img: '../images/contact/cntc_icon_01.png', alt: '복지아이콘', con: '4대보험<span>국민연금,건강,고용,산재</span>' },
+                { img: '../images/contact/cntc_icon_02.png', alt: '복지아이콘', con: '우수사원 표창/포상<span>세미나,전시회 참석</span>' },
+                { img: '../images/contact/cntc_icon_03.png', alt: '복지아이콘', con: '연차,월차,경조휴가<span>연차,월차,경조휴가</span>' },
+                { img: '../images/contact/cntc_icon_04.png', alt: '복지아이콘', con: '경조사 지원<span>화환,경조금 지원등</span>' },
+                { img: '../images/contact/cntc_icon_05.png', alt: '복지아이콘', con: '행사&회식<span>정기회식,팀회식,생일파티등</span>' },
+                { img: '../images/contact/cntc_icon_06.png', alt: '복지아이콘', con: '자기계발비 지원/성과급<span>자기개발비지원 / 성과급지원</span>' },
             ],
             cultureList : [
-                { con1: '저녁있는 나의 삶' },
-                { con1: '내가족은 집에~', con2: '회사는 일을위한 곳!' },
-                { con1: '상식적으로일하기' },
-                { con1: '편의점이 휴게실안에', con2: '있다!' },
-                { con1: '사무실뷰가', con2: '내집이었으면 ~' },
-                { con1: '눈치가 머야?', con2: '먹는거야?' },
+                { con: '저녁있는 나의 삶' },
+                { con: '내가족은 집에~<br>회사는 일을위한 곳!' },
+                { con: '상식적으로일하기' },
+                { con: '편의점이 휴게실안에<br>있다!' },
+                { con: '사무실뷰가<br>내집이었으면 ~' },
+                { con: '눈치가 머야?<br>먹는거야?' },
             ],
             joinList : [
-                { num: '1', con1: '입사지원 자료', con2: '이력서, 자기소개서, 포트폴리오'},
-                { num: '2', con1: '입사신청 이메일', con2: 'nokee2023@idrsystems.co.kr'},
-                { num: '3', con1: '채용 담당자', con2: '한옥희 관리팀장'},
+                { num: '1', con: '입사지원 자료<span>이력서, 자기소개서, 포트폴리오</span>'},
+                { num: '2', con: '입사신청 이메일<span>nokee2023@idrsystems.co.kr</span>'},
+                { num: '3', con: '채용 담당자<span>한옥희 관리팀장</span>'},
             ],
         }
     },
