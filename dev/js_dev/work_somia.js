@@ -1,3 +1,0 @@
-/**
- * somia Methods
- */

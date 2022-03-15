@@ -26,13 +26,7 @@
     justify-content:center;
     width:100%;
     overflow-x:hidden;
-    img {
-      &:first-child {
-        width: 100vh;
-      }
-    }
     @include mdq_m {
-
     }
   }
   .works_info_wrap {

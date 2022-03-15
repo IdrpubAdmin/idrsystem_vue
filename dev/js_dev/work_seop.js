@@ -1,3 +1,0 @@
-/**
- * seop Methods
- */
