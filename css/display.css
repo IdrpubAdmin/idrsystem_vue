@@ -488,7 +488,11 @@
 
 .works_box .works_img_wrap { display: flex; justify-content: center; width: 100%; overflow-x: hidden; }
 
-.works_box .works_info_wrap { position: absolute; top: 257px; left: 5%; }
+.works_box .works_img_wrap img:first-child { width: 100vh; }
+
+.works_box .works_info_wrap { position: absolute; top: 257px; left: 50%; margin-left: -620px; }
+
+@media (max-width: 1260px) { .works_box .works_info_wrap { position: absolute; top: 257px; left: 5%; margin-left: 0; } }
 
 .works_box .works_info_wrap .wif_date { font-weight: 800; font-size: 1.6em; line-height: unset; letter-spacing: -0.32px; }
 
