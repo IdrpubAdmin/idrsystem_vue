@@ -26,12 +26,22 @@
     justify-content:center;
     width:100%;
     overflow-x:hidden;
+    img {
+      &:first-child {
+        width: 100vh;
+      }
+    }
     @include mdq_m {
 
     }
   }
   .works_info_wrap {
-    @include posa_tl(257px,5%);
+    @include posa_tl(257px,50%);
+    margin-left: -620px;
+    @include narrow-custom {
+      @include posa_tl(257px,5%);
+      margin-left: 0;
+    }
     .wif_date {
       @include fnt_set($eb,1.6em,unset,-0.32px);
     }
