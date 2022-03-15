@@ -110,6 +110,7 @@
         > a {
           @include fnt_set($r,3.1em,44px,unset);
           color:#959595;
+          cursor: pointer;
         }
       }
     }

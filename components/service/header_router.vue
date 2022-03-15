@@ -15,7 +15,9 @@
           </a>
           <ul class="lnb_d2_wrap">
             <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li">
-              <span>{{subMenu.num}}</span>
+              <a href="javascript:;">
+                <span>{{subMenu.num}}</span>
+              </a>
             </li>
           </ul>
         </router-link>

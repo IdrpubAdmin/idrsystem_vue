@@ -2372,7 +2372,7 @@ img { width: 100%; }
 
 .lnb_d1_wrap > li .lnb_d2_wrap > li { padding-right: 10px; padding-left: 10px; }
 
-.lnb_d1_wrap > li .lnb_d2_wrap > li > a { font-weight: 400; font-size: 3.1em; line-height: 44px; letter-spacing: unset; color: #959595; }
+.lnb_d1_wrap > li .lnb_d2_wrap > li > a { font-weight: 400; font-size: 3.1em; line-height: 44px; letter-spacing: unset; color: #959595; cursor: pointer; }
 
 .lnb_d1_wrap > li.router-link-exact-active > a { font-size: 3.1em; color: #000; }
 
