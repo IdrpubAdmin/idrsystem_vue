@@ -13,7 +13,7 @@
                         ‘ 가족같은 분위기 ’ 라는 말로 더이상 팀웍을 강요하지않습니다.이젠 상식이 통하는 기업.그리고 그런 인격이 있는분을 찾습니다.
                     </p>
                     <div class="tag_label_wrap">
-                        <span class="tag_label" v-for="(tagList, i) in tagList" key="i">{{ tagList }}</span>
+                        <span class="tag_label" v-for="(tagList, i) in tagList" :key="i">{{ tagList }}</span>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                         이젠 기본이 되어야 하고 그 기본이 잘 지켜야 하는게 기업의 의무와 책임입니다. 당연한게 지켜지지 않고 있는 곳이 많습니다.당연히 누려야할 여러분의 권리입니다.
                     </p>
                     <ul class="rect_ul type1">
-                        <li v-for="(welfare, i) in welfareList" key="i">
+                        <li v-for="(welfare, i) in welfareList" :key="i">
                             <div class="rect_item">
                                 <div class="rect">
                                     <img class="wif_logo" :src="welfare.img" :alt="welfare.alt">
@@ -48,7 +48,7 @@
                         문화는 만들어져있는걸 그대로 받아들이는게 아닌 우리가 만들어가는 현재진행형입니다.함께 만들어갈 준비가 되어있는 기업입니다.
                     </p>
                     <ul class="rect_ul type2">
-                        <li v-for="(culture, i) in cultureList" key="i">
+                        <li v-for="(culture, i) in cultureList" :key="i">
                             <div class="rect_item">
                                 <div class="rect">
                                     <span>{{ culture.con1 }}<br>{{ culture.con2 }}</span>
@@ -79,7 +79,7 @@
                     </div>
 
                     <ul class="number_ul">
-                        <li v-for="(join, i) in joinList" key="i">
+                        <li v-for="(join, i) in joinList" :key="i">
                             <div class="number_item">
                                 <span class="number">{{ join.num }}</span>
                                 <p class="number_con">{{ join.con1 }}<span>{{ join.con2 }}</span></p>

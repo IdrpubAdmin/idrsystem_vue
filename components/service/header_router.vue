@@ -9,7 +9,16 @@
         <router-link v-for="lnbMenu1 in list1" :key="lnbMenu1" class="d1_li" :to="lnbMenu1.to" tag="li"><a href="#none"><span>{{lnbMenu1.title}}</span></a></router-link>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="worksLnb">
-        <router-link v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li" :to="lnbMenu2.to" tag="li"><a href="#none"><span>{{lnbMenu2.title}}</span></a></router-link>
+        <router-link v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li" :to="lnbMenu2.to" tag="li">
+          <a href="#none">
+            <span>{{lnbMenu2.title}}</span>
+          </a>
+          <ul class="lnb_d2_wrap">
+            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li">
+              <span>{{subMenu.num}}</span>
+            </li>
+          </ul>
+        </router-link>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="contactLnb">
         <router-link v-for="lnbMenu3 in list3" :key="lnbMenu3" class="d1_li" :to="lnbMenu3.to" tag="li"><a href="#none"><span>{{lnbMenu3.title}}</span></a></router-link>
@@ -28,15 +37,15 @@ const lnbData1 = [
   {to : '/design', title : 'UI/UX Design'}
 ];
 const lnbData2 = [
-  {to : '/', title : '2021'},
-  {to : '/2020', title : '2020'},
-  {to : '/2019', title : '2019'},
-  {to : '/2018', title : '2018'},
-  {to : '/2017', title : '2017'},
-  {to : '/2016', title : '2016'},
-  {to : '/2015', title : '2015'},
-  {to : '/2014', title : '2014'},
-  {to : '/2013', title : '2013'}
+  {to : '/', title : '2021', d2 : [ {num : '1'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
+  {to : '/2020', title : '2020', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {to : '/2019', title : '2019', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {to : '/2018', title : '2018', d2 : [ {num : '1'} ]},
+  {to : '/2017', title : '2017', d2 : [ {num : '1'}, {num : '2'} ]},
+  {to : '/2016', title : '2016', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {to : '/2015', title : '2015', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {to : '/2014', title : '2014', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {to : '/2013', title : '2013', d2 : [ {num : '1'}, {num : '2'} ]}
 ];
 const lnbData3 = [
   {to : '/', title : 'IDR 소개'},
@@ -60,4 +69,15 @@ module.exports = {
     }
   },
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").classList.add("fixed");
+  } else {
+    document.getElementById("header").classList.remove("fixed");
+  }
+}
+
 </script>

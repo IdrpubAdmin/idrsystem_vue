@@ -2,7 +2,7 @@
 <div id="contents">
 
 	<!-- works_box -->
-    <section v-for="worksBox in list" :key="worksBox" class="works_box">
+    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.c">
 
         <!-- works_img_wrap -->
         <div class="works_img_wrap">
@@ -40,6 +40,7 @@ const worksData = [
         mo : '../images/works/glyde/works_img.png', 
         logo : '../images/works/glyde/works_logo.svg', 
         w : 'width:76px', 
+        c : '2020_1', 
         date : '2019.11 ~ 2020.06', 
         txt1 : '하림그룹의 신제조 및 신유통', 
         txt2: '개념이 결합된 온라인 커머스', 
@@ -56,6 +57,7 @@ const worksData = [
         mo : '../images/works/lotteon/works_img.png', 
         logo : '../images/works/lotteon/works_logo.png', 
         w : 'width:48px', 
+        c : '2020_2', 
         date : '2019.11 ~ 2020.04', 
         txt1 : '롯데그룹의 유통계열사 7개 통합', 
         txt2: '통합 쇼핑몰 구축에 참여', 
@@ -72,6 +74,7 @@ const worksData = [
         mo : '../images/works/hyundai_greating/works_img.png', 
         logo : '', 
         w : 'width:118px', 
+        c : '2020_3', 
         date : '2020.06 ~ 2020.12', 
         txt1 : '현대그린푸드', 
         txt2: '그리팅몰 기능개선 완료', 
