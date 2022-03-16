@@ -48,7 +48,7 @@
 						<td class="td_bg_1 t_sm va_b">
 							IDR은 단지 이윤과 효율을 추구하기<br>
 							보다는 임직원 들의 행복, 자기 실현,<br>
-							삶의 가치를 더 우선시하고 있습 니다.
+							삶의 가치를 더 우선시하고 있습니다.
 						</td>
 						<td class="td_img">
 							<img class="wif_logo" src="../images/contact/cntc_img_02.png" alt="하늘 이미지">

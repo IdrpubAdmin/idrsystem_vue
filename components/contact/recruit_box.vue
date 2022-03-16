@@ -30,7 +30,7 @@
                         <li v-for="(welfare, i) in welfareList" :key="i">
                             <div class="rect_item">
                                 <div class="rect">
-                                    <img class="wif_logo" :src="welfare.img" :alt="welfare.alt">
+                                    <img class="wif_logo" :src="welfare.img" alt="복지아이콘">
                                 </div>
                                 <p v-html="welfare.con"></p>
                             </div>
@@ -103,12 +103,12 @@ module.exports = {
         return {
             tagList : [ '#기본에 충실한 사람', '#가족같은 분위기가  아닌 일 잘하는 사람', '#상식적인 사람', '#타인의 프라이버시를 존중할줄 아는 사람', '#자신의 발전에 게으르지 않는 사람', '#라떼는 말이지가 아닌 아메를 좋하는 사람'],
             welfareList : [
-                { img: '../images/contact/cntc_icon_01.png', alt: '복지아이콘', con: '4대보험<span>국민연금,건강,고용,산재</span>' },
-                { img: '../images/contact/cntc_icon_02.png', alt: '복지아이콘', con: '우수사원 표창/포상<span>세미나,전시회 참석</span>' },
-                { img: '../images/contact/cntc_icon_03.png', alt: '복지아이콘', con: '연차,월차,경조휴가<span>연차,월차,경조휴가</span>' },
-                { img: '../images/contact/cntc_icon_04.png', alt: '복지아이콘', con: '경조사 지원<span>화환,경조금 지원등</span>' },
-                { img: '../images/contact/cntc_icon_05.png', alt: '복지아이콘', con: '행사&회식<span>정기회식,팀회식,생일파티등</span>' },
-                { img: '../images/contact/cntc_icon_06.png', alt: '복지아이콘', con: '자기계발비 지원/성과급<span>자기개발비지원 / 성과급지원</span>' },
+                { img: '../images/contact/cntc_icon_01.png', con: '4대보험<span>국민연금,건강,고용,산재</span>' },
+                { img: '../images/contact/cntc_icon_02.png', con: '우수사원 표창/포상<span>세미나,전시회 참석</span>' },
+                { img: '../images/contact/cntc_icon_03.png', con: '연차,월차,경조휴가<span>연차,월차,경조휴가</span>' },
+                { img: '../images/contact/cntc_icon_04.png', con: '경조사 지원<span>화환,경조금 지원등</span>' },
+                { img: '../images/contact/cntc_icon_05.png', con: '행사&회식<span>정기회식,팀회식,생일파티등</span>' },
+                { img: '../images/contact/cntc_icon_06.png', con: '자기계발비 지원/성과급<span>자기개발비지원 / 성과급지원</span>' },
             ],
             cultureList : [
                 { con: '저녁있는 나의 삶' },
@@ -120,7 +120,7 @@ module.exports = {
             ],
             joinList : [
                 { num: '1', con: '입사지원 자료<span>이력서, 자기소개서, 포트폴리오</span>'},
-                { num: '2', con: '입사신청 이메일<span>nokee2023@idrsystems.co.kr</span>'},
+                { num: '2', con: '입사신청 이메일<a href="mailto:"nokee2023@idrsystems.co.kr"><span>nokee2023@idrsystems.co.kr</span></a>'},
                 { num: '3', con: '채용 담당자<span>한옥희 관리팀장</span>'},
             ],
         }
