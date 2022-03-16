@@ -2,22 +2,22 @@
 <div id="contents">
 
 	<!-- works_box -->
-    <section v-for="worksBox in list" :key="worksBox" class="works_box">
+    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num">
 
         <!-- works_img_wrap -->
         <div class="works_img_wrap">
-            <img class="only_pc" :src="worksBox.pc" alt="사이트이미지">
-            <img class="only_m" :src="worksBox.mo" alt="사이트이미지 모바일">
+            <img class="only_pc" :src=" '../images/works/' + worksBox.pc" alt="사이트이미지">
+            <img class="only_m" :src=" '../images/works/' + worksBox.mo" alt="사이트이미지 모바일">
         </div>
         <!-- //works_img_wrap -->
 
         <!-- works_info_wrap -->
         <div class="works_info_wrap">
             <p class="wif_date">{{worksBox.date}}</p>
-            <img class="wif_logo" :src="worksBox.logo" alt="로고" :style="worksBox.w">
+            <img class="wif_logo" :src=" '../images/works/' + worksBox.logo" alt="로고" :style="worksBox.w">
             <p class="wif_subject" v-html="worksBox.title"></p>
             <div class="wif_detail">
-                <p class="wifd_tit">{{worksBox.txt}}</p>
+                <p class="wifd_tit" v-html="worksBox.txt"></p>
                 <template v-for="contentData in worksBox.content" >
                     <p class="wifd_con" :key="contentData">{{contentData.subTxt}}</p>
                     <ul class="wifd_con" :key="contentData">
@@ -35,11 +35,14 @@
 </template>
 
 <script>
-
+console.log(worksData)
 module.exports = {
+    props : {
+        worksData : Array,
+    },
     data() {
         return {
-             list : worksData,
+             list : worksData
         }
     },
 }

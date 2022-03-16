@@ -23,7 +23,7 @@ module.exports = {
     return {
       // list : gnbData,
       gnbModal : false,
-      lnbOn : reqUrl.includes('/service') || reqUrl.includes('/contact') || reqUrl.includes('_vue'),
+      lnbOn : reqUrl.includes('/service') || reqUrl.includes('/contact') || reqUrl.includes('/works'),
       serviceOn: reqUrl.includes('/service'),
       worksOn: reqUrl.includes('/works'),
       contactOn: reqUrl.includes('/contact')

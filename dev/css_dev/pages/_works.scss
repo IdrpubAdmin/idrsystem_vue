@@ -402,7 +402,7 @@
       padding-bottom:80px !important;
     }
   }
-  .works_box {
+  &.works_box {
     height:100vh;
     background:url(#{$img_url}works/thehandsome/works_img_bg.png) no-repeat;
     background-size:cover;
@@ -561,7 +561,7 @@
       padding-bottom:80px !important;
     }
   }
-  .works_box {
+  &.works_box {
     height:100vh;
     background:url(#{$img_url}works/hyundai_greating/works_img_bg.png) no-repeat;
     background-size:cover;
@@ -758,12 +758,12 @@
 
 .works_2021_01 {
   background:#ffdd23;
-  &.has_wnd_nav {
-    #header,
-    #header.fixed {
-      background:#ffdd23 !important;
-    }
-  }
+  // &.has_wnd_nav {
+  //   #header,
+  //   #header.fixed {
+  //     background:#ffdd23 !important;
+  //   }
+  // }
   #contents {
     padding-bottom:0 !important;
     @include mdq_m {

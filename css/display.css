@@ -588,9 +588,9 @@
 
 @media (max-width: 736px) { .works_2018_01 #contents { padding-bottom: 80px !important; } }
 
-.works_2018_01 .works_box { height: 100vh; background: url(../images/works/thehandsome/works_img_bg.png) no-repeat; background-size: cover; }
+.works_2018_01.works_box { height: 100vh; background: url(../images/works/thehandsome/works_img_bg.png) no-repeat; background-size: cover; }
 
-@media (max-width: 736px) { .works_2018_01 .works_box { height: 100%; background: none; } }
+@media (max-width: 736px) { .works_2018_01.works_box { height: 100%; background: none; } }
 
 .works_2018_01 .works_img_wrap img { margin-top: 24%; margin-left: 22%; width: 52%; }
 
@@ -633,9 +633,9 @@
 
 @media (max-width: 736px) { .works_2020_03 #contents { padding-bottom: 80px !important; } }
 
-.works_2020_03 .works_box { height: 100vh; background: url(../images/works/hyundai_greating/works_img_bg.png) no-repeat; background-size: cover; }
+.works_2020_03.works_box { height: 100vh; background: url(../images/works/hyundai_greating/works_img_bg.png) no-repeat; background-size: cover; }
 
-@media (max-width: 736px) { .works_2020_03 .works_box { height: 100%; background: none; } }
+@media (max-width: 736px) { .works_2020_03.works_box { height: 100%; background: none; } }
 
 .works_2020_03 .works_img_wrap img { margin-top: 220px; margin-left: 640px; width: 340px; }
 
@@ -716,8 +716,6 @@
 .color10 { background-color: #89ADDB; }
 
 .works_2021_01 { background: #ffdd23; }
-
-.works_2021_01.has_wnd_nav #header, .works_2021_01.has_wnd_nav #header.fixed { background: #ffdd23 !important; }
 
 .works_2021_01 #contents { padding-bottom: 0 !important; }
 
