@@ -28,10 +28,6 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../css/default.css">
 	<link rel="stylesheet" type="text/css" href="../css/display.css">
-    <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
-	<link rel="stylesheet" type="text/css" href="../css/work-hyeon.css">
-	<link rel="stylesheet" type="text/css" href="../css/work-seop.css">
-	<link rel="stylesheet" type="text/css" href="../css/work-somia.css">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- httpVueLoader cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
@@ -47,10 +43,6 @@
 		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 	<![endif]-->
 	<script type="text/javascript" src="../js/common.js"></script>
-    <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
-    <script type="text/javascript" src="../js/hyeon.js"></script>
-    <script type="text/javascript" src="../js/seop.js" defer></script>
-    <script type="text/javascript" src="../js/somia.js"></script>
 </head>
 <body>
     <div id="app">
@@ -61,25 +53,23 @@
   <!-- container -->
   <div id="container" class="con_service service_commerce has_wnd_nav ">
 
-	<script type="text/javascript" src="../js/lnb_data_service.js"></script>
-
-
 	<!-- header -->
 	<header-component></header-component>
-		<!-- gnb_wrap -->
-		<gnb-component></gnb-component>
-		<!-- //gnb_wrap -->
 	<!-- //header -->
 
+	<!-- gnb_wrap -->
+	<gnb-component></gnb-component>
+	<!-- //gnb_wrap -->
+	
 	<!-- contents | 컨텐츠영역 -->
 	<div id="contents">
 		<router-view></router-view>
 	</div>
     <!-- //contents | 컨텐츠영역 -->
 
-		<!-- sub_footer -->
-		<footer-sub></footer-sub>
-		<!-- //sub_footer -->
+	<!-- sub_footer -->
+	<footer-sub></footer-sub>
+	<!-- //sub_footer -->
 
   	</div>
 	<!-- //container -->
@@ -132,13 +122,14 @@
 
         },
         components : {
-            'header-component': httpVueLoader('../components/service/header_router.vue'),
+            'header-component': httpVueLoader('../components/common/header_router.vue'),
             'gnb-component': httpVueLoader('../components/common/gnb.vue'),
 			'footer-sub': httpVueLoader('../components/common/footer_sub.vue'),
         },
     }).$mount('#app');
  
 </script>
+
 
     </div>
 </body>

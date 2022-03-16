@@ -28,10 +28,6 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../css/default.css">
 	<link rel="stylesheet" type="text/css" href="../css/display.css">
-    <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
-	<link rel="stylesheet" type="text/css" href="../css/work-hyeon.css">
-	<link rel="stylesheet" type="text/css" href="../css/work-seop.css">
-	<link rel="stylesheet" type="text/css" href="../css/work-somia.css">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- httpVueLoader cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
@@ -47,10 +43,6 @@
 		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 	<![endif]-->
 	<script type="text/javascript" src="../js/common.js"></script>
-    <!-- 작업 완료후 아래 work css 링크 삭제 예정 -->
-    <script type="text/javascript" src="../js/hyeon.js"></script>
-    <script type="text/javascript" src="../js/seop.js"></script>
-    <script type="text/javascript" src="../js/somia.js"></script>
 </head>
 <body>
     <div id="app">
@@ -146,7 +138,7 @@
 
         },
         components : {
-            'header-component': httpVueLoader('../components/service/header_router.vue'),
+            'header-component': httpVueLoader('../components/common/header_router.vue'),
             'gnb-component': httpVueLoader('../components/common/gnb.vue'),
 			'footer-sub': httpVueLoader('../components/common/footer_works.vue'),
         },

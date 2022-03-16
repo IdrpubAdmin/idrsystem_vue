@@ -17,7 +17,7 @@
             <img class="wif_logo" :src=" '../images/works/' + worksBox.logo" alt="로고" :style="worksBox.w">
             <p class="wif_subject" v-html="worksBox.title"></p>
             <div class="wif_detail">
-                <p class="wifd_tit">{{worksBox.txt}}</p>
+                <p class="wifd_tit" v-html="worksBox.txt"></p>
                 <template v-for="contentData in worksBox.content" >
                     <p class="wifd_con" :key="contentData">{{contentData.subTxt}}</p>
                     <ul class="wifd_con" :key="contentData">
@@ -37,7 +37,7 @@
 <script>
 const worksData = [
     {
-        num : '2015_1',
+        num : 'works_2015_01',
         pc : 'samsungmulsan/works_img.png', 
         mo : 'samsungmulsan/works_img.png', 
         logo : 'samsungmulsan/works_logo.png', 
@@ -59,7 +59,7 @@ const worksData = [
         ]
     },
     {
-        num : '2015_2',
+        num : 'works_2015_02',
         pc : 'kolon/works_img.png', 
         mo : 'kolon/works_img.png', 
         logo : 'kolon/works_logo.png', 
@@ -79,7 +79,7 @@ const worksData = [
         ]
     },
     {
-        num : '2015_3',
+        num : 'works_2015_03',
         pc : 'nongsim/works_img.png', 
         mo : 'nongsim/works_img.png', 
         logo : 'nongsim/works_logo.png', 
