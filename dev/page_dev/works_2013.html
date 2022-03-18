@@ -17,6 +17,8 @@
     
         <!-- contents | 컨텐츠영역 -->
         <works-component1></works-component1>
+
+        <router-view></router-view>
         <!-- //contents | 컨텐츠영역 -->
 
         <!-- sub_footer -->
@@ -67,9 +69,17 @@
         ]
     },
 ];
+	var router = new VueRouter({
+		routes: [
+		  { path: '/', component: httpVueLoader('../components/work/card_router_1.vue')},
+		  { path: '/1', component: httpVueLoader('../components/work/card_router_1.vue')},
+		  { path: '/2', component: httpVueLoader('../components/work/card_router_2.vue')},
+  		]
+	})
 	var eventBus = new Vue();
     var app = new Vue({
         el: '#app',
+        router,
         data: {
 
         },

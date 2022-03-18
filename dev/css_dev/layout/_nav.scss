@@ -114,7 +114,7 @@
         }
       }
     }
-    &.router-link-exact-active {
+    &.router-link-exact-active, &.on{
       > a {
         font-size: 3.1em;
         color:#000;

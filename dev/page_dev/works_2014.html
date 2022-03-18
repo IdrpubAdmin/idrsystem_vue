@@ -17,6 +17,8 @@
     
         <!-- contents | 컨텐츠영역 -->
         <works-component1></works-component1>
+
+        <works-component2></works-component2>
         <!-- //contents | 컨텐츠영역 -->
 
         <!-- sub_footer -->
@@ -94,6 +96,8 @@
             }
         ]
     },
+    ];
+    const worksData2 = [
     {
         num : 'works_2014_03',
         pc : 'samsung_elec_member/works_img.png', 
@@ -116,8 +120,8 @@
                 ]
             }
         ]
-    },
-];
+    }
+    ];
 	var eventBus = new Vue();
     var app = new Vue({
         el: '#app',
@@ -128,6 +132,7 @@
             'header-component': httpVueLoader('../components/common/header_router.vue'),
             'gnb-component': httpVueLoader('../components/common/gnb.vue'),
             'works-component1': httpVueLoader('../components/work/work_base_1.vue'),
+            'works-component2': httpVueLoader('../components/work/work_base_2.vue'),
 			'footer-sub': httpVueLoader('../components/common/footer_works.vue'),
         },
     }).$mount('#app');

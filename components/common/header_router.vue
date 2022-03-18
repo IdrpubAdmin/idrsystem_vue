@@ -9,8 +9,8 @@
         <router-link v-for="lnbMenu1 in list1" :key="lnbMenu1" class="d1_li" :to="lnbMenu1.to" tag="li"><a href="#none"><span>{{lnbMenu1.title}}</span></a></router-link>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="worksLnb">
-        <li v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li">
-          <a :href="lnbMenu2.href">
+        <li v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li" :class="{on : lnbMenu2.class}">
+          <a :href=" 'works_' + lnbMenu2.title + '.html' ">
             <span>{{lnbMenu2.title}}</span>
           </a>
           <ul class="lnb_d2_wrap">
@@ -39,15 +39,15 @@ const lnbData1 = [
   {to : '/design', title : 'UI/UX Design'}
 ];
 const lnbData2 = [
-  {href : 'works_2021.html', title : '2021', d2 : [ {num : '1'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
-  {href : 'works_2020.html', title : '2020', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {href : 'works_2019.html', title : '2019', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {href : 'works_2018.html', title : '2018', d2 : [ {num : '1'} ]},
-  {href : 'works_2017.html', title : '2017', d2 : [ {num : '1'}, {num : '2'} ]},
-  {href : 'works_2016.html', title : '2016', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {href : 'works_2015.html', title : '2015', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {href : 'works_2014.html', title : '2014', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {href : 'works_2013.html', title : '2013', d2 : [ {num : '1'}, {num : '2'} ]}
+  {class : reqUrl.includes('2021'), title : '2021', d2 : [ {num : '1'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
+  {class : reqUrl.includes('2020'), title : '2020', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2019'), title : '2019', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2018'), title : '2018', d2 : [ {num : '1'} ]},
+  {class : reqUrl.includes('2017'), title : '2017', d2 : [ {num : '1'}, {num : '2'} ]},
+  {class : reqUrl.includes('2016'), title : '2016', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2015'), title : '2015', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2014'), title : '2014', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2013'), title : '2013', d2 : [ {num : '1'}, {num : '2'} ]}
 ];
 const lnbData3 = [
   {to : '/', title : 'IDR 소개'},
@@ -62,7 +62,7 @@ module.exports = {
       contactLnb: reqUrl.includes('/contact'),
       list1 : lnbData1,
       list2 : lnbData2,
-      list3 : lnbData3
+      list3 : lnbData3,
     }
   },
   methods: {
@@ -72,11 +72,7 @@ module.exports = {
     onClickNav(subMenu) {
       eventBus.$emit('clickNav', subMenu);
     },
-
-    // onClickNav(value) {
-    //    eventBus.$emit('clickNav', value);
-    // },
-  },
+  }
 }
 
 window.onscroll = function() {scrollFunction()};

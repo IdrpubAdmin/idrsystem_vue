@@ -6,8 +6,17 @@
 
         <!-- works_img_wrap -->
         <div class="works_img_wrap">
-            <img class="only_pc" :src=" '../images/works/' + worksBox.pc" alt="사이트이미지">
-            <img class="only_m" :src=" '../images/works/' + worksBox.mo" alt="사이트이미지 모바일">
+            <div class="img_box">
+				<img :src=" '../images/works/' + worksBox.pc" alt="사이트이미지">
+                <div class="text_box">
+                    <p class="title">삼성전자 한국총괄 멤버십</p>
+                    <p class="sub_title">
+                        삼성전자 한국총괄의 CRM, Marketing 시스템 구축 경험을 바탕으로<br class="only_pc">
+                        삼성전자 Global CRM 구축 프로젝트에 참여하였으며, 타 해외법인의<br class="only_pc">
+                        확산 프로젝트에도 계속적으로 참여하고 있습니다.
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- //works_img_wrap -->
 
@@ -35,33 +44,12 @@
 </template>
 
 <script>
-const worksData = [
-    {
-        num : 'works_2018_01',
-        pc : 'thehandsome/works_img.png', 
-        mo : 'thehandsome/works_img.png', 
-        logo : 'thehandsome/works_logo.png', 
-        w : 'width:168px', 
-        date : '2018', 
-        title : '더한섬닷컴 모바일 구축', 
-        txt : 'thehandsome.com 의 mobile & App Renewal',
-        content: [{
-                list : [
-                    {li : 'PC 기반 쇼핑몰 환경을 모바일에 맞도록 최적화'}, 
-                    {li : '고객 편의성에 기여하는 신기술의 적극적인 반영 (바이오인증, 한섬페이, 개인화강화 등)'}, 
-                    {li : '모바일 매출 비중 확대'},
-                    {li : '앱 다운로드 증가, 타겟 마케팅 인프라 확대'},
-                    {li : 'Hybris Commerce Platform 기반'}
-                ]
-            }
-        ]
-    },
-];
 
 module.exports = {
+
     data() {
         return {
-             list : worksData,
+             list : worksData2
         }
     },
 }
