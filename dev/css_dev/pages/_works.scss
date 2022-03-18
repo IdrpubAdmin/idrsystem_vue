@@ -450,6 +450,11 @@ html {
       margin-left:640px;
       width:869px;
     }
+    @include narrow-custom {
+      img {
+        margin-left: 1000px;
+      }
+    }
     @include mdq_m {
       img {
         margin-top:0;
@@ -496,6 +501,11 @@ html {
       margin-bottom:120px;
       margin-left:640px;
       width:1087px;
+    }
+    @include narrow-custom {
+      img {
+        margin-left: 980px;
+      }
     }
     @include mdq_m {
       img {
@@ -570,6 +580,9 @@ html {
     height:100vh;
     background:url(#{$img_url}works/hyundai_greating/works_img_bg.png) no-repeat;
     background-size:cover;
+    @include narrow-custom {
+      background-position: right 20%;
+    }
     @include mdq_m {
       height: 100%;
       background:none;
@@ -889,6 +902,18 @@ html {
       justify-content: right;
     }
   }
+  // .works_info_wrap {
+  //   @include narrow-custom {
+  //     background-color: rgba(160, 160, 160, 0.548);
+  //     color: #fff;
+  //     padding: 30px;
+  //   }
+  //   @include mdq_m {
+  //     background-color: inherit;
+  //     color: inherit;
+  //     padding: auto;
+  //   }
+  // }
 }
 /* works e ================================================= */
 /* ---------------------------------------------------------- */
