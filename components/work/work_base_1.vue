@@ -44,6 +44,11 @@ module.exports = {
              list : worksData
         }
     },
+    mounted() {
+    AOS.init({
+        duration: 1200,
+    })
+    },
     created: function() {
         eventBus.$on('clickNav', function(subMenu){
             const num = subMenu.num // 받아온 데이터 컨텐츠 수
@@ -70,7 +75,6 @@ module.exports = {
 		    }
 		    }, 1);
         }.bind(this));
->>>>>>> ea3bb91e1798b4c800aaac5ca0c60e1246436c11
     },
 }
 </script>
