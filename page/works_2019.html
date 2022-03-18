@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang='ko'>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9JMF3K58J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N9JMF3K58J');
+    </script>
+    <!-- //Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<!-- og-tag s -->
+	<meta property="og:title" content="(주)아이디알시스템 IDRSYSTEM">
+	<meta property="og:url" content="https://www.idrsystems.co.kr">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="시스템통합,소프트웨어개발,정보인프라구축서비스">
+	<meta property="og:image" content="https://idrsys-site.s3.ap-northeast-2.amazonaws.com/homepage/images/favicon/or_img.png">
+	<!-- og-tag e -->
+	<title>(주)아이디알시스템 IDRSYSTEM</title>
+	<link rel="shortcut icon" href="../images/favicon/favicon.ico">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<link rel="stylesheet" type="text/css" href="../css/display.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- httpVueLoader cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+	<script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/http-vue-loader@1.4.2/src/httpVueLoader.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+    <div id="app">
+
+<!-- wrapper -->
+<div id="wrapper">
+
+    <!-- container -->
+    <div id="container" class="con_works has_wnd_nav">
+
+        <!-- header -->
+	    <header-component></header-component>
+		<!-- //header -->
+
+        <!-- gnb_wrap -->
+        <gnb-component></gnb-component>
+        <!-- //gnb_wrap -->
+    
+        <!-- contents | 컨텐츠영역 -->
+        <works-component1></works-component1>
+        <!-- //contents | 컨텐츠영역 -->
+
+        <!-- sub_footer -->
+		<footer-sub></footer-sub>
+		<!-- //sub_footer -->
+
+    </div>
+    <!-- //container -->
+
+</div>
+<!-- //wrapper -->
+
+<!-- layer_popup_wrap -->
+<div class="lp_wrap lp_depth1"></div>
+<!-- //layer_popup_wrap -->
+
+<!-- script_include -->
+
+<!-- plugin_handlebars -->
+<script type="text/javascript" src="../plugin/handlebars/handlebars-v4.7.6.js"></script>
+<!-- //plugin_handlebars -->
+
+<!-- plugin_swiper -->
+<link rel="stylesheet" type="text/css" href="../plugin/swiper-master/css/swiper.min.css">
+<script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
+<!-- plugin_swiper -->
+
+<script type="text/javascript" src="../js/style.js?v=20201229"></script>
+
+<!-- //script_include -->
+
+<script>
+    (function(){
+        WorksNav.checkCurrentLnbNav("gnb_02","lnb1_21","lnb2_04"); //현재 페이지 체크
+        StyleCommon.updateDocTitle('씨젠의료재단 차세대 정보화 시스템 구축');
+    })();
+</script>
+
+<script>
+const worksData = [
+    {
+        num : 'works_2019_01',
+        pc : 'chilsung/works_img.png', 
+        mo : 'chilsung/works_img.png', 
+        logo : 'chilsung/works_logo.png', 
+        w : 'width:77px', 
+        date : '2019.05 ~ 2019.11', 
+        title : `롯데 이커머스의 LECS 플랫폼을
+                <br>기반으로 롯데칠성몰 구축참여`, 
+        txt : '롯데 칠성몰 구축',
+        content: [{
+                list : [
+                    {li : `롯데이커머스 LECS Platform 기반 식품전문
+                          <br class="only_m">몰 구축`}, 
+                    {li : '정기주문 / 정기배송 Process'}, 
+                    {li : 'SAP ERP 주문 연계'},
+                    {li : 'Fornt 주문 / 결제 및 Back Office 영역 개발'}
+                ]
+            }
+        ]
+    },
+    {
+        num : 'works_2019_02',
+        pc : 'conran/works_img.png', 
+        mo : 'conran/works_img.png', 
+        logo : 'conran/works_logo.png', 
+        w : 'width:163px', 
+        date : '2019.05 ~ 2019.11', 
+        title: `영국의 명품 가구 편집샵<br> 한국 상륙한 더콘란샵.`,
+        txt : '더콘란샵 구축(영국의 명품 가구 편집샵)',
+        content: [{
+                list : [
+                    {li : '롯데이커머스 LECS Platform 기반'}, 
+                    {li : '더콘란샵 Global Guide Line 준용'}, 
+                    {li : '롯데백화점 ERP 시스템과 연계'},
+                    {li : '주문제작형 가구 주문 처리 구현'}
+                ]
+            }
+        ]
+    },
+    {
+        num : 'works_2019_03',
+        pc : 'uniqlo/works_img.png', 
+        mo : 'uniqlo/works_img.png', 
+        logo : 'uniqlo/works_logo.png', 
+        w : 'width:42px', 
+        date : '2019.05 ~ 2019.11', 
+        title: `유니클로 Store Pick
+               <br>매장에서 Pickup ~`,
+        txt : '유니클로 Store Pick',
+        content: [{
+                list : [       
+                    {li : '롯데이커머스 LECS Platform 기반'}, 
+                    {li : '유니클로 매장 재고 연계'}, 
+                    {li : '유니클로 Pos 시스템  주문 연계'},
+                    {li : '주문 / 배송 / 정산 처리 프로세스 변경'}
+                ]
+            }
+        ]
+    },
+];
+    var eventBus = new Vue();
+    var app = new Vue({
+        el: '#app',
+        data: {
+
+        },
+        components : {
+            'header-component': httpVueLoader('../components/common/header_router.vue'),
+            'gnb-component': httpVueLoader('../components/common/gnb.vue'),
+            'works-component1': httpVueLoader('../components/work/work_base_1.vue'),
+			'footer-sub': httpVueLoader('../components/common/footer_works.vue'),
+        },
+    }).$mount('#app');
+ 
+</script>
+
+
+    </div>
+</body>
+</html>
