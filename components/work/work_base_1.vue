@@ -35,11 +35,9 @@
 </template>
 
 <script>
-console.log(worksData)
+
 module.exports = {
-    props : {
-        worksData : Array,
-    },
+
     data() {
         return {
              list : worksData

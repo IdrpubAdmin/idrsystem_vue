@@ -2,7 +2,7 @@
   <div class="gnb_wrap on" v-show="gnbModal">
     <ul class="gnb_menu" :class="{ has_wnd_nav : lnbOn }">
         <li :class="{on : serviceOn}"><a href="service.html"><span>service</span></a></li>
-				<li :class="{on : worksOn}"><a href="works.html"><span>work</span></a></li>
+				<li :class="{on : worksOn}"><a href="works_2021.html"><span>work</span></a></li>
 				<li :class="{on : contactOn}"><a href="contact.html"><span>contact</span></a></li>
       <!-- <li v-for="gnbMenu in list" :key="gnbMenu">
         <a :href="gnbMenu.href"><span>{{gnbMenu.title}}</span></a>

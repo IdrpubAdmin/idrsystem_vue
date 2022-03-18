@@ -9,9 +9,10 @@
                         <!-- <a class="link_btn" href="works_2013_02_02.html">
                             <span>다음 페이지</span>
                         </a> -->
-                        <div class="card_wrap">
-                            <div class="item color1">
+                        <div v-for="cardBox in list2" :key="cardBox" class="card_wrap">
+                            <div class="item color1" :class="cardBox.color">
                                 <ul>
+                                    <li class="title">{{cardBox.title}}</li>
                                     <li class="title">2016.07 -2016.10</li>
                                     <li>삼성전자 G-CRM GMC 시스템</li>
                                     <li>동남아총괄 확산 및</li>
@@ -136,10 +137,16 @@
 </template>
 
 <script>
-
+const cardData = [
+    {
+        color : 'color1',
+        title : '2016.07 -2016.10'
+    }
+]
 module.exports = {
     data() {
         return {
+            list2 : cardData
         }
     },
 }

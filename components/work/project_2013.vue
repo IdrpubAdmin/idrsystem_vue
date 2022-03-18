@@ -31,10 +31,92 @@
     </section>
     <!-- works_box -->
 
+     <section class="works_card">
+			    <span class="wif_subject">삼성전자 구축사례</span>
+                <span class="wif_tit">삼성전자 주요 사업실적(1/2)</span>
+                    <div class="container">
+                        <router-link to="/2" class="link_btn">
+                            <span>다음 페이지</span>
+                        </router-link>
+                        <!-- <a class="link_btn" href="works_2013_02_02.html">
+                            <span>다음 페이지</span>
+                        </a> -->
+                        <div v-for="cardBox in list2" :key="cardBox" class="card_wrap">
+                            <div v-for="contentData in cardBox.content" :key="contentData" class="item" :class="contentData.color">
+                                <ul>
+                                    <li class="title">{{contentData.title}}</li>
+                                    <li v-for="listData in contentData.list" :key="listData">{{listData.li}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card_wrap">
+                            <div class="item color4">
+                                <ul>
+                                    <li class="title">2012.05 - 2013.04</li>
+                                    <li>한국총괄 프리미엄</li>
+                                    <li>판촉 시스템 개발/운영</li>
+                                </ul>
+                            </div>
+                            <div class="item color4">
+                                <ul>
+                                    <li class="title">2012.04 -2012.08</li>
+                                    <li>한국총괄 B2B거래선정보개선</li>
+                                    <li>개발</li>
+                                </ul>
+                            </div>
+                            <div class="item color4">
+                                <ul>
+                                    <li class="title">2012.01 - 2012.05</li>
+                                    <li>삼성전자 한국총괄 프리미엄</li>
+                                    <li>판촉 시스템 구축</li>
+                                </ul>
+                            </div>
+                            <router-link to="2" class="item color0 link_card">
+                                <p>다음 페이지</p>
+                            </router-link>
+                            <!-- <a  class="item color0 link_card" href="works_2013_02_02.html"> -->
+                                <!-- <p> 다음페이지</p> -->
+                            <!-- </a> -->
+                        </div><!--// card_wrap-->
+                    </div>
+	    </section>
+
 </div>
 </template>
 
 <script>
+const cardData = [
+    {
+        content : [
+            {
+                color: 'color1', 
+                title : '2016.07 -2016.10',
+                list : [
+                    {li : '삼성전자 G-CRM GMC 시스템'},
+                    {li : '동남아총괄 확산 및'},
+                    {li : '기능개선 프로젝트'}
+                ]
+            },
+            {
+                color: 'color1', 
+                title : '2016.06 -2016.10',
+                list : [
+                    {li : '삼성전자 G-CRM'},
+                    {li : '중동총괄 확산 프로젝트'},
+                ]
+            },
+            {
+                color: 'color1', 
+                title : '2016.06 -2016.10',
+                list : [
+                    {li : '삼성전자 G-CRM'},
+                {li : '동남아 확산 프로젝트'},
+                ]
+            },
+            
+        ]
+    },
+]
 const worksData = [
     {
         num : 'works_2013_01',
@@ -64,7 +146,8 @@ const worksData = [
 module.exports = {
     data() {
         return {
-			list : worksData
+			list : worksData,
+            list2 : cardData
         }
     },
 }

@@ -9,18 +9,18 @@
         <router-link v-for="lnbMenu1 in list1" :key="lnbMenu1" class="d1_li" :to="lnbMenu1.to" tag="li"><a href="#none"><span>{{lnbMenu1.title}}</span></a></router-link>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="worksLnb">
-        <router-link v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li" :to="lnbMenu2.to" tag="li">
-          <a href="#none">
+        <li v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li">
+          <a :href="lnbMenu2.href">
             <span>{{lnbMenu2.title}}</span>
           </a>
           <ul class="lnb_d2_wrap">
-            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li">
+            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num" @click="onClickNav(subMenu)">
               <a href="javascript:;">
                 <span>{{subMenu.num}}</span>
               </a>
             </li>
           </ul>
-        </router-link>
+        </li>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="contactLnb">
         <router-link v-for="lnbMenu3 in list3" :key="lnbMenu3" class="d1_li" :to="lnbMenu3.to" tag="li"><a href="#none"><span>{{lnbMenu3.title}}</span></a></router-link>
@@ -39,15 +39,15 @@ const lnbData1 = [
   {to : '/design', title : 'UI/UX Design'}
 ];
 const lnbData2 = [
-  {to : '/', title : '2021', d2 : [ {num : '1'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
-  {to : '/2020', title : '2020', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {to : '/2019', title : '2019', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {to : '/2018', title : '2018', d2 : [ {num : '1'} ]},
-  {to : '/2017', title : '2017', d2 : [ {num : '1'}, {num : '2'} ]},
-  {to : '/2016', title : '2016', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {to : '/2015', title : '2015', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {to : '/2014', title : '2014', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {to : '/2013', title : '2013', d2 : [ {num : '1'}, {num : '2'} ]}
+  {href : 'works_2021.html', title : '2021', d2 : [ {num : '1'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
+  {href : 'works_2020.html', title : '2020', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {href : 'works_2019.html', title : '2019', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {href : 'works_2018.html', title : '2018', d2 : [ {num : '1'} ]},
+  {href : 'works_2017.html', title : '2017', d2 : [ {num : '1'}, {num : '2'} ]},
+  {href : 'works_2016.html', title : '2016', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {href : 'works_2015.html', title : '2015', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {href : 'works_2014.html', title : '2014', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
+  {href : 'works_2013.html', title : '2013', d2 : [ {num : '1'}, {num : '2'} ]}
 ];
 const lnbData3 = [
   {to : '/', title : 'IDR 소개'},
@@ -62,13 +62,20 @@ module.exports = {
       contactLnb: reqUrl.includes('/contact'),
       list1 : lnbData1,
       list2 : lnbData2,
-      list3 : lnbData3,
+      list3 : lnbData3
     }
   },
   methods: {
     showGnb: function(){
       eventBus.$emit('clickGnb');
-    }
+    },
+    onClickNav(subMenu) {
+      eventBus.$emit('clickNav', subMenu);
+    },
+
+    // onClickNav(value) {
+    //    eventBus.$emit('clickNav', value);
+    // },
   },
 }
 
@@ -81,5 +88,4 @@ function scrollFunction() {
     document.getElementById("header").classList.remove("fixed");
   }
 }
-
 </script>

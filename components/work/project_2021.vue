@@ -2,7 +2,7 @@
 <div id="contents">
 
 	<!-- works_box -->
-    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num">
+    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num" :ref="worksBox.id" :data-num="worksBox.id">
 
         <!-- works_img_wrap -->
         <div class="works_img_wrap">
@@ -27,6 +27,7 @@
             </div>
         </div>
          <!-- //works_info_wrap -->
+         {{works.id}}
 
     </section>
     <!-- works_box -->
@@ -37,6 +38,7 @@
 <script>
 const worksData = [
     {
+        id : 'nav-1',
         num : 'works_2021_01',
         pc : 'eland_qualqual/works_img.png', 
         mo : 'eland_qualqual/works_img.png', 
@@ -56,6 +58,7 @@ const worksData = [
         ]
     },
     {
+        id : 'nav-2',
         num : 'works_2021_02',
         pc : 'hyundai_arket/works_img.png', 
         mo : 'hyundai_arket/works_img_mo.png', 
@@ -76,6 +79,7 @@ const worksData = [
         ]
     },
     {
+        id : 'nav-3',
         num : 'works_2021_03',
         pc : 'dongbanmall/works_img.png', 
         mo : 'dongbanmall/works_img_mo.png', 
@@ -94,6 +98,7 @@ const worksData = [
         ]
     },
     {
+        id : 'nav-4',
         num : 'works_2021_04',
         pc : 'seegene/works_img.png', 
         mo : 'seegene/works_img_mo.png', 
@@ -118,8 +123,36 @@ const worksData = [
 module.exports = {
     data() {
         return {
-            list : worksData
+            list : worksData,
+            works : [],
         }
+    },
+    created: function() {
+        eventBus.$on('clickNav', function(subMenu){
+            const num = subMenu.num // 받아온 데이터 컨텐츠 수
+            var contents = document.querySelectorAll('#contents section'); // 컨텐츠 선택
+	        var lastPos = 0;
+            var tt = contents[subMenu.num - 1].offsetTop; // 컨텐츠 수에서 인덱스 값 구해야하니 - 1 뺀 컨텐츠의 top값 클릭한 컨텐츠의 값
+            console.log(tt)
+            console.log(window.pageYOffset)
+            console.log(lastPos)
+
+            var scrollInterval = setInterval(function(){
+		    // 현재위치스크롤양 < tt (페이지 아래로 내려가는 경우), 현재위치스크롤양 > tt (페이지 위로 올라가는경우)
+		    if (tt - window.pageYOffset > 50 || window.pageYOffset - tt > 50){
+			    // +값
+			    if (tt > lastPos){
+			      window.scrollBy(0, 10);        
+			    } else {
+			      window.scrollBy(0, -10);
+			    }
+		    } else{
+		        clearInterval(scrollInterval);
+		        window.scrollTo(0, tt);
+		        lastPos = tt;
+		    }
+		    }, 1);
+        }.bind(this));
     },
 }
 </script>
