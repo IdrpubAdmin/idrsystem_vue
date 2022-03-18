@@ -1,5 +1,6 @@
 const worksData = [
     {
+        id : '1',
         num : 'works_2019_01',
         pc : 'chilsung/works_img.png', 
         mo : 'chilsung/works_img.png', 
@@ -21,6 +22,7 @@ const worksData = [
         ]
     },
     {
+        id : '2',
         num : 'works_2019_02',
         pc : 'conran/works_img.png', 
         mo : 'conran/works_img.png', 
@@ -40,6 +42,7 @@ const worksData = [
         ]
     },
     {
+        id : '3',
         num : 'works_2019_03',
         pc : 'uniqlo/works_img.png', 
         mo : 'uniqlo/works_img.png', 

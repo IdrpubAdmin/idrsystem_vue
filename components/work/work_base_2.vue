@@ -1,8 +1,7 @@
 <template>
-<div id="contents">
-
+<div>
 	<!-- works_box -->
-    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num">
+    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num" :id="worksBox.id">
 
         <!-- works_img_wrap -->
         <div class="works_img_wrap">
@@ -39,7 +38,6 @@
 
     </section>
     <!-- works_box -->
-
 </div>
 </template>
 

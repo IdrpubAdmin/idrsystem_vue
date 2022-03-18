@@ -63,7 +63,9 @@
         <!-- //gnb_wrap -->
     
         <!-- contents | 컨텐츠영역 -->
-        <works-component1></works-component1>
+        <div id="contents">
+            <works-component1></works-component1>
+        </div>
         <!-- //contents | 컨텐츠영역 -->
 
         <!-- sub_footer -->
@@ -91,7 +93,19 @@
 <script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
 <!-- plugin_swiper -->
 
+<!-- plugin_AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- plugin_AOS -->
+
 <script type="text/javascript" src="../js/style.js?v=20201229"></script>
+
+<script>
+    // AOS 처음에 한번에 실행되는 문제 해결 - 새로고침
+    document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function() { AOS.refresh(); }, 100);
+});
+</script>
 
 <!-- //script_include -->
 
@@ -105,6 +119,7 @@
 <script>
     const worksData = [
     {
+        id : '1',
         num : 'works_2017_01',
         pc : 'civilpension/works_img.png', 
         mo : 'civilpension/works_img.png', 
@@ -138,6 +153,7 @@
         ]
     },
     {
+        id : '2',
         num : 'works_2017_02',
         pc : 'hyundaimall/works_img.png', 
         mo : 'hyundaimall/works_img.png', 

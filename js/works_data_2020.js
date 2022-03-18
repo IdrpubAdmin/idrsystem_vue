@@ -1,6 +1,7 @@
 "use strict";
 
 var worksData = [{
+  id: '1',
   num: 'works_2020_01',
   pc: 'glyde/works_img.png',
   mo: 'glyde/works_img.png',
@@ -17,6 +18,7 @@ var worksData = [{
     }]
   }]
 }, {
+  id: '2',
   num: 'works_2020_02',
   pc: 'lotteon/works_img.png',
   mo: 'lotteon/works_img.png',
@@ -33,6 +35,7 @@ var worksData = [{
     }]
   }]
 }, {
+  id: '3',
   num: 'works_2020_03',
   pc: 'hyundai_greating/works_img.png',
   mo: 'hyundai_greating/works_img.png',

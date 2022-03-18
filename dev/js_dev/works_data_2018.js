@@ -1,5 +1,6 @@
 const worksData = [
     {
+        id : '1',
         num : 'works_2018_01',
         pc : 'thehandsome/works_img.png', 
         mo : 'thehandsome/works_img.png', 

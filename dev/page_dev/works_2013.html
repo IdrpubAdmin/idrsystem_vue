@@ -16,9 +16,10 @@
         <!-- //gnb_wrap -->
     
         <!-- contents | 컨텐츠영역 -->
-        <works-component1></works-component1>
-
-        <router-view></router-view>
+        <div id="contents">
+            <works-component1></works-component1>
+            <router-view></router-view>
+        </div>
         <!-- //contents | 컨텐츠영역 -->
 
         <!-- sub_footer -->
@@ -45,6 +46,7 @@
 <script>
     const worksData = [
     {
+        id : '1',
         num : 'works_2013_01',
         pc : 'samsung_elec_store/works_img.png', 
         mo : 'samsung_elec_store/works_img.png', 

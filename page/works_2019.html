@@ -63,7 +63,9 @@
         <!-- //gnb_wrap -->
     
         <!-- contents | 컨텐츠영역 -->
-        <works-component1></works-component1>
+        <div id="contents">
+            <works-component1></works-component1>
+        </div>
         <!-- //contents | 컨텐츠영역 -->
 
         <!-- sub_footer -->
@@ -91,80 +93,32 @@
 <script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
 <!-- plugin_swiper -->
 
+<!-- plugin_AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- plugin_AOS -->
+
 <script type="text/javascript" src="../js/style.js?v=20201229"></script>
+
+<script>
+    // AOS 처음에 한번에 실행되는 문제 해결 - 새로고침
+    document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function() { AOS.refresh(); }, 100);
+});
+</script>
 
 <!-- //script_include -->
 
 <script>
     (function(){
         WorksNav.checkCurrentLnbNav("gnb_02","lnb1_21","lnb2_04"); //현재 페이지 체크
-        StyleCommon.updateDocTitle('씨젠의료재단 차세대 정보화 시스템 구축');
+        StyleCommon.updateDocTitle('Works');
     })();
 </script>
 
+<script src="../dev/js_dev/works_data_2019.js"></script>
+
 <script>
-const worksData = [
-    {
-        num : 'works_2019_01',
-        pc : 'chilsung/works_img.png', 
-        mo : 'chilsung/works_img.png', 
-        logo : 'chilsung/works_logo.png', 
-        w : 'width:77px', 
-        date : '2019.05 ~ 2019.11', 
-        title : `롯데 이커머스의 LECS 플랫폼을
-                <br>기반으로 롯데칠성몰 구축참여`, 
-        txt : '롯데 칠성몰 구축',
-        content: [{
-                list : [
-                    {li : `롯데이커머스 LECS Platform 기반 식품전문
-                          <br class="only_m">몰 구축`}, 
-                    {li : '정기주문 / 정기배송 Process'}, 
-                    {li : 'SAP ERP 주문 연계'},
-                    {li : 'Fornt 주문 / 결제 및 Back Office 영역 개발'}
-                ]
-            }
-        ]
-    },
-    {
-        num : 'works_2019_02',
-        pc : 'conran/works_img.png', 
-        mo : 'conran/works_img.png', 
-        logo : 'conran/works_logo.png', 
-        w : 'width:163px', 
-        date : '2019.05 ~ 2019.11', 
-        title: `영국의 명품 가구 편집샵<br> 한국 상륙한 더콘란샵.`,
-        txt : '더콘란샵 구축(영국의 명품 가구 편집샵)',
-        content: [{
-                list : [
-                    {li : '롯데이커머스 LECS Platform 기반'}, 
-                    {li : '더콘란샵 Global Guide Line 준용'}, 
-                    {li : '롯데백화점 ERP 시스템과 연계'},
-                    {li : '주문제작형 가구 주문 처리 구현'}
-                ]
-            }
-        ]
-    },
-    {
-        num : 'works_2019_03',
-        pc : 'uniqlo/works_img.png', 
-        mo : 'uniqlo/works_img.png', 
-        logo : 'uniqlo/works_logo.png', 
-        w : 'width:42px', 
-        date : '2019.05 ~ 2019.11', 
-        title: `유니클로 Store Pick
-               <br>매장에서 Pickup ~`,
-        txt : '유니클로 Store Pick',
-        content: [{
-                list : [       
-                    {li : '롯데이커머스 LECS Platform 기반'}, 
-                    {li : '유니클로 매장 재고 연계'}, 
-                    {li : '유니클로 Pos 시스템  주문 연계'},
-                    {li : '주문 / 배송 / 정산 처리 프로세스 변경'}
-                ]
-            }
-        ]
-    },
-];
     var eventBus = new Vue();
     var app = new Vue({
         el: '#app',

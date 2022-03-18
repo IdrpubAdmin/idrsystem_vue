@@ -1,6 +1,7 @@
 "use strict";
 
 var worksData = [{
+  id: '1',
   num: 'works_2021_01',
   pc: 'eland_qualqual/works_img.png',
   mo: 'eland_qualqual/works_img.png',
@@ -19,6 +20,7 @@ var worksData = [{
     }]
   }]
 }, {
+  id: '2',
   num: 'works_2021_02',
   pc: 'hyundai_arket/works_img.png',
   mo: 'hyundai_arket/works_img_mo.png',
@@ -37,6 +39,7 @@ var worksData = [{
     }]
   }]
 }, {
+  id: '3',
   num: 'works_2021_03',
   pc: 'dongbanmall/works_img.png',
   mo: 'dongbanmall/works_img_mo.png',
@@ -52,6 +55,7 @@ var worksData = [{
     }]
   }]
 }, {
+  id: '4',
   num: 'works_2021_04',
   pc: 'seegene/works_img.png',
   mo: 'seegene/works_img_mo.png',

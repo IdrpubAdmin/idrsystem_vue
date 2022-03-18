@@ -14,8 +14,8 @@
             <span>{{lnbMenu2.title}}</span>
           </a>
           <ul class="lnb_d2_wrap">
-            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num" @click="onClickNav(subMenu)">
-              <a href="javascript:;">
+            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num">
+              <a :href="'#' + subMenu.num">
                 <span>{{subMenu.num}}</span>
               </a>
             </li>
@@ -68,9 +68,6 @@ module.exports = {
   methods: {
     showGnb: function(){
       eventBus.$emit('clickGnb');
-    },
-    onClickNav(subMenu) {
-      eventBus.$emit('clickNav', subMenu);
     },
   }
 }

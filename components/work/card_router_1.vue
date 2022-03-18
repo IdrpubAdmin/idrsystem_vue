@@ -1,5 +1,5 @@
 <template>
-	<section class="works_card">
+	<section class="works_card" id="2">
 		<span class="wif_subject">삼성전자 구축사례</span>
         <span class="wif_tit">삼성전자 주요 사업실적(1/2)</span>
         <div class="container">
