@@ -49,6 +49,7 @@ $header_motion_time:0.4s;
     .lnb_d2_wrap {
       > li {
         &.router-link-exact-active,
+        &.on,
         &:hover {
           > a {
             color:#fff;

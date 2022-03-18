@@ -124,7 +124,6 @@ module.exports = {
     data() {
         return {
             list : worksData,
-            works : [],
         }
     },
     created: function() {
