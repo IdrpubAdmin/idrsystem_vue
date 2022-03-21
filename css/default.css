@@ -2468,9 +2468,11 @@ img { width: 100%; }
 
 .sub_footer_work .ft_info_wrap .copyright { margin-top: 10px; font-weight: 300; font-size: 1.3em; line-height: unset; letter-spacing: 0.39px; }
 
-@media (max-width: 736px) { .sub_footer_work { position: relative; bottom: unset; left: unset; padding-right: 15px; padding-left: 15px; }
+@media (max-width: 1260px) { .sub_footer_work { position: relative; bottom: unset; left: unset; padding: 30px; }
   .sub_footer_work .ft_info_wrap { padding-left: 0; background-position: 100% 100%; border-top: 1px solid #f1f1f1; }
   .sub_footer_work .ft_info_wrap .service_ul { display: none; } }
+
+@media (max-width: 736px) { .sub_footer_work { padding: 15px; } }
 
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */

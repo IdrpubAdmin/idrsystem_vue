@@ -146,11 +146,11 @@
       @include fnt_set($l,1.3em,unset,0.39px);
     }
   }
-  @include mdq_m {
+  @include narrow_custom {
     position:relative;
     bottom:unset;
     left:unset;
-    @include setDfPadding();
+    padding: 30px;
     .ft_info_wrap {
       padding-left:0;
       background-position:100% 100%;
@@ -159,6 +159,9 @@
         display:none;
       }
     }
+  }
+  @include mdq_m {
+    padding: 15px;
   }
 }
 /* footer e ================================================= */
