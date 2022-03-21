@@ -1,4 +1,5 @@
 <template>
+<div class="header_wrap">
   <header id="header">
     <h1 class="header_logo">
       <a href="main.html">
@@ -14,7 +15,7 @@
             <span>{{lnbMenu2.title}}</span>
           </a>
           <ul class="lnb_d2_wrap">
-            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num">
+            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num" :class="subMenu.class">
               <a :href="'#' + subMenu.num">
                 <span>{{subMenu.num}}</span>
               </a>
@@ -29,6 +30,16 @@
       <span class="line" v-for="line in 3" :key="line"></span>
     </button>
   </header>
+  <div class="mo_nav">
+    <ul v-for="lnbMenu2 in list2" :key="lnbMenu2" class="mo_nav lnb_d2_wrap" :class="{on : lnbMenu2.class}">
+      <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num">
+        <a :href="'#' + subMenu.num">
+          <div></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 </template>
 
 <script>
@@ -39,15 +50,15 @@ const lnbData1 = [
   {to : '/design', title : 'UI/UX Design'}
 ];
 const lnbData2 = [
-  {class : reqUrl.includes('2021'), title : '2021', d2 : [ {num : '1'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
-  {class : reqUrl.includes('2020'), title : '2020', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {class : reqUrl.includes('2019'), title : '2019', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {class : reqUrl.includes('2018'), title : '2018', d2 : [ {num : '1'} ]},
-  {class : reqUrl.includes('2017'), title : '2017', d2 : [ {num : '1'}, {num : '2'} ]},
-  {class : reqUrl.includes('2016'), title : '2016', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {class : reqUrl.includes('2015'), title : '2015', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {class : reqUrl.includes('2014'), title : '2014', d2 : [ {num : '1'}, {num : '2'}, {num : '3'} ]},
-  {class : reqUrl.includes('2013'), title : '2013', d2 : [ {num : '1'}, {num : '2'} ]}
+  {class : reqUrl.includes('2021'), title : '2021', d2 : [ {num : '1', class : 'on'}, {num : '2'}, {num : '3'}, {num : '4'} ]},
+  {class : reqUrl.includes('2020'), title : '2020', d2 : [ {num : '1', class : 'on'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2019'), title : '2019', d2 : [ {num : '1', class : 'on'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2018'), title : '2018', d2 : [ {num : '1', class : 'on'} ]},
+  {class : reqUrl.includes('2017'), title : '2017', d2 : [ {num : '1', class : 'on'}, {num : '2'} ]},
+  {class : reqUrl.includes('2016'), title : '2016', d2 : [ {num : '1', class : 'on'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2015'), title : '2015', d2 : [ {num : '1', class : 'on'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2014'), title : '2014', d2 : [ {num : '1', class : 'on'}, {num : '2'}, {num : '3'} ]},
+  {class : reqUrl.includes('2013'), title : '2013', d2 : [ {num : '1', class : 'on'}, {num : '2'} ]}
 ];
 const lnbData3 = [
   {to : '/', title : 'IDR 소개'},
@@ -63,12 +74,34 @@ module.exports = {
       list1 : lnbData1,
       list2 : lnbData2,
       list3 : lnbData3,
+
+      isActive: false
     }
   },
   methods: {
     showGnb: function(){
       eventBus.$emit('clickGnb');
     },
+
+    handleScroll () {
+      const els = document.querySelectorAll('.works_box')
+      els.forEach((el) => {
+        const elTop = el.getBoundingClientRect().top
+        const elBottom = el.getBoundingClientRect().bottom
+        if (elTop >= 0 || elBottom <= 0) {
+          this.isActive = false
+        } if (elTop <= 0 && elBottom >= 0) {
+          this.isActive = true
+        } 
+      })  
+    }
+  },
+
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 
@@ -81,4 +114,5 @@ function scrollFunction() {
     document.getElementById("header").classList.remove("fixed");
   }
 }
+
 </script>

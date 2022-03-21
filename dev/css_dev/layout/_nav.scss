@@ -134,6 +134,11 @@
       .lnb_d2_wrap {
         display:inline-block;
       }
+      @include mdq_custom{
+        .lnb_d2_wrap {
+          display:none;
+        }
+      }
     }
     &:hover {
       > a {
@@ -164,5 +169,36 @@
     }
   }
 }
+
+.mo_nav{
+  ul{
+    position: fixed;
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    z-index: 1;
+    display: none;
+    @include mdq_custom{
+      &.on{
+        display: inline-block;
+      }
+    }
+    .d2_li{
+      margin-top: 10px;
+      a{
+        div{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 1px solid #000;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
 /* nav e ==================================================== */
 /* ---------------------------------------------------------- */

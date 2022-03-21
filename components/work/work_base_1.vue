@@ -2,7 +2,7 @@
 <div>
 
 	<!-- works_box -->
-    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num" :id="worksBox.id">
+    <section v-for="worksBox in list" :key="worksBox" class="works_box" :class="worksBox.num" :id="worksBox.id" :data-num="worksBox.id">
         <!-- works_img_wrap -->
         <div class="works_img_wrap" data-aos="fade-up" data-aos-delay="400">
             <img class="only_pc" :src=" '../images/works/' + worksBox.pc" alt="사이트이미지">
