@@ -18,9 +18,48 @@
 
 <script>
     // AOS 처음에 한번에 실행되는 문제 해결 - 새로고침
-    document.addEventListener("DOMContentLoaded", function() {
-setTimeout(function() { AOS.refresh(); }, 100);
-});
+    setTimeout(function() { AOS.refresh(); }, 100);
+</script>
+
+<script>
+
+//테스트용
+$(window).scroll(function(){
+			var contentN = $('.works_box').length;
+
+			var contentP = [];
+			for(var i=1 ; i<contentN+1 ; i++ ) {
+				contentP.push($('.works_2021_0' + i).position().top + $('#header').innerHeight() - 1000);					
+			}			
+			/*첫번째 컨텐트~뒤에서 2번째 컨텐트*/
+			for(var i=1 ; i<contentN; i++ ) {
+				var scrollW = $(window).scrollTop();
+				if( scrollW >= contentP[i-1] && scrollW < contentP[i]){
+					$('.lnb_d2_wrap li').removeClass('on');
+					$('.lnb_d2_wrap li').eq(i-1).addClass('on');
+				}				
+			}
+			/*마지막 컨텐트*/
+			var scrollW = $(window).scrollTop();
+			if( scrollW >= contentP[contentN]){
+				$('.lnb_d2_wrap li').removeClass('on');
+				$('.lnb_d2_wrap li').eq(contentN).addClass('on');
+			}
+
+			var scrollW = $(window).scrollTop();
+			if( scrollW >= contentP[contentN-1]){
+				$('.lnb_d2_wrap li').removeClass('on');
+				$('.lnb_d2_wrap li').eq(contentN-1).addClass('on');
+			}
+
+			/*문서 끝 닿을 때*/			
+			if (scrollW == $(document).height() - $(window).height() ) {
+				$('.lnb_d2_wrap li').removeClass('on');
+				$('.lnb_d2_wrap li').eq(contentN-1).addClass('on');
+			}
+
+		});
+
 </script>
 
 <!-- //script_include -->
