@@ -2392,9 +2392,15 @@ img { width: 100%; }
 
 @media (max-width: 1520px) { .mo_nav ul.on { display: inline-block; } }
 
-.mo_nav ul .d2_li { margin-top: 10px; }
+.mo_nav ul .d2_li { margin-top: 10px; width: 20px; height: 20px; }
 
-.mo_nav ul .d2_li a div { width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000; background-color: #fff; }
+.mo_nav ul .d2_li a { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+
+.mo_nav ul .d2_li a div { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #3d440b; background-color: transparent; transition: transform 0.3s; }
+
+.mo_nav ul .d2_li.on a { position: relative; }
+
+.mo_nav ul .d2_li.on a div { background-color: #3d440b; transform: scale(1.4); }
 
 /* nav e ==================================================== */
 /* ---------------------------------------------------------- */

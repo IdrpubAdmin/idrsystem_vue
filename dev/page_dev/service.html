@@ -49,7 +49,7 @@
 	var eventBus = new Vue();
 	var router = new VueRouter({
 		routes: [
-		  { path: '/', component: CommerceComponent},
+		  { path: '/', component: CommerceComponent, meta: {title: 'Home'}},
 		  { path: '/marketing', component: MarketingComponent},
   		  { path: '/design', component: DesignComponent}
   		]

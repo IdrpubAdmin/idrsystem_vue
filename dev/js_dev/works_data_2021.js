@@ -5,7 +5,6 @@ const worksData = [
         pc : 'eland_qualqual/works_img.png', 
         mo : 'eland_qualqual/works_img.png', 
         logo : 'eland_qualqual/works_logo.png', 
-        w : 'width:118px',
         date : '2020.11 ~ 2021.02', 
         title: `이랜드 신규브랜드
               <br>콸콸 구축 및 운영`, 
@@ -25,7 +24,6 @@ const worksData = [
         pc : 'hyundai_arket/works_img.png', 
         mo : 'hyundai_arket/works_img_mo.png', 
         logo : 'hyundai_arket/works_logo.png', 
-        w : 'width:110px', 
         date : '2021.05 ~ 2021.12', 
         title : `현대백화점
                <br>아르켓 (ARKET) 온라인 쇼핑몰
@@ -46,8 +44,6 @@ const worksData = [
         pc : 'dongbanmall/works_img.png', 
         mo : 'dongbanmall/works_img_mo.png', 
         logo : 'dongbanmall/works_logo.png', 
-        w : 'width:53px', 
-        c : '2021_3',
         date : '2021.04 ~ 2022.02', 
         title : `중소기업유통센터
                <br>‘가치삽시다’ 년간 운영`, 
@@ -65,8 +61,6 @@ const worksData = [
         pc : 'seegene/works_img.png', 
         mo : 'seegene/works_img_mo.png', 
         logo : 'seegene/works_logo.png', 
-        w : 'width:164px', 
-        c : '2021_4',
         date : '2021.06 ~ 2021.11', 
         title : `씨젠의료재단 차세대 정보화
                <br class="only_m">시스템 구축

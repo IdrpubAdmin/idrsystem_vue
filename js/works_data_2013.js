@@ -6,7 +6,6 @@ var worksData = [{
   pc: 'samsung_elec_store/works_img.png',
   mo: 'samsung_elec_store/works_img.png',
   logo: 'samsung_elec_store/works_logo.png',
-  w: 'width:95px',
   date: '2013',
   title: "\uC0BC\uC131\uC804\uC790 \uC628\uB77C\uC778\uC2A4\uD1A0\uC5B4\n\t\t\t\t<br>\uBA64\uBC84\uC2ED",
   txt: '삼성전자 Global e-Store 구축',

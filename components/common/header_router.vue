@@ -14,8 +14,8 @@
           <a :href=" 'works_' + lnbMenu2.title + '.html' ">
             <span>{{lnbMenu2.title}}</span>
           </a>
-          <ul class="lnb_d2_wrap">
-            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num" :class="subMenu.class">
+          <ul class="lnb_d2_wrap" v-if="lnbMenu2.class">
+            <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :class="subMenu.class">
               <a :href="'#' + subMenu.num">
                 <span>{{subMenu.num}}</span>
               </a>
@@ -32,11 +32,13 @@
   </header>
   <div class="mo_nav">
     <ul v-for="lnbMenu2 in list2" :key="lnbMenu2" class="mo_nav lnb_d2_wrap" :class="{on : lnbMenu2.class}">
-      <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :data-num="subMenu.num">
+      <template v-if="lnbMenu2.class">
+        <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :class="subMenu.class">
         <a :href="'#' + subMenu.num">
           <div></div>
         </a>
       </li>
+      </template>
     </ul>
   </div>
 </div>
@@ -82,21 +84,10 @@ module.exports = {
     showGnb: function(){
       eventBus.$emit('clickGnb');
     },
-
     handleScroll () {
-      const els = document.querySelectorAll('.works_box')
-      els.forEach((el) => {
-        const elTop = el.getBoundingClientRect().top
-        const elBottom = el.getBoundingClientRect().bottom
-        if (elTop >= 0 || elBottom <= 0) {
-          this.isActive = false
-        } if (elTop <= 0 && elBottom >= 0) {
-          this.isActive = true
-        } 
-      })  
+
     }
   },
-
   created() {
     window.addEventListener('scroll', this.handleScroll);
   },

@@ -5,7 +5,6 @@ const worksData = [
         pc : 'k2/works_img.png', 
         mo : 'k2/works_img.png', 
         logo : 'k2/works_logo.png', 
-        w : 'width:48px', 
         date : '2016.03 ~ 2016.10', 
         title : `K2 코리아 온라인
                <br>통합플랫폼`, 
@@ -37,7 +36,6 @@ const worksData = [
         pc : 'skmagic/works_img.png', 
         mo : 'skmagic/works_img.png', 
         logo : 'skmagic/works_logo.png', 
-        w : 'width:80px', 
         date : '2016.03 ~ 2016.10', 
         title : `동양매직몰 구축
                <br>통합플랫폼`,
@@ -59,7 +57,6 @@ const worksData = [
         pc : 'livart/works_img.png', 
         mo : 'livart/works_img.png', 
         logo : 'livart/works_logo.png', 
-        w : 'width:113px', 
         date : '2016.03 ~ 2016.10', 
         title : `현대리바트 쇼핑몰 리뉴얼`,
         txt : '현대리바트 쇼핑몰 리뉴얼',

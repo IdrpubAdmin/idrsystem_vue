@@ -5,7 +5,6 @@ const worksData = [
         pc : 'imarket/works_img.png', 
         mo : 'imarket/works_img.png', 
         logo : 'imarket/works_logo.png', 
-        w : 'width:130px', 
         date : '2014.02 ~ 2014.10', 
         title : `아이마켓코리아
                 <br>B2B Mall`,
@@ -30,7 +29,6 @@ const worksData = [
         pc : 'skinfood/works_img.png', 
         mo : 'skinfood/works_img.png', 
         logo : 'skinfood/works_logo.png', 
-        w : 'width:105px', 
         date : '2014.11 ~ 2015.05', 
         title : `스킨푸드 쇼핑몰
                 <br>구축 및 운영`,
@@ -61,7 +59,6 @@ const worksData2 = [
         pc : 'samsung_elec_member/works_img.png', 
         mo : 'samsung_elec_member/works_img.png', 
         logo : 'samsung_elec_member/works_logo.png', 
-        w : 'width:95px', 
         date : '2014.02 ~ 2014.10', 
         title : ` 삼성전자 한국총괄 멤버십`,
         txt : '삼성전자 블루멤버십 구축',

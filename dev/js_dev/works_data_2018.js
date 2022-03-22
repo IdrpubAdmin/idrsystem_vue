@@ -5,7 +5,6 @@ const worksData = [
         pc : 'thehandsome/works_img.png', 
         mo : 'thehandsome/works_img.png', 
         logo : 'thehandsome/works_logo.png', 
-        w : 'width:168px', 
         date : '2018', 
         title : '더한섬닷컴 모바일 구축', 
         txt : 'thehandsome.com 의 mobile & App Renewal',

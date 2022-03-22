@@ -5,7 +5,6 @@ const worksData = [
         pc : 'chilsung/works_img.png', 
         mo : 'chilsung/works_img.png', 
         logo : 'chilsung/works_logo.png', 
-        w : 'width:77px', 
         date : '2019.05 ~ 2019.11', 
         title : `롯데 이커머스의 LECS 플랫폼을
                 <br>기반으로 롯데칠성몰 구축참여`, 
@@ -27,7 +26,6 @@ const worksData = [
         pc : 'conran/works_img.png', 
         mo : 'conran/works_img.png', 
         logo : 'conran/works_logo.png', 
-        w : 'width:163px', 
         date : '2019.05 ~ 2019.11', 
         title: `영국의 명품 가구 편집샵<br> 한국 상륙한 더콘란샵.`,
         txt : '더콘란샵 구축(영국의 명품 가구 편집샵)',
@@ -47,7 +45,6 @@ const worksData = [
         pc : 'uniqlo/works_img.png', 
         mo : 'uniqlo/works_img.png', 
         logo : 'uniqlo/works_logo.png', 
-        w : 'width:42px', 
         date : '2019.05 ~ 2019.11', 
         title: `유니클로 Store Pick
                <br>매장에서 Pickup ~`,

@@ -13,7 +13,7 @@
         <!-- works_info_wrap -->
         <div class="works_info_wrap" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <p class="wif_date">{{worksBox.date}}</p>
-            <img class="wif_logo" :src=" '../images/works/' + worksBox.logo" alt="로고" :style="worksBox.w">
+            <img class="wif_logo" :src=" '../images/works/' + worksBox.logo" alt="로고">
             <p class="wif_subject" v-html="worksBox.title"></p>
             <div class="wif_detail">
                 <p class="wifd_tit" v-html="worksBox.txt"></p>

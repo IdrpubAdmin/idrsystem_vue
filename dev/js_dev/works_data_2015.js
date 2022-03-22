@@ -5,7 +5,6 @@ const worksData = [
         pc : 'samsungmulsan/works_img.png', 
         mo : 'samsungmulsan/works_img.png', 
         logo : 'samsungmulsan/works_logo.png', 
-        w : 'width:127px', 
         date : '2015.10 ~ 2016.02', 
         title : `삼성물산 패션부문
                  <br>SSFshop & Tmall연계`,
@@ -28,7 +27,6 @@ const worksData = [
         pc : 'kolon/works_img.png', 
         mo : 'kolon/works_img.png', 
         logo : 'kolon/works_logo.png', 
-        w : 'width:140px', 
         date : '2015.10 ~ 2016.02', 
         title : `코오롱 통합쇼핑몰
                <br>OCC 연계 구축 참여`,
@@ -49,7 +47,6 @@ const worksData = [
         pc : 'nongsim/works_img.png', 
         mo : 'nongsim/works_img.png', 
         logo : 'nongsim/works_logo.png', 
-        w : 'width:38px', 
         date : '2015.04 ~ 2015.07 / 2015.08 ~ 2015.10', 
         title : `농심 메가마트 쇼핑몰
                 <br>1,2단계 구축`,

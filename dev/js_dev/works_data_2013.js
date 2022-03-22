@@ -5,7 +5,6 @@ const worksData = [
         pc : 'samsung_elec_store/works_img.png', 
         mo : 'samsung_elec_store/works_img.png', 
         logo : 'samsung_elec_store/works_logo.png', 
-        w : 'width:95px', 
         date : '2013', 
         title : `삼성전자 온라인스토어
 				<br>멤버십`,

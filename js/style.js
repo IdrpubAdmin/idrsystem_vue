@@ -6,11 +6,11 @@
 function getBodyScrollTop() {
   var el = document.scrollingElement || document.documentElement; // return el.scrollTop;
 
-  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop); //가장 큰수 반환 (페이지 top, 스크롤 top, 바디 top)
 } // STYLE COMMON API
 
 
-var StyleCommon = StyleCommon || {};
+var StyleCommon = StyleCommon || {}; // 변수를 오른쪽값에 넣겠다
 
 StyleCommon = function (doc, global) {
   // PRIVATE VARIABLE

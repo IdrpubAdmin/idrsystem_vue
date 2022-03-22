@@ -109,41 +109,36 @@
 <script>
 
 //테스트용
-$(window).scroll(function(){
-            var contentN = $('.works_box').length; // 컨텐츠 갯수 4라면
-
-            var contentP = []; // 배열 저장소
-            for(var i=1 ; i<contentN+1 ; i++ ) { // i : 1 ~ 5 << 왜 + 1 했을까
-                contentP.push($('.works_2021_0' + i).position().top - 100);
-                // contentP 배열안에 넣는다 각 컨텐츠의 top값               
-            }       
-            /*첫번째 컨텐트~뒤에서 2번째 컨텐트*/
-            for(var i=1 ; i<contentN; i++ ) { // i : 1 ~ 4
-                var scrollW = $(window).scrollTop(); // scrollW 페이지 스크롤 값
-                if( scrollW >= contentP[i-1] && scrollW < contentP[i]){ // 만약 스크롤값이 첫번째 top 값보다 크거나 같다면 그리고 스크롤값이 그다음번째 top값보다 작다면
-                    $('.lnb_d2_wrap li').removeClass('on');
-                    $('.lnb_d2_wrap li').eq(i-1).addClass('on'); // eq : 0 >> 첫번째 , 1, 2, 3, 4 >> 마지막
-                }               
-            }
-            /*마지막 컨텐트*/
-            var scrollW = $(window).scrollTop(); // scrollW 페이지 스크롤 값
-            if( scrollW >= contentP[contentN]){ // 만약 스크롤값이 마지막 요소의 top값 보다 같거나 크다면 [4] >> 5번째 컨텐츠 (존재하지 않음)
-                $('.lnb_d2_wrap li').removeClass('on');
-                $('.lnb_d2_wrap li').eq(contentN).addClass('on'); // 마지막 요소한테 on
-            }
-
-            var scrollW = $(window).scrollTop();
-            if( scrollW >= contentP[contentN-1]){ // 만약 스크롤값이 보여지는 마지막 컨텐츠(4번째) 요소의 top값 보다 같거나 크다면
-                $('.lnb_d2_wrap li').removeClass('on');
-                $('.lnb_d2_wrap li').eq(contentN-1).addClass('on'); // 마지막 컨텐츠한테 on
-            }
-
-            /*문서 끝 닿을 때*/           
-            if (scrollW == $(document).height() - $(window).height() ) { // 스크롤값과 전체높이 - 윈도우높이 값이 같다면 = 문서의 끝이라면
-                $('.lnb_d2_wrap li').removeClass('on');
-                $('.lnb_d2_wrap li').eq(contentN-1).addClass('on'); // 마지막 컨텐츠한테 on
-            }
-        });
+    window.addEventListener('scroll', function(){
+        var contentN = document.querySelectorAll('#contents section').length;
+        var contentP = [];
+        var scrollW = window.scrollY;
+        var $nav = $('.lnb_d2_wrap li');
+        var $moNav = $('.mo_nav li');
+        for(var i = 1; i <= contentN; i++ ) {
+            contentP.push(document.getElementById(i).offsetTop - 100);
+        }       
+        /*첫번째 컨텐트~뒤에서 2번째 컨텐트*/
+        for(var i = 1; i < contentN; i++ ) {
+            var menu = document.querySelectorAll('.lnb_d2_wrap li');
+            if( scrollW >= contentP[i-1] && scrollW < contentP[i]){
+                $nav.removeClass('on');
+                $nav.eq(i-1).addClass('on');
+                $moNav.eq(i-1).addClass('on');
+            }                
+        }
+        if( scrollW >= contentP[contentN-1]){
+            $nav.removeClass('on');
+            $nav.eq(contentN-1).addClass('on');
+            $moNav.eq(contentN-1).addClass('on');
+        }
+        /*문서 끝 닿을 때*/           
+        if (scrollW == $(document).height() - $(window).height() ) {
+            $nav.removeClass('on');
+            $nav.eq(contentN-1).addClass('on');
+            $moNav.eq(contentN-1).addClass('on');
+        }
+    });
 </script>
 
 <!-- //script_include -->
@@ -151,7 +146,7 @@ $(window).scroll(function(){
 <script>
     (function(){
         WorksNav.checkCurrentLnbNav("gnb_02","lnb1_21","lnb2_04"); //현재 페이지 체크
-        StyleCommon.updateDocTitle('씨젠의료재단 차세대 정보화 시스템 구축');
+        StyleCommon.updateDocTitle('Works');
     })();
 </script>
 

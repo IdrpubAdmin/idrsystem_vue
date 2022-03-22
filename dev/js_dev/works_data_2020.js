@@ -5,7 +5,6 @@ const worksData = [
         pc : 'glyde/works_img.png', 
         mo : 'glyde/works_img.png', 
         logo : 'glyde/works_logo.svg', 
-        w : 'width:76px', 
         date : '2019.11 ~ 2020.06', 
         title : `하림그룹의 신제조 및 신유통
                 <br>개념이 결합된 온라인 커머스
@@ -25,7 +24,6 @@ const worksData = [
         pc : 'lotteon/works_img.png', 
         mo : 'lotteon/works_img.png', 
         logo : 'lotteon/works_logo.png', 
-        w : 'width:48px', 
         date : '2019.11 ~ 2020.04', 
         title : `롯데그룹의 유통계열사 7개 통합
                 <br>통합 쇼핑몰 구축에 참여`,
@@ -44,7 +42,6 @@ const worksData = [
         pc : 'hyundai_greating/works_img.png', 
         mo : 'hyundai_greating/works_img.png', 
         logo : 'hyundai_greating/works_logo.png', 
-        w : 'width:118px', 
         date : '2020.06 ~ 2020.12', 
         title : `현대그린푸드
                 <br>그리팅몰 기능개선 완료`,

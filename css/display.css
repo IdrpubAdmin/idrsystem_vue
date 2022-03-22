@@ -520,9 +520,13 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2013_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 10px 20px; width: 100%; height: 100%; } }
 
+.works_2013_01 .works_info_wrap .wif_logo { width: 95px; }
+
 .works_2014_01 .works_img_wrap img { margin-top: 240px; margin-bottom: 320px; margin-left: 720px; width: 929px; }
 
 @media (max-width: 736px) { .works_2014_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; height: 100%; } }
+
+.works_2014_01 .works_info_wrap .wif_logo { width: 130px; }
 
 .works_2014_02 .works_img_wrap img { margin-top: 240px; margin-bottom: 254px; margin-left: 640px; width: 594px; }
 
@@ -531,6 +535,8 @@ html { scroll-behavior: smooth; }
 .works_2014_02 .works_info_wrap .wif_detail { margin-top: 28px; }
 
 .works_2014_02 .works_info_wrap .wif_detail .wifd_tit { line-height: 24px; }
+
+.works_2014_02 .works_info_wrap .wif_logo { width: 105px; }
 
 .works_2014_03 .works_img_wrap img { width: 379px; }
 
@@ -550,13 +556,19 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2014_03 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
 
+.works_2014_03 .works_info_wrap .wif_logo { width: 95px; }
+
 .works_2015_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 120px; margin-left: 640px; width: 850px; }
 
 @media (max-width: 736px) { .works_2015_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2015_01 .works_info_wrap .wif_logo { width: 127px; }
+
 .works_2015_02 .works_img_wrap img { margin-top: 190px; margin-bottom: 210px; margin-left: 840px; width: 926px; }
 
 @media (max-width: 736px) { .works_2015_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
+.works_2015_02 .works_info_wrap .wif_logo { width: 140px; }
 
 .works_2015_03 #contents { padding-bottom: 0 !important; }
 
@@ -564,13 +576,19 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2015_03 .works_info_wrap .wif_logo { width: 38px; }
+
 .works_2016_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 140px; margin-left: 740px; width: 503px; }
 
 @media (max-width: 736px) { .works_2016_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2016_01 .works_info_wrap .wif_logo { width: 48px; }
+
 .works_2016_02 .works_img_wrap img { margin-top: 170px; margin-bottom: 35px; margin-left: 740px; width: 679px; }
 
 @media (max-width: 736px) { .works_2016_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
+.works_2016_02 .works_info_wrap .wif_logo { width: 80px; }
 
 .works_2016_03 .works_img_wrap img { margin-top: 170px; margin-bottom: 45px; margin-left: 740px; width: 864px; }
 
@@ -578,13 +596,19 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2016_03 .works_info_wrap { padding-right: 10px; } }
 
+.works_2016_03 .works_info_wrap .wif_logo { width: 113px; }
+
 .works_2017_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 100px; margin-left: 640px; width: 374px; }
 
 @media (max-width: 736px) { .works_2017_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2017_01 .works_info_wrap .wif_logo { width: 64px; }
+
 .works_2017_02 .works_img_wrap img { margin-top: 260px; margin-bottom: 180px; margin-left: 840px; width: 711px; }
 
 @media (max-width: 736px) { .works_2017_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
+.works_2017_02 .works_info_wrap .wif_logo { width: 136px; }
 
 .works_2018_01 #contents { padding-bottom: 0 !important; }
 
@@ -600,6 +624,8 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2018_01 .works_info_wrap { margin-left: 0; padding-right: 10px; } }
 
+.works_2018_01 .works_info_wrap .wif_logo { width: 168px; }
+
 .works_2019_01 #contents { padding-bottom: 0 !important; }
 
 .works_2019_01 .works_img_wrap img { margin-top: 160px; margin-left: 640px; width: 869px; }
@@ -610,17 +636,23 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2019_01 .works_info_wrap { padding-right: 10px; } }
 
+.works_2019_01 .works_info_wrap .wif_logo { width: 77px; }
+
 .works_2019_02 #contents { padding-bottom: 0 !important; }
 
 @media (max-width: 736px) { .works_2019_02 #contents { padding-bottom: 80px !important; } }
 
 @media (max-width: 736px) { .works_2019_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2019_02 .works_info_wrap .wif_logo { width: 163px; }
+
 .works_2019_03 .works_img_wrap img { margin-top: 160px; margin-bottom: 120px; margin-left: 640px; width: 1087px; }
 
 @media (max-width: 1260px) { .works_2019_03 .works_img_wrap img { margin-left: 980px; } }
 
 @media (max-width: 736px) { .works_2019_03 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
+.works_2019_03 .works_info_wrap .wif_logo { width: 42px; }
 
 .works_2020_01 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
 
@@ -629,11 +661,15 @@ html { scroll-behavior: smooth; }
 @media (max-width: 736px) { .works_2020_01 .works_img_wrap { background: none; }
   .works_2020_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2020_01 .works_info_wrap .wif_logo { width: 76px; }
+
 .works_2020_02 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
 
 @media (max-width: 736px) { .works_2020_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; padding-right: 10px; width: 100%; height: 100%; } }
 
 @media (max-width: 736px) { .works_2020_02 .works_info_wrap { padding-right: 10px; } }
+
+.works_2020_02 .works_info_wrap .wif_logo { width: 48px; }
 
 .works_2020_03 #contents { padding-bottom: 0 !important; }
 
@@ -650,6 +686,8 @@ html { scroll-behavior: smooth; }
 @media (max-width: 736px) { .works_2020_03 .works_img_wrap img { margin-top: 20px; margin-left: 0; padding-right: 20px; padding-left: 20px; width: 100%; height: 100%; } }
 
 @media (max-width: 736px) { .works_2020_03 .works_info_wrap { margin-left: 0; padding-right: 10px; } }
+
+.works_2020_03 .works_info_wrap .wif_logo { width: 118px; }
 
 .works_card { max-width: 1280px; margin: 200px auto; }
 
@@ -733,6 +771,8 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2021_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
+.works_2021_01 .works_info_wrap .wif_logo { width: 118px; }
+
 .works_2021_02 #contents { padding-bottom: 0 !important; }
 
 @media (max-width: 736px) { .works_2021_02 #contents { padding-bottom: 80px !important; } }
@@ -745,6 +785,8 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 736px) { .works_2021_02 { padding-top: 0 !important; }
   .works_2021_02 #header { background: rgba(255, 0, 0, 0); } }
+
+.works_2021_02 .works_info_wrap .wif_logo { width: 110px; }
 
 .works_2021_03 #contents { padding-bottom: 0 !important; }
 
@@ -759,6 +801,8 @@ html { scroll-behavior: smooth; }
 @media (max-width: 736px) { .works_2021_03 { padding-top: 0 !important; }
   .works_2021_03 #header { background: rgba(255, 0, 0, 0); } }
 
+.works_2021_03 .works_info_wrap .wif_logo { width: 53px; }
+
 .works_2021_04 #contents { padding-bottom: 0 !important; }
 
 @media (max-width: 736px) { .works_2021_04 #contents { padding-bottom: 80px !important; } }
@@ -772,6 +816,8 @@ html { scroll-behavior: smooth; }
 @media (max-width: 736px) { .works_2021_04 .works_img_wrap img { margin-top: 0; margin-left: 0; width: 100%; height: 100%; } }
 
 @media (min-width: 1800px) { .works_2021_04 .works_img_wrap { justify-content: right; } }
+
+.works_2021_04 .works_info_wrap .wif_logo { width: 164px; }
 
 /* works e ================================================= */
 /* ---------------------------------------------------------- */

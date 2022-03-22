@@ -5,7 +5,6 @@ const worksData = [
         pc : 'civilpension/works_img.png', 
         mo : 'civilpension/works_img.png', 
         logo : 'civilpension/works_logo.png', 
-        w : 'width:64px', 
         date : '2017.08 ~ 2017.11', 
         title : `공무원연금공단
                 <br>제휴복지몰`,
@@ -39,7 +38,6 @@ const worksData = [
         pc : 'hyundaimall/works_img.png', 
         mo : 'hyundaimall/works_img.png', 
         logo : 'hyundaimall/works_logo.png', 
-        w : 'width:136px', 
         date : '2017.03 ~ 2017.11', 
         title : '현대백화점<br>H&M Brand Mall',
         txt : 'H&M COS / &OtherStories 한국대표몰 구축',

@@ -7,115 +7,34 @@
                 <span>다음 페이지</span>
             </router-link>
             <div class="card_wrap">
-                <div class="item color1">
+                <div v-for="cardBox in list" :key="cardBox" class="item" :class="'color' + cardBox.color">
                     <ul>
-                        <li class="title">2016.07 -2016.10</li>
-                        <li>삼성전자 G-CRM GMC 시스템</li>
-                        <li>동남아총괄 확산 및</li>
-                        <li>기능개선 프로젝트</li>
-                    </ul>
-                </div>
-                <div class="item color1">
-                    <ul>
-                        <li class="title">2016.06 -2016.10</li>
-                        <li>삼성전자 G-CRM</li>
-                        <li>중동총괄 확산 프로젝트</li>
-                    </ul>
-                </div>
-                <div class="item color1">
-                    <ul>
-                        <li class="title">2016.06 -2016.09</li>
-                        <li>삼성전자 G-CRM</li>
-                        <li>동남아 확산 프로젝트</li>
-                    </ul>
-                </div>
-                <div class="item color1">
-                    <ul>
-                        <li class="title">2015.01 -2016.03</li>
-                        <li>한국총괄 MIF 시스템</li>
-                        <li>추가 개발 및 운영</li>
+                        <li class="title">{{cardBox.date}}</li>
+                        <li v-for="listData in cardBox.list" :key="listData">{{listData.li}}</li>
                     </ul>
                 </div>
             </div>
             <div class="card_wrap">
-                <div class="item color2">
+                <div v-for="cardBox in list2" :key="cardBox" class="item" :class="'color' + cardBox.color">
                     <ul>
-                        <li class="title">2014.12 -2015.10</li>
-                        <li>삼성전자 한국총괄</li>
-                        <li>DM 시스템 개선</li>
-                    </ul>
-                </div>
-                <div class="item color2">
-                    <ul>
-                        <li class="title">2014.09 -2014.12</li>
-                        <li>G-CRM 시스템</li>
-                    </ul>
-                </div>
-                <div class="item color2">
-                    <ul>
-                        <li class="title">2014.03 -2014.09</li>
-                        <li>삼성전자 GCRM 프로젝트</li>
-                        <li>멤버십포탈 구축</li>
-                    </ul>
-                </div>
-                <div class="item color3">
-                    <ul>
-                        <li class="title">2013.09 -2013.10</li>
-                        <li>한국총괄 SAMSUNGBLUE</li>
-                        <li>사이트 및 멤버십 운영</li>
+                        <li class="title">{{cardBox.date}}</li>
+                        <li v-for="listData in cardBox.list" :key="listData">{{listData.li}}</li>
                     </ul>
                 </div>
             </div>
             <div class="card_wrap">
-                <div class="item color3">
+                <div v-for="cardBox in list3" :key="cardBox" class="item" :class="'color' + cardBox.color">
                     <ul>
-                        <li class="title">2013.05 - 2014.07</li>
-                        <li>삼성전자 B2B Partner Portal</li>
-                        <li>구축</li>
-                    </ul>
-                </div>
-                <div class="item color3">
-                    <ul>
-                        <li class="title">2013.05 -2013.06</li>
-                        <li>삼성전자 모바일스토어 구축</li>
-                    </ul>
-                </div>
-                <div class="item color3">
-                    <ul>
-                        <li class="title">2013.03 -2013.07</li>
-                        <li>삼성전자 한국총괄 직영</li>
-                        <li>온라인 쇼핑몰 </li>
-                        <li>시스템분석/설계</li>
-                    </ul>
-                </div>
-                <div class="item color4">
-                    <ul>
-                        <li class="title">2012.12 -2013.02</li>
-                        <li>한국총괄 등외급 통합</li>
-                        <li>시스템 개발 용역</li>
+                        <li class="title">{{cardBox.date}}</li>
+                        <li v-for="listData in cardBox.list" :key="listData">{{listData.li}}</li>
                     </ul>
                 </div>
             </div>
             <div class="card_wrap">
-                <div class="item color4">
+               <div v-for="cardBox in list4" :key="cardBox" class="item" :class="'color' + cardBox.color">
                     <ul>
-                        <li class="title">2012.05 - 2013.04</li>
-                        <li>한국총괄 프리미엄</li>
-                        <li>판촉 시스템 개발/운영</li>
-                    </ul>
-                </div>
-                <div class="item color4">
-                    <ul>
-                        <li class="title">2012.04 -2012.08</li>
-                        <li>한국총괄 B2B거래선정보개선</li>
-                        <li>개발</li>
-                    </ul>
-                </div>
-                <div class="item color4">
-                    <ul>
-                        <li class="title">2012.01 - 2012.05</li>
-                        <li>삼성전자 한국총괄 프리미엄</li>
-                        <li>판촉 시스템 구축</li>
+                        <li class="title">{{cardBox.date}}</li>
+                        <li v-for="listData in cardBox.list" :key="listData">{{listData.li}}</li>
                     </ul>
                 </div>
                 <router-link to="/2" class="item color0 link_card">
@@ -127,10 +46,141 @@
 </template>
 
 <script>
+const cardData = [
+    {
+        color : '1',
+        date : '2016.07 -2016.10',
+        list : [
+            {li : '삼성전자 G-CRM GMC 시스템'},
+            {li : '동남아총괄 확산 및'},
+            {li : '기능개선 프로젝트'}
+        ]
+    },
+    {
+        color : '1',
+        date : '2016.06 -2016.10',
+        list : [
+            {li : '삼성전자 G-CRM'},
+            {li : '중동총괄 확산 프로젝트'},
+        ]
+    },
+        {
+        color : '1',
+        date : '2016.06 -2016.09',
+        list : [
+            {li : '삼성전자 G-CRM'},
+            {li : '동남아 확산 프로젝트'},
+        ]
+    },
+        {
+        color : '1',
+        date : '2015.01 -2016.03',
+        list : [
+            {li : '한국총괄 MIF 시스템'},
+            {li : '추가 개발 및 운영'},
+        ]
+    }
+]
+const cardData2 = [
+    {
+        color : '2',
+        date : '2014.12 -2015.10',
+        list : [
+            {li : '삼성전자 한국총괄'},
+            {li : 'DM 시스템 개선'}
+        ]
+    },
+    {
+        color : '2',
+        date : '2014.09 -2014.12',
+        list : [
+            {li : 'G-CRM 시스템'}
+        ]
+    },
+        {
+        color : '2',
+        date : '2014.03 -2014.09',
+        list : [
+            {li : '삼성전자 GCRM 프로젝트'},
+            {li : '멤버십포탈 구축'}
+        ]
+    },
+       {
+        color : '3',
+        date : '2013.09 -2013.10',
+        list : [
+            {li : '한국총괄 SAMSUNGBLUE'},
+            {li : '사이트 및 멤버십 운영'}
+        ]
+    }
+]
+const cardData3 = [
+    {
+        color : '3',
+        date : '2013.05 - 2014.07',
+        list : [
+            {li : '삼성전자 B2B Partner Portal'},
+            {li : '구축'}
+        ]
+    },
+    {
+        color : '3',
+        date : '2013.05 -2013.06',
+        list : [
+            {li : '삼성전자 모바일스토어 구축'}
+        ]
+    },
+        {
+        color : '3',
+        date : '2013.03 -2013.07',
+        list : [
+            {li : '삼성전자 한국총괄 직영'},
+            {li : '온라인 쇼핑몰'},
+            {li : '시스템분석/설계'}
+        ]
+    },
+       {
+        color : '4',
+        date : '2012.12 -2013.02',
+        list : [
+            {li : '한국총괄 등외급 통합'},
+            {li : '시스템 개발 용역'}
+        ]
+    }
+]
+const cardData4 = [
+    {
+        color : '4',
+        date : '2012.05 - 2013.04',
+        list : [
+            {li : '한국총괄 프리미엄'},
+            {li : '판촉 시스템 개발/운영'}
+        ]
+    },
+    {
+        color : '4',
+        date : '2012.04 -2012.08',
+        list : [
+            {li : '한국총괄 B2B거래선정보개선'},
+            {li : '개발'}
+        ]
+    },
+        {
+        color : '4',
+        date : '2012.01 - 2012.05',
+        list : [
+            {li : '삼성전자 한국총괄 프리미엄'},
+            {li : '판촉 시스템 구축'}
+        ]
+    }
+]
 module.exports = {
     data() {
         return {
-            
+            list : cardData,
+            list2 : cardData2,
+            list3 : cardData3,
+            list4 : cardData4
         }
     },
 }
