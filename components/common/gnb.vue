@@ -28,11 +28,17 @@ module.exports = {
       const lineX = document.querySelector('.gnb_btn');
       const body = document.body;
       const header = document.querySelector('header');
+      const lnb_d2 = document.querySelectorAll('.lnb_d2_wrap a');
       if(this.gnbModal == false){
       this.gnbModal = true;
       lineX.classList.add('on');
       body.classList.add('hidden');
       header.classList.add('gnb_on');
+      lnb_d2.forEach((target)=>{
+        target.addEventListener('click', function(e){
+            e.preventDefault()
+        })
+      });
       } else {
         this.gnbModal = false;
         lineX.classList.remove('on');

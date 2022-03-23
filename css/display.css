@@ -488,6 +488,9 @@ html { scroll-behavior: smooth; }
 
 .works_box { position: relative; width: 100%; height: 100%; }
 
+@media (max-width: 736px) { .works_box { padding-bottom: 40px; }
+  .works_box:last-child { padding-bottom: 0; } }
+
 .works_box .works_img_wrap { display: flex; justify-content: center; width: 100%; overflow-x: hidden; }
 
 .works_box .works_info_wrap { position: absolute; top: 257px; left: 50%; margin-left: -620px; }
@@ -570,8 +573,6 @@ html { scroll-behavior: smooth; }
 
 .works_2015_02 .works_info_wrap .wif_logo { width: 140px; }
 
-.works_2015_03 #contents { padding-bottom: 0 !important; }
-
 .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: auto; width: 960px; }
 
 @media (max-width: 736px) { .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
@@ -610,10 +611,6 @@ html { scroll-behavior: smooth; }
 
 .works_2017_02 .works_info_wrap .wif_logo { width: 136px; }
 
-.works_2018_01 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2018_01 #contents { padding-bottom: 80px !important; } }
-
 .works_2018_01.works_box { height: 100vh; background: url(../images/works/thehandsome/works_img_bg.png) no-repeat; background-size: cover; }
 
 @media (max-width: 736px) { .works_2018_01.works_box { height: 100%; background: none; } }
@@ -626,8 +623,6 @@ html { scroll-behavior: smooth; }
 
 .works_2018_01 .works_info_wrap .wif_logo { width: 168px; }
 
-.works_2019_01 #contents { padding-bottom: 0 !important; }
-
 .works_2019_01 .works_img_wrap img { margin-top: 160px; margin-left: 640px; width: 869px; }
 
 @media (max-width: 1260px) { .works_2019_01 .works_img_wrap img { margin-left: 1000px; } }
@@ -637,10 +632,6 @@ html { scroll-behavior: smooth; }
 @media (max-width: 736px) { .works_2019_01 .works_info_wrap { padding-right: 10px; } }
 
 .works_2019_01 .works_info_wrap .wif_logo { width: 77px; }
-
-.works_2019_02 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2019_02 #contents { padding-bottom: 80px !important; } }
 
 @media (max-width: 736px) { .works_2019_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; height: 100%; } }
 
@@ -671,10 +662,6 @@ html { scroll-behavior: smooth; }
 
 .works_2020_02 .works_info_wrap .wif_logo { width: 48px; }
 
-.works_2020_03 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2020_03 #contents { padding-bottom: 80px !important; } }
-
 .works_2020_03.works_box { height: 100vh; background: url(../images/works/hyundai_greating/works_img_bg.png) no-repeat; background-size: cover; }
 
 @media (max-width: 1260px) { .works_2020_03.works_box { background-position: right 20%; } }
@@ -689,7 +676,7 @@ html { scroll-behavior: smooth; }
 
 .works_2020_03 .works_info_wrap .wif_logo { width: 118px; }
 
-.works_card { max-width: 1280px; margin: 200px auto; }
+.works_card { padding-top: 80px; max-width: 1280px; margin: 0 auto 200px; }
 
 .works_card .wif_subject { margin-right: 10px; font-weight: 300; font-size: 3.5em; line-height: 48px; letter-spacing: -2.63px; }
 
@@ -763,19 +750,11 @@ html { scroll-behavior: smooth; }
 
 .works_2021_01 { background: #ffdd23; }
 
-.works_2021_01 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2021_01 #contents { padding-bottom: 80px !important; } }
-
 .works_2021_01 .works_img_wrap img { margin-top: 150px; margin-left: 370px; width: 1065px; }
 
 @media (max-width: 736px) { .works_2021_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2021_01 .works_info_wrap .wif_logo { width: 118px; }
-
-.works_2021_02 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2021_02 #contents { padding-bottom: 80px !important; } }
 
 .works_2021_02 .works_img_wrap img { width: 1151px; margin-left: 810px; }
 
@@ -788,10 +767,6 @@ html { scroll-behavior: smooth; }
 
 .works_2021_02 .works_info_wrap .wif_logo { width: 110px; }
 
-.works_2021_03 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2021_03 #contents { padding-bottom: 80px !important; } }
-
 .works_2021_03 .works_img_wrap img { width: 1340px; margin-left: 810px; }
 
 @media (max-width: 736px) { .works_2021_03 .works_img_wrap img { margin-top: 0; margin-left: 0; width: 100%; height: 100%; } }
@@ -802,10 +777,6 @@ html { scroll-behavior: smooth; }
   .works_2021_03 #header { background: rgba(255, 0, 0, 0); } }
 
 .works_2021_03 .works_info_wrap .wif_logo { width: 53px; }
-
-.works_2021_04 #contents { padding-bottom: 0 !important; }
-
-@media (max-width: 736px) { .works_2021_04 #contents { padding-bottom: 80px !important; } }
 
 .works_2021_04 .works_img_wrap { padding-bottom: 145px; }
 

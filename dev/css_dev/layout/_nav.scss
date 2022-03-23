@@ -134,7 +134,7 @@
       .lnb_d2_wrap {
         display:inline-block;
       }
-      @include mdq_custom{
+      @include narrow_custom{
         .lnb_d2_wrap {
           display:none;
         }
@@ -180,7 +180,7 @@
     margin: auto;
     z-index: 1;
     display: none;
-    @include mdq_custom{
+    @include narrow_custom{
       &.on{
         display: inline-block;
       }
