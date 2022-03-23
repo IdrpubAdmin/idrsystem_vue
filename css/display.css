@@ -326,7 +326,7 @@
 /* main s =================================================== */
 .sec_tit { margin-bottom: 28px; font-weight: 700; font-size: 1.4em; line-height: 20px; letter-spacing: -1.05px; text-align: center; color: #535353; }
 
-.biz_box { position: relative; margin-bottom: 116px; }
+.biz_box { position: relative; }
 
 @media (max-width: 736px) { .biz_box { margin: inherit; } }
 
@@ -411,7 +411,7 @@
 
 .biz_box .swiper-pagination-bullet-active { color: #fff; background: #007aff; }
 
-.portfolio_box .sec_tit { margin-top: 90px; }
+@media (max-width: 1260px) { .portfolio_box .sec_tit { margin-top: 90px; } }
 
 .portfolio_box ul { width: 100%; display: flex; justify-content: center; flex-wrap: wrap; }
 
