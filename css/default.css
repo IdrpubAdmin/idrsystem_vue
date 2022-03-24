@@ -2356,7 +2356,7 @@ img { width: 100%; }
 
 .gnb_menu a:before { position: absolute; top: 50%; left: -8%; margin-top: 6px; content: ''; width: 0; height: 8px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
 
-@media (max-width: 736px) { .gnb_menu a:before { margin-top: -3px; } }
+@media (max-width: 1260px) { .gnb_menu a:before { margin-top: -3px; } }
 
 .gnb_menu li:hover a:before, .gnb_menu li.on a:before { width: 116%; }
 
@@ -2452,7 +2452,7 @@ img { width: 100%; }
 
 .main_footer .copyright p { font-weight: 300; font-size: 1.5em; letter-spacing: 0.45px; }
 
-.sub_footer .ft_info_wrap { padding-top: 20px; border-top: 2px solid #000; }
+.sub_footer .ft_info_wrap { padding-top: 20px; padding-bottom: 15px; border-top: 2px solid #000; }
 
 .sub_footer .ft_info_wrap .service_ul { padding-top: 5px; padding-bottom: 15px; padding-left: 95px; background: url(../images/common/logo_idr_btm.png) no-repeat; background-size: 68px; border-bottom: 1px solid #dcdcdc; font-weight: 300; font-size: 1.7em; line-height: 23px; letter-spacing: -1.28px; }
 
@@ -2468,7 +2468,7 @@ img { width: 100%; }
 
 @media (max-width: 736px) { .sub_footer .ft_info_wrap .sep_ul { padding-left: 5px; } }
 
-.sub_footer .ft_info_wrap .copyright { float: right; padding-top: 25px; margin-right: 90px; font-weight: 300; font-size: 1.3em; line-height: 33px; letter-spacing: 0.39px; color: #707070; }
+.sub_footer .ft_info_wrap .copyright { padding-top: 25px; margin-left: 90px; font-weight: 300; font-size: 1.3em; line-height: 33px; letter-spacing: 0.39px; color: #707070; }
 
 @media (max-width: 736px) { .sub_footer .ft_info_wrap .copyright { padding-top: 0; padding-bottom: 20px; padding-left: 20px; line-height: 20px; } }
 
@@ -2492,7 +2492,7 @@ img { width: 100%; }
   .sub_footer_work .ft_info_wrap { padding-left: 0; background-position: 100% 100%; border-top: 1px solid #f1f1f1; }
   .sub_footer_work .ft_info_wrap .service_ul { display: none; } }
 
-@media (max-width: 736px) { .sub_footer_work { padding: 15px; } }
+@media (max-width: 736px) { .sub_footer_work { padding: 15px 15px 25px 15px; } }
 
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */

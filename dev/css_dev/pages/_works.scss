@@ -44,7 +44,7 @@ html {
   .works_info_wrap {
     @include posa_tl(257px,50%);
     margin-left: -620px;
-    @include narrow-custom {
+    @include narrow_custom {
       @include posa_tl(257px,5%);
       margin-left: 0;
     }
@@ -136,7 +136,7 @@ html {
     img {
       margin-top:240px;
       margin-bottom:320px;
-      margin-left:720px;
+      margin-left:980px;
       width:929px;
     }
     @include mdq_m {
@@ -193,6 +193,7 @@ html {
     }
   }
 }
+
 .works_2014_03 {
   .works_img_wrap {
     img {
@@ -363,7 +364,7 @@ html {
     img {
       margin-top:170px;
       margin-bottom:35px;
-      margin-left:740px;
+      margin-left:805px;
       width:679px;
     }
     @include mdq_m {
@@ -389,7 +390,7 @@ html {
     img {
       margin-top:170px;
       margin-bottom:45px;
-      margin-left:740px;
+      margin-left:1010px;
       width:864px;
     }
     @include mdq_m {
@@ -511,7 +512,7 @@ html {
       margin-left:640px;
       width:869px;
     }
-    @include narrow-custom {
+    @include narrow_custom {
       img {
         margin-left: 1000px;
       }
@@ -567,7 +568,7 @@ html {
       margin-left:640px;
       width:1087px;
     }
-    @include narrow-custom {
+    @include narrow_custom {
       img {
         margin-left: 980px;
       }
@@ -654,7 +655,7 @@ html {
     height:100vh;
     background:url(#{$img_url}works/hyundai_greating/works_img_bg.png) no-repeat;
     background-size:cover;
-    @include narrow-custom {
+    @include narrow_custom {
       background-position: right 20%;
     }
     @include mdq_m {
@@ -680,6 +681,7 @@ html {
     }
   }
   .works_info_wrap {
+    top: 30%;
     @include mdq_m {
       margin-left:0;
       padding-right: 10px;
@@ -767,6 +769,9 @@ html {
         margin-bottom: 0.1em;
         ul {
           padding: 35px 3px 30px 35px;
+          @include narrow_custom {
+            padding: 20px;
+          }
           li {
             font-weight: 400;
             font-size: 1.9em;
@@ -817,7 +822,7 @@ html {
       }
       .before {
         p {
-          margin-right: -40px;
+          margin-right: -90px;
         }
         p::after{
           content: url(#{$img_url}common/arrow_l_w.png);
@@ -866,7 +871,6 @@ html {
   //   }
   // }
   .works_img_wrap {
-    
     img {
       margin-top:150px;
       margin-left:370px;
@@ -982,7 +986,7 @@ html {
     }
   }
   // .works_info_wrap {
-  //   @include narrow-custom {
+  //   @include narrow_custom {
   //     background-color: rgba(160, 160, 160, 0.548);
   //     color: #fff;
   //     padding: 30px;

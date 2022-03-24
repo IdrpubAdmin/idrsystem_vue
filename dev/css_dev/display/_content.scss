@@ -13,6 +13,17 @@
     display:none;
   }
 }
+
+.only_t {
+  display: none;
+  @include narrow_custom {
+    display: block;
+  }
+  @include mdq_m {
+    display:none;
+  }
+}
+
 .only_m {
   display:none;
   @include mdq_m {

@@ -51,7 +51,7 @@
     &:before {
       @include posa_tl(50%,-8%);
       margin-top:6px;
-      @include mdq_m {
+      @include narrow_custom {
         margin-top: -3px;
       }
       content:'';
