@@ -239,7 +239,9 @@
 
 .portfolio_box {
   .sec_tit {
-    margin-top: 90px;
+    @include narrow_custom {
+      margin-top: 90px;
+    }
   }
   ul {
     width:100%;

@@ -411,7 +411,7 @@
 
 .biz_box .swiper-pagination-bullet-active { color: #fff; background: #007aff; }
 
-.portfolio_box .sec_tit { margin-top: 90px; }
+@media (max-width: 1260px) { .portfolio_box .sec_tit { margin-top: 90px; } }
 
 .portfolio_box ul { width: 100%; display: flex; justify-content: center; flex-wrap: wrap; }
 
