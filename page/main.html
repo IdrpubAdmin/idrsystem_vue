@@ -114,46 +114,6 @@
 
 <script type="text/javascript" src="../js/style.js?v=20201229"></script>
 
-<script>
-    // AOS 처음에 한번에 실행되는 문제 해결 - 새로고침
-    setTimeout(function() { AOS.refresh(); }, 100);
-</script>
-
-<script>
-
-//테스트용
-    window.addEventListener('scroll', function(){
-        var contentN = document.querySelectorAll('#contents section').length;
-        var contentP = [];
-        var scrollW = window.scrollY;
-        var $nav = $('.lnb_d2_wrap li');
-        var $moNav = $('.mo_nav li');
-        for(var i = 1; i <= contentN; i++ ) {
-            contentP.push(document.getElementById(i).offsetTop - 100);
-        }       
-        /*첫번째 컨텐트~뒤에서 2번째 컨텐트*/
-        for(var i = 1; i < contentN; i++ ) {
-            var menu = document.querySelectorAll('.lnb_d2_wrap li');
-            if( scrollW >= contentP[i-1] && scrollW < contentP[i]){
-                $nav.removeClass('on');
-                $nav.eq(i-1).addClass('on');
-                $moNav.eq(i-1).addClass('on');
-            }                
-        }
-        if( scrollW >= contentP[contentN-1]){
-            $nav.removeClass('on');
-            $nav.eq(contentN-1).addClass('on');
-            $moNav.eq(contentN-1).addClass('on');
-        }
-        /*문서 끝 닿을 때*/           
-        if (scrollW == $(document).height() - $(window).height() ) {
-            $nav.removeClass('on');
-            $nav.eq(contentN-1).addClass('on');
-            $moNav.eq(contentN-1).addClass('on');
-        }
-    });
-</script>
-
 <!-- //script_include -->
 
 <script>
