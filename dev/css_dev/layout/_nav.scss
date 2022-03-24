@@ -51,6 +51,9 @@
     &:before {
       @include posa_tl(50%,-8%);
       margin-top:6px;
+      @include mdq_m {
+        margin-top: -3px;
+      }
       content:'';
       width:0;
       height:8px;
@@ -176,7 +179,7 @@
     height: 80px;
     top: 0;
     bottom: 0;
-    right: 20px;
+    right: 10px;
     margin: auto;
     z-index: 1;
     display: none;

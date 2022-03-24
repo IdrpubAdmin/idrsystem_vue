@@ -467,7 +467,7 @@
 
 .sub_bg_wrap { max-width: 1920px; margin-bottom: 95px; margin-right: auto; margin-left: auto; }
 
-@media (max-width: 736px) { .sub_bg_wrap { margin-bottom: 40px; margin-right: -15px; margin-left: -15px; } }
+@media (max-width: 736px) { .sub_bg_wrap { margin-bottom: 40px; } }
 
 .commerce_box .txt_wrap { width: 100%; }
 
@@ -489,6 +489,7 @@ html { scroll-behavior: smooth; }
 .works_box { position: relative; width: 100%; height: 100%; }
 
 @media (max-width: 736px) { .works_box { padding-bottom: 40px; }
+  .works_box:first-child { padding-top: 70px; }
   .works_box:last-child { padding-bottom: 0; } }
 
 .works_box .works_img_wrap { display: flex; justify-content: center; width: 100%; overflow-x: hidden; }
@@ -530,6 +531,8 @@ html { scroll-behavior: smooth; }
 @media (max-width: 736px) { .works_2014_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; height: 100%; } }
 
 .works_2014_01 .works_info_wrap .wif_logo { width: 130px; }
+
+@media (max-width: 736px) { .works_2014_02.works_box { padding-bottom: 40px; } }
 
 .works_2014_02 .works_img_wrap img { margin-top: 240px; margin-bottom: 254px; margin-left: 640px; width: 594px; }
 
@@ -747,6 +750,8 @@ html { scroll-behavior: smooth; }
 .color9 { background-color: #F8B750; }
 
 .color10 { background-color: #89ADDB; }
+
+@media (max-width: 736px) { .con_works { padding-top: 0 !important; } }
 
 .works_2021_01 { background: #ffdd23; }
 

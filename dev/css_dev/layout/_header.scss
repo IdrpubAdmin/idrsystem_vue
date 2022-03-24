@@ -27,7 +27,8 @@ $header_motion_time:0.4s;
   @include mdq_m {
     padding-top:$header_padding-top2;
     height:$header_h;
-    background:#fff;
+    background:rgba(255,255,255,0.8);
+    min-height: 70px;
     .header_logo,
     .gnb_btn {
       top:$header_padding-top2;
@@ -67,6 +68,9 @@ $header_motion_time:0.4s;
 .has_wnd_nav {
   #header.fixed {
     background:#fff;
+    @include mdq_m{
+      background: rgba(255,255,255,0.8);
+    }
   }
 }
 .header_logo {

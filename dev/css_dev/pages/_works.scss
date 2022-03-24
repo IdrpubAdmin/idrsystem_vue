@@ -28,6 +28,9 @@ html {
   height:100%;
   @include mdq_m {
     padding-bottom: 40px;
+    &:first-child{
+      padding-top: 70px;
+    }
     &:last-child{
       padding-bottom: 0;
     }
@@ -155,6 +158,11 @@ html {
 }
 
 .works_2014_02 {
+  @include mdq_m {
+    &.works_box{
+    padding-bottom: 40px;
+    }
+  }
   .works_img_wrap {
     img {
       margin-top:240px;
@@ -844,6 +852,11 @@ html {
 .color9 {background-color:#F8B750;}
 .color10 {background-color:#89ADDB;}
 
+.con_works{
+  @include mdq_m {
+    padding-top: 0 !important;
+  }
+}
 .works_2021_01 {
   background:#ffdd23;
   // &.has_wnd_nav {

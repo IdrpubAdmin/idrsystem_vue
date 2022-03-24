@@ -41,12 +41,12 @@
 var blkItemList = [
     { 
         label : 'IDR Omni Channel 방법론',
-        tit : '옴니채널 전략을 수립하여,<br class="only_pc">서비스에 반영',
+        tit : '옴니채널 전략을 수립하여<br class="only_pc">서비스에 반영',
         con : 'IDR은 고유의 Omni Channel Strategic Planning 방법론을 개발하여 고객의 <span class="point_clr">옴니채널 전략 수립하는<br class="only_pc">서비스를 제공</span>하고 있습니다.'
     },
     { 
         label : 'Omni  Commerce Pro !',
-        tit : '자체 솔루션 보유<br class="only_pc">자체적 개발.',
+        tit : '자체 솔루션 보유,<br class="only_pc">자체적 개발.',
         con : 'IDR은 Global Solution외에도 중소규모의 쇼핑몰을 위한 <span class="point_clr">Omni-Channel Shopping Mall Solution을 자체적으로<br class="only_pc">개발하여 본격적으로 사업</span>을 진행하고 있습니다.'
     },
     {

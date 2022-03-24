@@ -32,7 +32,6 @@
   margin-left:auto;
   @include mdq_m {
     margin-bottom:40px;
-    @include setFullBox();
   }
 }
 .commerce_box {
