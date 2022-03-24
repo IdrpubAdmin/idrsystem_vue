@@ -76,8 +76,8 @@ module.exports = {
       list1 : lnbData1,
       list2 : lnbData2,
       list3 : lnbData3,
-
       isActive: false
+      
     }
   },
   methods: {
