@@ -31,13 +31,13 @@ var worksData = [{
   txt: '코오롱 통합쇼핑몰',
   content: [{
     list: [{
-      li: '코오롱 브랜드 공식 쇼핑몰인 코오롱 몰과<br class="only_t">코오롱 스포츠 공식 쇼핑몰 구축 참여'
+      li: "\uCF54\uC624\uB871 \uBE0C\uB79C\uB4DC \uACF5\uC2DD \uC1FC\uD551\uBAB0\uC778 \uCF54\uC624\uB871 \uBAB0\uACFC\n                        <br class=\"only_t\">\uCF54\uC624\uB871 \uC2A4\uD3EC\uCE20 \uACF5\uC2DD \uC1FC\uD551\uBAB0 \uAD6C\uCD95 \uCC38\uC5EC"
     }, {
-      li: '코오롱 통합 쇼핑몰 백오피스와 화면을 연동하는<br class="only_t">인터페이스 처리'
+      li: "\uCF54\uC624\uB871 \uD1B5\uD569 \uC1FC\uD551\uBAB0 \uBC31\uC624\uD53C\uC2A4\uC640 \uD654\uBA74\uC744 \uC5F0\uB3D9\uD558\uB294\n                        <br class=\"only_t\">\uC778\uD130\uD398\uC774\uC2A4 \uCC98\uB9AC"
     }, {
-      li: 'Adobe 웹 CMS 솔루션 툴을 사용하여<br class="only_t">데이터 연동 처리'
+      li: "Adobe \uC6F9 CMS \uC194\uB8E8\uC158 \uD234\uC744 \uC0AC\uC6A9\uD558\uC5EC\n                        <br class=\"only_t\">\uB370\uC774\uD130 \uC5F0\uB3D9 \uCC98\uB9AC"
     }, {
-      li: '솔루션 Tool 및 백오피스 데이터 처리에 대한<br class="only_t">다방면의 경험 축적'
+      li: "\uC194\uB8E8\uC158 Tool \uBC0F \uBC31\uC624\uD53C\uC2A4 \uB370\uC774\uD130 \uCC98\uB9AC\uC5D0 \uB300\uD55C\n                        <br class=\"only_t\">\uB2E4\uBC29\uBA74\uC758 \uACBD\uD5D8 \uCD95\uC801"
     }]
   }]
 }, {

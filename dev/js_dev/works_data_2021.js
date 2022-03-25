@@ -11,9 +11,12 @@ const worksData = [
         txt : '이랜드그룹의 콸콸쇼핑몰(셀러몰) 구축',
         content: [{ 
                 list : [
-                    {li : 'MSA (Micro Service Architecture)기반<br class="only_t">IDR Comm’On Solution적용 구축'}, 
-                    {li : '셀러들이 지인들과 공유할 상품을 서랍에 담은 후,<br class="only_t">카카오톡을 통해 상품정보를 공유'}, 
-                    {li : '지인들이 공유된 상품을 주문하면 셀러들에게<br class="only_t">인센티브를 지급'}
+                    {li : `MSA (Micro Service Architecture)기반
+                        <br class="only_t">IDR Comm’On Solution적용 구축`}, 
+                    {li : `셀러들이 지인들과 공유할 상품을 서랍에 담은 후,
+                        <br class="only_t">카카오톡을 통해 상품정보를 공유`}, 
+                    {li : `지인들이 공유된 상품을 주문하면 셀러들에게
+                        <br class="only_t">인센티브를 지급`}
                 ]
             }    
         ]
@@ -63,7 +66,7 @@ const worksData = [
         logo : 'seegene/works_logo.png', 
         date : '2021.06 ~ 2021.11', 
         title : `씨젠의료재단 차세대 정보화
-               <br class="only_t"><br class="only_m">시스템 구축 전략 컨설팅`, 
+                <br class="only_t"><br class="only_m">시스템 구축 전략 컨설팅`, 
         txt: '씨젠의료재단 차세대 정보화 시스템 구축 전략 컨설팅',
         content : [{ 
                 list : [

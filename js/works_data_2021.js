@@ -11,11 +11,11 @@ var worksData = [{
   txt: '이랜드그룹의 콸콸쇼핑몰(셀러몰) 구축',
   content: [{
     list: [{
-      li: 'MSA (Micro Service Architecture)기반<br class="only_t">IDR Comm’On Solution적용 구축'
+      li: "MSA (Micro Service Architecture)\uAE30\uBC18\n                        <br class=\"only_t\">IDR Comm\u2019On Solution\uC801\uC6A9 \uAD6C\uCD95"
     }, {
-      li: '셀러들이 지인들과 공유할 상품을 서랍에 담은 후,<br class="only_t">카카오톡을 통해 상품정보를 공유'
+      li: "\uC140\uB7EC\uB4E4\uC774 \uC9C0\uC778\uB4E4\uACFC \uACF5\uC720\uD560 \uC0C1\uD488\uC744 \uC11C\uB78D\uC5D0 \uB2F4\uC740 \uD6C4,\n                        <br class=\"only_t\">\uCE74\uCE74\uC624\uD1A1\uC744 \uD1B5\uD574 \uC0C1\uD488\uC815\uBCF4\uB97C \uACF5\uC720"
     }, {
-      li: '지인들이 공유된 상품을 주문하면 셀러들에게<br class="only_t">인센티브를 지급'
+      li: "\uC9C0\uC778\uB4E4\uC774 \uACF5\uC720\uB41C \uC0C1\uD488\uC744 \uC8FC\uBB38\uD558\uBA74 \uC140\uB7EC\uB4E4\uC5D0\uAC8C\n                        <br class=\"only_t\">\uC778\uC13C\uD2F0\uBE0C\uB97C \uC9C0\uAE09"
     }]
   }]
 }, {
@@ -57,7 +57,7 @@ var worksData = [{
   mo: 'seegene/works_img_mo.png',
   logo: 'seegene/works_logo.png',
   date: '2021.06 ~ 2021.11',
-  title: "\uC528\uC820\uC758\uB8CC\uC7AC\uB2E8 \uCC28\uC138\uB300 \uC815\uBCF4\uD654\n               <br class=\"only_t\"><br class=\"only_m\">\uC2DC\uC2A4\uD15C \uAD6C\uCD95 \uC804\uB7B5 \uCEE8\uC124\uD305",
+  title: "\uC528\uC820\uC758\uB8CC\uC7AC\uB2E8 \uCC28\uC138\uB300 \uC815\uBCF4\uD654\n                <br class=\"only_t\"><br class=\"only_m\">\uC2DC\uC2A4\uD15C \uAD6C\uCD95 \uC804\uB7B5 \uCEE8\uC124\uD305",
   txt: '씨젠의료재단 차세대 정보화 시스템 구축 전략 컨설팅',
   content: [{
     list: [{

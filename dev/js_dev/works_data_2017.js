@@ -44,15 +44,18 @@ const worksData = [
         content : [{
                 subTxt : 'Front 오피셜', 
                 list : [
-                    {li : 'Main/상품리스트/상품상세 및 기타 컨텐츠 페이지<br class="only_t">Global Guide 적용'},
+                    {li : `Main/상품리스트/상품상세 및 기타 컨텐츠 페이지
+                        <br class="only_t">Global Guide 적용`},
                     {li : '반응형 시스템 구현(PC/Tablet/Mobile)'},
-                    {li : '회원, 주문/결제 및 마이페이지는 한국법 제도에 맞춰<br class="only_t">로컬라이제이션 진행'}
+                    {li : `회원, 주문/결제 및 마이페이지는 한국법 제도에 맞춰
+                        <br class="only_t">로컬라이제이션 진행`}
                 ]
             },{
                 subTxt : 'Front 샵인샵',
                 list : [
-                    {li : `더현대 사이트 내에서 Main/상품 리스트/상품상세 및<br class="only_t">컨텐츠 페이지는 오피셜 
-                          <br class="only_pc">사이트와 동일한 Global Guide 적용`},
+                    {li : `더현대 사이트 내에서 Main/상품 리스트/상품상세 및
+                        <br class="only_t">컨텐츠 페이지는 오피셜 
+                        <br class="only_pc">사이트와 동일한 Global Guide 적용`},
                     {li : '회원, 주문, 마이페이지는 더현대닷컴 사용'}
                 ]
             },{
@@ -60,12 +63,14 @@ const worksData = [
                 list : [
                     {li : '더현대닷컴 기존 Admin 기반으로 구축'},
                     {li : `H&M 전용 Admin 구현
-                          <br>* 상품관리, 재고관리, 프로모션관리, 매장관리, 전시관리,<br class="only_t">기획전관리, 매거진관리, Sales Report 등`}
+                          <br>* 상품관리, 재고관리, 프로모션관리, 매장관리, 전시관리,
+                          <br class="only_t">기획전관리, 매거진관리, Sales Report 등`}
                 ]
             },{
                 subTxt : '물류 API 연동',
                 list : [
-                    {li : 'H&M Global 물류대행업체인 Li&Pung과 출고,회수,취소 및<br class="only_t">재고 연동 구현'}
+                    {li : `H&M Global 물류대행업체인 Li&Pung과 출고,회수,취소 및
+                        <br class="only_t">재고 연동 구현`}
                 ]
             }
         ]
