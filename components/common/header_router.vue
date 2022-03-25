@@ -7,14 +7,14 @@
       </a>
     </h1>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="serviceLnb">
-        <router-link v-for="lnbMenu1 in list1" :key="lnbMenu1" class="d1_li" :to="lnbMenu1.to" tag="li"><a href="#none"><span>{{lnbMenu1.title}}</span></a></router-link>
+        <router-link v-for="lnbMenu1 in list1" :key="lnbMenu1" class="d1_li" :to="lnbMenu1.to" tag="li" @click.native="gnbClose"><a href="#none"><span>{{lnbMenu1.title}}</span></a></router-link>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="worksLnb">
         <li v-for="lnbMenu2 in list2" :key="lnbMenu2" class="d1_li" :class="{on : lnbMenu2.class}">
           <a :href=" 'works_' + lnbMenu2.title + '.html' ">
             <span>{{lnbMenu2.title}}</span>
           </a>
-          <ul class="lnb_d2_wrap" v-if="lnbMenu2.class">
+          <ul class="lnb_d2_wrap pc_nav" v-if="lnbMenu2.class">
             <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :class="subMenu.class">
               <a :href="'#' + subMenu.num">
                 <span>{{subMenu.num}}</span>
@@ -24,7 +24,7 @@
         </li>
     </ul>
     <ul class="lnb_wrap lnb_d1_wrap" v-if="contactLnb">
-        <router-link v-for="lnbMenu3 in list3" :key="lnbMenu3" class="d1_li" :to="lnbMenu3.to" tag="li"><a href="#none"><span>{{lnbMenu3.title}}</span></a></router-link>
+        <router-link v-for="lnbMenu3 in list3" :key="lnbMenu3" class="d1_li" :to="lnbMenu3.to" tag="li" @click.native="gnbClose"><a href="#none"><span>{{lnbMenu3.title}}</span></a></router-link>
     </ul>
     <button type="button" class="gnb_btn" title="메뉴버튼" @click="showGnb">
       <span class="line" v-for="line in 3" :key="line"></span>
@@ -83,6 +83,9 @@ module.exports = {
   methods: {
     showGnb: function(){
       eventBus.$emit('clickGnb');
+    },
+    gnbClose: function(){
+      eventBus.$emit('closeGnb');
     },
     handleScroll () {
 
