@@ -76,7 +76,6 @@ module.exports = {
       list1 : lnbData1,
       list2 : lnbData2,
       list3 : lnbData3,
-      isActive: false
     }
   },
   methods: {
@@ -86,21 +85,10 @@ module.exports = {
     gnbClose: function(){
       eventBus.$emit('closeGnb');
     },
-    handleScroll () {
-
-    },
     scrollToAnchor(selectedAnchor){
-      document.getElementById(selectedAnchor).scrollIntoView({ 
-        behavior: 'smooth'
-      });
+      eventBus.$emit('scrollEvt', selectedAnchor);
     }
   },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
 }
 
 window.onscroll = function() {scrollFunction()};
