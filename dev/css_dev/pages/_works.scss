@@ -113,6 +113,9 @@ html {
       margin-bottom: 268px;
       margin-left: 782px;
       width: 770px;
+      @include narrow_custom {
+        margin-left: 1050px;
+      }
     }
     @include mdq_m {
       img {
@@ -703,6 +706,9 @@ html {
     font-size: 3.5em;
     line-height: 48px;
     letter-spacing: -2.63px;
+    @include narrow_custom {
+      margin-left: 20px;
+    }
   }
   @include mdq_m {
     .wif_subject {
@@ -752,6 +758,9 @@ html {
       span {
         top: -58px;
         right: 0;
+        @include narrow_custom {
+          right: 20px;
+        }
       }
       span::after {
         content: url(#{$img_url}common/arrow_l_b.png);

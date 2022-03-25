@@ -47,16 +47,16 @@ var worksData = [{
   content: [{
     subTxt: 'Front 오피셜',
     list: [{
-      li: 'Main/상품리스트/상품상세 및 기타 컨텐츠 페이지 Global Guide 적용'
+      li: 'Main/상품리스트/상품상세 및 기타 컨텐츠 페이지<br class="only_t">Global Guide 적용'
     }, {
       li: '반응형 시스템 구현(PC/Tablet/Mobile)'
     }, {
-      li: '회원, 주문/결제 및 마이페이지는 한국법 제도에 맞춰 로컬라이제이션 진행'
+      li: '회원, 주문/결제 및 마이페이지는 한국법 제도에 맞춰<br class="only_t">로컬라이제이션 진행'
     }]
   }, {
     subTxt: 'Front 샵인샵',
     list: [{
-      li: "\uB354\uD604\uB300 \uC0AC\uC774\uD2B8 \uB0B4\uC5D0\uC11C Main/\uC0C1\uD488 \uB9AC\uC2A4\uD2B8/\uC0C1\uD488\uC0C1\uC138 \uBC0F \uCEE8\uD150\uCE20 \uD398\uC774\uC9C0\uB294 \uC624\uD53C\uC15C \n                          <br class=\"only_pc\">\uC0AC\uC774\uD2B8\uC640 \uB3D9\uC77C\uD55C Global Guide \uC801\uC6A9"
+      li: "\uB354\uD604\uB300 \uC0AC\uC774\uD2B8 \uB0B4\uC5D0\uC11C Main/\uC0C1\uD488 \uB9AC\uC2A4\uD2B8/\uC0C1\uD488\uC0C1\uC138 \uBC0F<br class=\"only_t\">\uCEE8\uD150\uCE20 \uD398\uC774\uC9C0\uB294 \uC624\uD53C\uC15C \n                          <br class=\"only_pc\">\uC0AC\uC774\uD2B8\uC640 \uB3D9\uC77C\uD55C Global Guide \uC801\uC6A9"
     }, {
       li: '회원, 주문, 마이페이지는 더현대닷컴 사용'
     }]
@@ -65,12 +65,12 @@ var worksData = [{
     list: [{
       li: '더현대닷컴 기존 Admin 기반으로 구축'
     }, {
-      li: "H&M \uC804\uC6A9 Admin \uAD6C\uD604\n                          <br>* \uC0C1\uD488\uAD00\uB9AC, \uC7AC\uACE0\uAD00\uB9AC, \uD504\uB85C\uBAA8\uC158\uAD00\uB9AC, \uB9E4\uC7A5\uAD00\uB9AC, \uC804\uC2DC\uAD00\uB9AC, \uAE30\uD68D\uC804\uAD00\uB9AC, \uB9E4\uAC70\uC9C4\uAD00\uB9AC, Sales Report \uB4F1"
+      li: "H&M \uC804\uC6A9 Admin \uAD6C\uD604\n                          <br>* \uC0C1\uD488\uAD00\uB9AC, \uC7AC\uACE0\uAD00\uB9AC, \uD504\uB85C\uBAA8\uC158\uAD00\uB9AC, \uB9E4\uC7A5\uAD00\uB9AC, \uC804\uC2DC\uAD00\uB9AC,<br class=\"only_t\">\uAE30\uD68D\uC804\uAD00\uB9AC, \uB9E4\uAC70\uC9C4\uAD00\uB9AC, Sales Report \uB4F1"
     }]
   }, {
     subTxt: '물류 API 연동',
     list: [{
-      li: 'H&M Global 물류대행업체인 Li&Pung과 출고,회수,취소 및 재고 연동 구현'
+      li: 'H&M Global 물류대행업체인 Li&Pung과 출고,회수,취소 및<br class="only_t">재고 연동 구현'
     }]
   }]
 }];
