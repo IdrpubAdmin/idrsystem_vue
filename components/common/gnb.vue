@@ -24,10 +24,10 @@ module.exports = {
     }
   },
   created: function() {
+    const lineX = document.querySelector('.gnb_btn');
+    const body = document.body;
+    const header = document.querySelector('header');
     eventBus.$on('clickGnb', function(){
-      const lineX = document.querySelector('.gnb_btn');
-      const body = document.body;
-      const header = document.querySelector('header');
       if(this.gnbModal == false){
       this.gnbModal = true;
       lineX.classList.add('on');
@@ -38,6 +38,14 @@ module.exports = {
         lineX.classList.remove('on');
         body.classList.remove('hidden');
         header.classList.remove('gnb_on');
+      }
+    }.bind(this));
+    eventBus.$on('closeGnb', function(){
+      if(this.gnbModal == true){
+        this.gnbModal = false;
+        lineX.classList.remove('on');
+        body.classList.remove('hidden');
+        header.classList.remove('gnb_on');        
       }
     }.bind(this));
   },
