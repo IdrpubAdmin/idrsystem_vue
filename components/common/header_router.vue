@@ -16,7 +16,7 @@
           </a>
           <ul class="lnb_d2_wrap pc_nav" v-if="lnbMenu2.class">
             <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :class="subMenu.class">
-              <a :href="'#' + subMenu.num">
+              <a @click="scrollToAnchor(subMenu.num)">
                 <span>{{subMenu.num}}</span>
               </a>
             </li>
@@ -34,7 +34,7 @@
     <ul v-for="lnbMenu2 in list2" :key="lnbMenu2" class="mo_nav lnb_d2_wrap" :class="{on : lnbMenu2.class}">
       <template v-if="lnbMenu2.class">
         <li v-for="subMenu in lnbMenu2.d2" :key="subMenu" class="d2_li" :class="subMenu.class">
-        <a :href="'#' + subMenu.num">
+        <a @click="scrollToAnchor(subMenu.num)">
           <div></div>
         </a>
       </li>
@@ -77,7 +77,6 @@ module.exports = {
       list2 : lnbData2,
       list3 : lnbData3,
       isActive: false
-      
     }
   },
   methods: {
@@ -89,6 +88,11 @@ module.exports = {
     },
     handleScroll () {
 
+    },
+    scrollToAnchor(selectedAnchor){
+      document.getElementById(selectedAnchor).scrollIntoView({ 
+        behavior: 'smooth'
+      });
     }
   },
   created() {
