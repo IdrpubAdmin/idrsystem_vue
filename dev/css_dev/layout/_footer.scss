@@ -98,14 +98,18 @@
       }
     }
     .copyright {
+      float: right;
       padding-top:25px;
       margin-left:90px;
       @include fnt_set($l,1.3em,33px,0.39px);
       color:#707070;
+      @include narrow_custom {
+        float: inherit;
+      }
       @include mdq_m {
         padding-top:0;
         padding-bottom:$con_pd2;
-        padding-left:$con_pd2;
+        margin-left: 25px;
         line-height:20px;
       }
     }
