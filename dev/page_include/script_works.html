@@ -4,36 +4,40 @@
 </script>
 
 <script>
-
-//테스트용
+    // 스크롤 이벤트
     window.addEventListener('scroll', function(){
         var contentN = document.querySelectorAll('#contents section').length;
         var contentP = [];
         var scrollW = window.scrollY;
-        var $nav = $('.lnb_d2_wrap li');
-        var $moNav = $('.mo_nav li');
+        var nav = document.querySelectorAll(".pc_nav li");
+        var moNav = document.querySelectorAll(".mo_nav li");
+        var body = document.body;
+        var html = document.documentElement;
+        var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         for(var i = 1; i <= contentN; i++ ) {
-            contentP.push(document.getElementById(i).offsetTop - 100);
+            contentP.push(document.getElementById(i).offsetTop - 500);
         }       
-        /*첫번째 컨텐트~뒤에서 2번째 컨텐트*/
-        for(var i = 1; i < contentN; i++ ) {
-            var menu = document.querySelectorAll('.lnb_d2_wrap li');
-            if( scrollW >= contentP[i-1] && scrollW < contentP[i]){
-                $nav.removeClass('on');
-                $nav.eq(i-1).addClass('on');
-                $moNav.eq(i-1).addClass('on');
-            }                
-        }
-        if( scrollW >= contentP[contentN-1]){
-            $nav.removeClass('on');
-            $nav.eq(contentN-1).addClass('on');
-            $moNav.eq(contentN-1).addClass('on');
-        }
-        /*문서 끝 닿을 때*/           
-        if (scrollW == $(document).height() - $(window).height() ) {
-            $nav.removeClass('on');
-            $nav.eq(contentN-1).addClass('on');
-            $moNav.eq(contentN-1).addClass('on');
+        for(var a = 0; a < nav.length; a++){
+            for(var i = 1; i < contentN; i++ ) {
+                if( scrollW >= contentP[i-1] && scrollW < contentP[i]){
+                    nav[a].classList.remove("on");
+                    nav[i-1].classList.add("on");
+                    moNav[a].classList.remove("on");
+                    moNav[i-1].classList.add("on");
+                }                
+            }
+            if( scrollW >= contentP[contentN-1]){
+                nav[a].classList.remove("on");
+                nav[contentN-1].classList.add("on");
+                moNav[a].classList.remove("on");
+                moNav[contentN-1].classList.add("on");
+            }      
+            if (scrollW == height - window.innerHeight) {
+                nav[a].classList.remove("on");
+                nav[contentN-1].classList.add("on");
+                moNav[a].classList.remove("on");
+                moNav[contentN-1].classList.add("on");
+            }   
         }
     });
 </script>
