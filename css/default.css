@@ -2468,9 +2468,11 @@ img { width: 100%; }
 
 @media (max-width: 736px) { .sub_footer .ft_info_wrap .sep_ul { padding-left: 5px; } }
 
-.sub_footer .ft_info_wrap .copyright { padding-top: 25px; margin-left: 90px; font-weight: 300; font-size: 1.3em; line-height: 33px; letter-spacing: 0.39px; color: #707070; }
+.sub_footer .ft_info_wrap .copyright { float: right; padding-top: 25px; margin-left: 90px; font-weight: 300; font-size: 1.3em; line-height: 33px; letter-spacing: 0.39px; color: #707070; }
 
-@media (max-width: 736px) { .sub_footer .ft_info_wrap .copyright { padding-top: 0; padding-bottom: 20px; padding-left: 20px; line-height: 20px; } }
+@media (max-width: 1260px) { .sub_footer .ft_info_wrap .copyright { float: inherit; } }
+
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .copyright { padding-top: 0; padding-bottom: 20px; margin-left: 25px; line-height: 20px; } }
 
 .sub_footer_work { padding-bottom: 45px; position: absolute; bottom: 0; left: 10px; }
 
